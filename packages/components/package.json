@@ -1,0 +1,25 @@
+{
+  "name": "crland-element-plus",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "crland-element-plus",
+    "vue3组件库"
+  ],
+  "author": "bigdeng",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "crland-utils": "workspace:2.0.2"
+  }
+}

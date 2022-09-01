@@ -1,0 +1,132 @@
+.login-wrap {
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+
+  .login-bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+  }
+
+  .login-form {
+    width: 70%;
+    margin: 100px auto 0 auto;
+
+    .h-100 {
+      height: 100px;
+    }
+
+    .h-50 {
+      height: 50px;
+    }
+
+    .login-title {
+      display: block;
+      border: none;
+      max-width: 70%;
+      margin: 0 auto;
+    }
+
+    .el-form-item {
+      display: block;
+      padding-bottom: 20px;
+
+      .el-form-item__label {
+        font-size: 14px;
+        line-height: 36px;
+        text-align: left;
+        padding-bottom: 10px;
+        color: #8d9eae;
+        font-weight: 700;
+        display: block;
+
+        &::before {
+          content: "";
+          margin-right: 0px;
+        }
+      }
+
+      .el-input__wrapper {
+        border-radius: 0px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        box-shadow: none;
+        color: #232323;
+        font-weight: 800;
+        font-size: 20px;
+        caret-color: #232323;
+        text-indent: 0px;
+        padding-left: 0px;
+        letter-spacing: 0px;
+        background: #fff;
+        padding: 1px 0px;
+      }
+
+      .el-input__wrapper.is-focus {
+        border-bottom: 2px solid var(--el-color-primary) !important;
+      }
+
+      input:-webkit-autofill {
+        transition: background-color 9999s;
+        caret-color: #232323;
+        font-size: 20px;
+      }
+
+      input {
+        -webkit-text-fill-color: #232323;
+        caret-color: #232323;
+        font-size: 20px;
+      }
+
+      .el-input__inner {
+        caret-color: #232323;
+        &[type="password"] {
+          letter-spacing: 3px;
+        }
+      }
+
+      .el-input__icon {
+        font-size: 20px !important;
+      }
+
+      .el-input--large .el-input__suffix {
+        right: 2px;
+      }
+    }
+
+    .is-error {
+      .el-input__wrapper {
+        border-bottom: 2px solid var(--el-color-danger);
+
+        &:focus {
+          // border-bottom: 2px solid var(--el-color-danger);
+        }
+      }
+    }
+
+    .submit-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .el-button {
+        width: 157px;
+        height: 58px;
+        border-radius: 18px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #fff;
+      }
+
+      .submit-login {
+        background: linear-gradient(
+          231deg,
+          var(--el-color-primary-light-3),
+          var(--el-color-primary)
+        );
+      }
+    }
+  }
+}

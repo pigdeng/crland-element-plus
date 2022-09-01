@@ -1,0 +1,66 @@
+.component-wrap {
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  transition: 0.2s;
+  text-align: left;
+  .component-source {
+    display: block;
+    padding: 24px;
+  }
+  .component-btn-bars {
+    border-top: 1px solid #eaeefb;
+    height: 40px;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .el-icon {
+      color: #909399;
+      cursor: pointer;
+      margin: 0 4px;
+      &:hover {
+        color: #303133;
+      }
+    }
+  }
+  .code-wrap {
+    // background: #f5f7fa;
+  }
+  .code-text {
+    padding: 0 24px 24px 24px;
+    .highlightjs-style {
+      margin-top: 0px;
+    }
+  }
+  .code-footer {
+    height: 44px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #eaeefb;
+    .hide-code {
+      display: flex;
+      align-items: center;
+      color: #909399;
+      cursor: pointer;
+      margin: 0 4px;
+      font-size: 14px;
+      &:hover {
+        color: #303133;
+      }
+      > span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .open-style {
+    background-color: rgba(255, 176, 0, 0.04) !important;
+    :deep(.hljs) {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
+  
+}

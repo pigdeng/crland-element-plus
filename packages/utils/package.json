@@ -1,0 +1,16 @@
+{
+  "name": "crland-utils",
+  "version": "2.0.2",
+  "main": "index.ts",
+  "module": "index.ts",
+  "description": "",
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  }
+}

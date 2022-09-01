@@ -1,0 +1,20 @@
+<template>
+  <crland-switch
+    v-model="value"
+    size="large"
+    inline-prompt
+    active-text="是"
+    inactive-text="否"
+  />
+</template>
+
+<script lang="ts" setup>
+import {ref} from 'vue';
+
+const value = ref(true);
+</script>
+<style lang="scss" scoped>
+.mb-4 {
+    margin-bottom: 16px;
+}
+</style>
