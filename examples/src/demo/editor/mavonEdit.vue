@@ -6,11 +6,11 @@
             <crland-button shadow type="success" @click="setEdit"> {{editable ? '设置不可编辑':'设置可编辑'}}</crland-button>
         </el-row>
         <br />
-        <mavon-editor ref="md" v-model="content" @imgAdd="imgAdd" :editable="editable" />
+        <crland-mavon-editor ref="md" v-model="content" @imgAdd="imgAdd" :editable="editable"></crland-mavon-editor>
     </div>
 </template>
 
-<script  setup>
+<script setup>
 import {
   computed,
   ref,

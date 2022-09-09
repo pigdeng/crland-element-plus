@@ -35,6 +35,8 @@ import './style/index.scss'
 import { propsData } from './types'
 import {defineProps} from 'vue';
 import {useRouter, useRoute} from 'vue-router';
+import { ElMenu,ElMenuItem,ElSubMenu } from "element-plus";
+
 const router:any = useRouter();
 const route: any = useRoute();
 

@@ -44,7 +44,16 @@
             <span>登&nbsp;录</span>
             &nbsp;&nbsp;
             <el-icon>
-              <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-029747aa=""><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"></path></svg>
+              <svg
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+                data-v-029747aa=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312L754.752 480z"
+                ></path>
+              </svg>
             </el-icon>
           </crland-button>
         </div>
@@ -61,25 +70,17 @@ export default defineComponent({
 </script>
 
 <script lang="ts" setup>
-import './style/index.scss';
-import { reactive,ref } from "vue";
+import "./style/index.scss";
+import { propsData } from "./types";
+import { reactive, ref } from "vue";
 import type { FormInstance } from "element-plus";
+import { ElCol, ElForm, ElFormItem, ElIcon, ElImage, ElInput, ElRow } from "element-plus";
+import CrlandButton from "../button/CrlandButton.vue"
+
 
 const ruleFormRef = ref<FormInstance>();
-const props = defineProps({
-  imgBg: {
-    type: String,
-    default: './img/login-bg.png'
-  },
-  imgTitle: {
-    type: String,
-    default: './img/logo-title.png'
-  },
-  loading: {
-    type: Boolean,
-    default: false,
-  },
-});
+const props = defineProps(propsData);
+
 const emit = defineEmits(["formSubmit"]);
 
 const ruleForm = reactive({

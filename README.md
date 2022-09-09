@@ -12,11 +12,11 @@ pnpm run exm:dev
 
 ## 打包
 
-pnpm run build:kitty
+pnpm run build
 
 ## 发布
 
-pnpm run publish:kitty
+pnpm run publish
 
 ## 启动文档
 

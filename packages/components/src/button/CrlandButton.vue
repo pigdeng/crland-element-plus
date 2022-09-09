@@ -14,7 +14,8 @@
 <script lang='ts' setup>
 import './style/crland-button.scss'
 import {defineProps} from 'vue';
-import {ElButton} from 'element-plus';
+import { ElButton } from 'element-plus';
+
 // import { buttonProps } from './types'
 const props = defineProps({
   shadow: {

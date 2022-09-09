@@ -3,7 +3,7 @@
     <button class="k-button" :class="styleClass">
         <Icon v-if="iconFont.iconName && iconFont.position != 'right'" :name="iconFont.iconName" />
         <div class="k-button-text">
-            <slot />
+            <slot></slot>
         </div>
         <Icon v-if="iconFont.position == 'right' && iconFont.iconName" :name="iconFont.iconName" />
     </button>

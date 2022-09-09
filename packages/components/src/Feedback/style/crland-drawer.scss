@@ -1,0 +1,63 @@
+.crland-drawer {
+  .el-drawer__header {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .el-drawer__body {
+    background: #f3f7fb;
+  }
+
+  .drawer-header {
+    height: 50px;
+    background: #fcfcfc;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1d252f;
+    border-bottom: 1px solid #dde2eb;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .close-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--el-color-primary);
+      height: 100%;
+      width: 35px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .drawer-title {
+      color: #1d252f;
+      font-size: 16px;
+      font-weight: 600;
+      text-indent: 12px;
+    }
+  }
+
+  .el-drawer__footer {
+    padding: 0;
+    text-align: left;
+  }
+
+  .drawer-bottom {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #dde2eb;
+    background: #fcfcfc;
+
+    * ～ .default-btn {
+      display: none;
+    }
+
+    * + .default-btn {
+      display: none;
+    }
+  }
+}

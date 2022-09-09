@@ -13,6 +13,7 @@ export const publish = async () => {
     await copypackage()
     //在dist下执行发布命令
     await run('npm publish --access=public --registry http://127.0.0.1:4873', `${componentPath}/dist`)
+    // await run('npm publish --access=public', `${componentPath}/dist`)
     // run('pnpm publish')
 
 }
