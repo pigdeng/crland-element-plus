@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+    import { CrlandButton } from 'crland-element-plus';
+</script>
+
 <template>
 
     <crland-button shadow  size="large" >crland-btn</crland-button>

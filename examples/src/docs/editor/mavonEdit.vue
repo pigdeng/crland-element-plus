@@ -260,6 +260,7 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandCodeShow } from 'crland-element-plus';
 import MavonEdit from '@/demo/editor/mavonEdit.vue';
 
 import {

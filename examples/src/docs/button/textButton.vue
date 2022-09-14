@@ -31,5 +31,6 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandCodeShow } from 'crland-element-plus';
 import TextButton from '@/demo/button/textButton.vue';
 </script>

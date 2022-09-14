@@ -15,6 +15,7 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandDrawer,CrlandButton } from "crland-element-plus";
 import { ref } from "vue";
 const visible = ref(false);
 const title = ref("抽屉标题");

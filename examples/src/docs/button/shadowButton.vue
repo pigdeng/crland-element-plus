@@ -49,6 +49,7 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandCodeShow } from 'crland-element-plus';
 import shadowButton from '@/demo/button/shadowButton.vue';
 
 import {

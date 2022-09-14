@@ -28,6 +28,7 @@ export default defineConfig({
         "element-plus",
         "mavon-editor",
         "tinymce",
+        "crland-element-plus",
         "@tinymce/tinymce-vue",
         "@element-plus/icons-vue",
         "axios",

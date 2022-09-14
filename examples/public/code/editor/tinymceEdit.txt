@@ -7,8 +7,10 @@
     <crland-tinymce-editor v-model="value" :disabled="disabled" :setting="setting"></crland-tinymce-editor>
 </template>
 <script lang='ts' setup>
+
 import {ref} from 'vue';
-import {ElMessage} from 'element-plus';
+import { ElMessage,ElRow } from 'element-plus';
+import { CrlandTinymceEditor, CrlandButton } from "crland-element-plus";
 import axios from 'axios';
 const value = ref(`<p>富文本编辑器</p>`);
 const disabled = ref(false);

@@ -16,6 +16,7 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandMenu } from 'crland-element-plus';
 import menuData from '@/docs/data/menu';
 import {
   reactive,

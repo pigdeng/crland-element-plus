@@ -79,6 +79,7 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandCodeShow } from 'crland-element-plus';
 import loginDemo from '@/demo/login/login.vue';
 
 import {

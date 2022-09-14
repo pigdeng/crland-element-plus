@@ -147,6 +147,7 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandCodeShow } from 'crland-element-plus';
 import TinymceEdit from '@/demo/editor/tinymceEdit.vue';
 
 import {

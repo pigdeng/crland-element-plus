@@ -13,6 +13,7 @@ specifiers:
   axios: ^0.27.2
   c8: ^7.12.0
   cpy: ^9.0.1
+  crland-element-plus: ^1.3.3
   element-plus: ^2.2.13
   fast-glob: ^3.2.11
   gulp: ^4.0.2
@@ -50,6 +51,7 @@ devDependencies:
   axios: 0.27.2
   c8: 7.12.0
   cpy: 9.0.1
+  crland-element-plus: 1.3.3
   element-plus: 2.2.16
   fast-glob: 3.2.11
   gulp: 4.0.2
@@ -1299,6 +1301,16 @@ packages:
       nested-error-stacks: 2.1.1
       p-filter: 3.0.0
       p-map: 5.5.0
+    dev: true
+
+  /crland-element-plus/1.3.3:
+    resolution: {integrity: sha512-5MMGKn2LKuAfvIaXxaGhIH8UjVELDTZ6O67eeZDZdpV46Ioxd6GzjYp2HU6C061udT1oeFKhcpFdRin245onMg==}
+    dependencies:
+      crland-utils: 2.0.2
+    dev: true
+
+  /crland-utils/2.0.2:
+    resolution: {integrity: sha512-ILTUqSRfgL6jLTOp49UB49UfGuKC3JAtl16zJFMD+WEgorT5e4YbyZGLd/FiBQASzbiExnB/FkHrs37h4943Cg==}
     dev: true
 
   /cross-spawn/7.0.3:
