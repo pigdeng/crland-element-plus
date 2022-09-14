@@ -63,6 +63,13 @@
           <td>false｜true</td>
           <td>false</td>
         </tr>
+        <tr>
+          <td>closePopconfirm</td>
+          <td>关闭提示</td>
+          <td><el-tag class="ml-2" type="info">Boolean</el-tag></td>
+          <td>false｜true</td>
+          <td>false</td>
+        </tr>	
       </tbody>
     </table>
 
