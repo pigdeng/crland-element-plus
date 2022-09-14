@@ -71,4 +71,10 @@ export default [
     component: () =>
       import(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandDrawer.vue"),
   },
+  {
+    path: "feedback/CrlandDialog",
+    name: "CrlandDialog",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandDialog.vue"),
+  },
 ];

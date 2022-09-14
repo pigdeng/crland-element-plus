@@ -1,25 +1,25 @@
 <template>
-  <el-drawer
+  <el-dialog
     v-model="visible"
-    custom-class="crland-drawer"
-    :show-close="false"
+    custom-class="crland-dialog"
     :before-close="handleClose"
-    :size="size"
+    :show-close="false"
   >
-    <template #header="{ close }">
-      <div class="drawer-header">
-        <div class="close-bar" title="关闭" @click="close">
-          <el-icon>
-            <ArrowRightBold></ArrowRightBold>
-          </el-icon>
+    <template #header="{ close, titleId, titleClass }">
+      <div class="dialog-header">
+        <div class="dialog-header-title" :id="titleId" :class="titleClass">
+          {{ title }}
         </div>
-        <div class="drawer-title">{{ title }}</div>
+        <el-icon class="dialog-header-close" @click="close" title="关闭"
+          ><Close
+        /></el-icon>
       </div>
     </template>
+
     <slot name="body"></slot>
 
     <template #footer>
-      <div class="drawer-bottom">
+      <span class="dialog-footer dialog-bottom">
         <slot name="footer"></slot>
         <div class="default-btn">
           <el-button @click="handleClose" v-if="isColseBtn">{{
@@ -32,25 +32,23 @@
             >{{ confirmText }}</el-button
           >
         </div>
-      </div>
+      </span>
     </template>
-  </el-drawer>
+  </el-dialog>
 </template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "crland-drawer",
+  name: "crland-dialog",
 });
 </script>
 
 <script lang="ts" setup>
-import "./style/crland-drawer.scss";
-import { defineProps, ref, defineEmits } from "vue";
-import { ElButton, ElMessageBox, ElDrawer, ElIcon } from "element-plus";
-import { ArrowRightBold } from "@element-plus/icons-vue";
+import "./style/crland-dialog.scss";
+import { ref } from "vue";
+import { ElButton, ElMessageBox, ElDialog, ElIcon } from "element-plus";
+import { Close } from "@element-plus/icons-vue";
 import { propsData } from "./types";
-
 const props = defineProps(propsData);
 
 const emit = defineEmits(["update:visible", "confirm", "close"]);

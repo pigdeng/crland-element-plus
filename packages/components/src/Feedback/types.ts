@@ -35,6 +35,11 @@ export const propsData = {
     type: Boolean,
     default: false,
   },
+  // 关闭提示
+  closePopconfirm: {
+    type: Boolean,
+    default: false,
+  },
 };
 
 export type propsData = ExtractPropTypes<typeof propsData>;

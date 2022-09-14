@@ -16,7 +16,8 @@
     "exm:dev": "pnpm run --filter ./examples dev",
     "test": "pnpm run --filter ./packages/components test",
     "coverage": "pnpm run --filter ./packages/components vitest run --coverage",
-    "delete":"rm -rf packages/components/dist"
+    "delete":"rm -rf packages/components/dist",
+    "copy": "cp -r examples/src/demo/* examples/public/code && node examples/src/copyDemo.js"
   },
   "devDependencies": {
     "@types/gulp": "^4.0.9",

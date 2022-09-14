@@ -5,5 +5,5 @@ export { CrlandButton } from "./button";
 export { default as CrlandMenu } from "./Navigation";
 export { default as CrlandCodeShow } from "./Code";
 export { default as CrlandLogin } from "./Login";
-// export { CrlandMavonEditor, CrlandTinymceEditor } from "./Editor";
-export { CrlandDrawer } from "./Feedback";
+export { CrlandTinymceEditor } from "./Editor";
+export { CrlandDrawer, CrlandDialog } from "./Feedback";

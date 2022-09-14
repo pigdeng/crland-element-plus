@@ -75,6 +75,10 @@ const menuData: any = [
         index: "crlandDrawer",
         title: "Drawer 抽屉",
       },
+      {
+        index: "CrlandDialog",
+        title: "Dialog 对话框",
+      },
     ],
   },
 ];

@@ -1,0 +1,41 @@
+.crland-dialog {
+  border-radius: 6px;
+
+  .el-dialog__header {
+    margin-right: 0px;
+    border-bottom: 1px solid #eaeefb;
+
+    .el-icon {
+      cursor: pointer;
+    }
+  }
+
+  .dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .el-dialog__footer{
+    padding: 10px 0px;
+    box-sizing: border-box;
+  }
+
+  .dialog-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-top: 1px solid #eaeefb;
+    background: #fcfcfc;
+    padding-top: 10px;
+
+    * ～ .default-btn {
+      display: none;
+    }
+
+    * + .default-btn {
+      display: none;
+    }
+  }
+}

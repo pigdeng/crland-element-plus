@@ -1,6 +1,6 @@
 <template>
   <div class="doc-wrap">
-    <h2 class="title">crland-drawer 抽屉组件</h2>
+    <h2 class="title">crland-dialog 对话框组件</h2>
     <p>
         抽屉组件是后台管理系统开发中最常见之一，这里对 <span>element-plus</span> 的 <span>Deawer</span>
         组件进行的二次封装，依旧保留了原有功能和穿参方式，在原有基础上增加一些功能。
@@ -17,14 +17,14 @@
     <!-- <el-divider /> -->
 
     <h3>代码演示</h3>
-    <crland-code-show fileUrl="/code/Feedback/CrlandDrawer.txt">
-        <CrlandDrawer  />
+    <crland-code-show fileUrl="/code/Feedback/CrlandDialog.txt">
+        <CrlandDialog  />
     </crland-code-show>
 
 
     <h3>代码演示【带插槽】</h3>
-    <crland-code-show fileUrl="/code/Feedback/CrlandDrawerSlot.txt">
-        <CrlandDrawerSlot  />
+    <crland-code-show fileUrl="/code/Feedback/CrlandDialogSlot.txt">
+        <CrlandDialogSlot  />
     </crland-code-show>
 
     <!-- <el-divider /> -->
@@ -63,13 +63,6 @@
           <td>false｜true</td>
           <td>false</td>
         </tr>
-        <tr>
-          <td>closePopconfirm</td>
-          <td>关闭提示</td>
-          <td><el-tag class="ml-2" type="info">Boolean</el-tag></td>
-          <td>false｜true</td>
-          <td>false</td>
-        </tr>	
       </tbody>
     </table>
 
@@ -116,8 +109,8 @@
 </template>
 
 <script lang="ts" setup>
-import CrlandDrawer from '@/demo/Feedback/CrlandDrawer.vue';
-import CrlandDrawerSlot from '@/demo/Feedback/CrlandDrawerSlot.vue';
+import CrlandDialog from '@/demo/Feedback/CrlandDialog.vue';
+import CrlandDialogSlot from '@/demo/Feedback/CrlandDialogSlot.vue';
 
 import {
   reactive,
