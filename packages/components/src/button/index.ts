@@ -1,4 +1,4 @@
-import { withInstall } from "crland-utils";
+import { withInstall } from "bui-utils";
 
 // import button from "./button.vue";
 import crlandButton from "./CrlandButton.vue";

@@ -90,7 +90,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { k-button } from "crland-element-plus";
+import { k-button } from "bui-element-plus";
 </script>
 <style>
 .k-k-button {
@@ -145,7 +145,7 @@ import { k-button } from "crland-element-plus";
   </div>
 </template>
 <script lang="ts" setup>
-import { k-button } from "crland-element-plus";
+import { k-button } from "bui-element-plus";
 </script>
 <style>
 .k-k-button {
@@ -180,7 +180,7 @@ import { k-button } from "crland-element-plus";
   </div>
 </template>
 <script lang="ts" setup>
-import { k-button } from "crland-element-plus";
+import { k-button } from "bui-element-plus";
 </script>
 <style>
 .k-k-button {

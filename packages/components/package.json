@@ -1,5 +1,5 @@
 {
-  "name": "crland-element-plus",
+  "name": "bui-element-plus",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -12,7 +12,7 @@
     "lib"
   ],
   "keywords": [
-    "crland-element-plus",
+    "bui-element-plus",
     "vue3组件库"
   ],
   "author": "bigdeng",
@@ -20,6 +20,6 @@
   "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "crland-utils": "workspace:2.0.2"
+    "bui-utils": "workspace:2.0.2"
   }
 }

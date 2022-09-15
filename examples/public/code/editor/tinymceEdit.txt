@@ -10,7 +10,7 @@
 
 import {ref} from 'vue';
 import { ElMessage,ElRow } from 'element-plus';
-import { CrlandTinymceEditor, CrlandButton } from "crland-element-plus";
+import { CrlandTinymceEditor, CrlandButton } from "bui-element-plus";
 import axios from 'axios';
 const value = ref(`<p>富文本编辑器</p>`);
 const disabled = ref(false);

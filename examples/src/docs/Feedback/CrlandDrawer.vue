@@ -116,7 +116,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from 'crland-element-plus';
+import { CrlandCodeShow } from 'bui-element-plus';
 import CrlandDrawer from '@/demo/Feedback/CrlandDrawer.vue';
 import CrlandDrawerSlot from '@/demo/Feedback/CrlandDrawerSlot.vue';
 

@@ -1,5 +1,5 @@
 {
-  "name": "crland-utils",
+  "name": "bui-utils",
   "version": "2.0.2",
   "main": "index.ts",
   "module": "index.ts",

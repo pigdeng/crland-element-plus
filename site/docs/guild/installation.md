@@ -16,13 +16,13 @@ KittyUI 目前还在开发中
 # 选择一个你喜欢的包管理器
 
 # NPM
-$ npm install crland-element-plus --save
+$ npm install bui-element-plus --save
 
 # Yarn
-$ yarn add crland-element-plus
+$ yarn add bui-element-plus
 
 # pnpm
-$ pnpm install crland-element-plus
+$ pnpm install bui-element-plus
 ```
 
 ## 浏览器直接引入

@@ -6,7 +6,7 @@ export default {
   enhanceApp: async ({ app, router, siteData, isServer }) => {
     // app is the Vue 3 app instance from `createApp()`. router is VitePress'
     // custom router. `siteData`` is a `ref`` of current site-level metadata.
-    import("crland-element-plus").then((module) => {
+    import("bui-element-plus").then((module) => {
       app.use(module.Button);
       app.use(module.Icon);
     });

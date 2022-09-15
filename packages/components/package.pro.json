@@ -1,10 +1,10 @@
 {
-  "name": "crland-element-plus",
+  "name": "bui-element-plus",
   "version": "2.1.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": ["es", "lib"],
-  "keywords": ["crland-element-plus", "vue3组件库"],
+  "keywords": ["bui-element-plus", "vue3组件库"],
   "author": "bigdeng",
   "license": "MIT",
   "description": "",

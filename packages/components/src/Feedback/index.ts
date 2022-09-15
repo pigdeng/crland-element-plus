@@ -1,4 +1,4 @@
-import { withInstall } from "crland-utils";
+import { withInstall } from "bui-utils";
 
 import crlandDrawer from "./CrlandDrawer.vue";
 import crlandDialog from "./CrlandDialog.vue";

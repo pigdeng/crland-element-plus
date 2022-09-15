@@ -55,7 +55,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from 'crland-element-plus';
+import { CrlandCodeShow } from 'bui-element-plus';
 import menuDemo from '@/demo/navigation/menu.vue';
 
 import {

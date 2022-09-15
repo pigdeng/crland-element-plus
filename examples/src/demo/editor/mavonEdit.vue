@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { CrlandMavonEditor, CrlandButton } from "crland-element-plus";
+import { CrlandMavonEditor, CrlandButton } from "bui-element-plus";
 import {ElRow} from "element-plus"
   
 import {
