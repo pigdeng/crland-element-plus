@@ -6,6 +6,14 @@ export default [
       import(/* webpackChunkName: "menu" */ "@/docs/navigation/menu.vue"),
   },
   {
+    path: "navigation/CralndMenuPro",
+    name: "CralndMenuPro",
+    component: () =>
+      import(
+        /* webpackChunkName: "menu" */ "@/docs/navigation/CralndMenuPro.vue"
+      ),
+  },
+  {
     path: "button/shadowButton",
     name: "shadowButton",
     component: () =>

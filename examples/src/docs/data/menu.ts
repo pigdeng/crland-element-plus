@@ -7,6 +7,10 @@ const menuData: any = [
         index: "mune",
         title: "Mune 菜单组件",
       },
+      {
+        index: "CralndMenuPro",
+        title: "MunePro 菜单组件",
+      },
     ],
   },
   {

@@ -20,6 +20,6 @@
   "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "bui-utils": "workspace:2.0.2"
+    "bui-utils": "workspace:2.0.3"
   }
 }
