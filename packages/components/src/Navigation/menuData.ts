@@ -1,21 +1,5 @@
-<template>
-  <div>
-    是否收缩菜单：
-    <el-switch
-      v-model="isCollapse"
-      inline-prompt
-      active-text="是"
-      inactive-text="否"
-    />
-    <crland-menu-pro :data="data" :isCollapse="isCollapse"></crland-menu-pro>
-  </div>
-</template>
-
-<script lang="ts" setup>
-import { ref } from "vue";
 import collapseLogo from "./img/collapse-logo.png";
-const isCollapse = ref(false);
-const data = [
+const menuData = [
   {
     title: "NavigatorOne",
     index: "NavigatorOne",
@@ -78,4 +62,5 @@ const data = [
     child: [],
   },
 ];
-</script>
+
+export default menuData;

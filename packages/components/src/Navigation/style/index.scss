@@ -1,16 +1,18 @@
-.el-sub-menu.is-active {
-  > :deep(.el-sub-menu__title) {
-    position: relative;
-    &::after {
-      content: " ";
-      position: absolute;
-      width: 3px;
-      height: 100%;
-      top: 0px;
-      left: 0px;
-      border-radius: 0px 3px 3px 0px;
-      background: var(--el-color-primary);
-      overflow: hidden;
+.crland-menu {
+  > .el-sub-menu.is-active {
+    > .el-sub-menu__title {
+      position: relative;
+      &::after {
+        content: " ";
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        border-radius: 0px 3px 3px 0px;
+        background: var(--el-color-primary);
+        overflow: hidden;
+      }
     }
   }
 }
