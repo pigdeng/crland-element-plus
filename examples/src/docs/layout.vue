@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="docs-layout-wrap"
-  >
+  <div class="docs-layout-wrap">
     <div class="docs-left">
       <div class="docs-left-title">
         <h1>Pc</h1>
@@ -16,8 +14,8 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandMenu } from 'bui-element-plus';
-import menuData from '@/docs/data/menu';
+import { CrlandMenu } from "bui-element-plus";
+import menuData from "@/docs/data/menu";
 import {
   reactive,
   onBeforeMount,
@@ -26,7 +24,7 @@ import {
   defineEmits,
   defineProps,
   ref,
-} from 'vue';
+} from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});
@@ -50,7 +48,8 @@ onMounted(() => {
     top: 0px;
     left: 0px;
     width: 242px;
-    height: 100%;
+    height: 100vh;
+    overflow: auto;
     float: left;
     .docs-left-title {
       display: flex;

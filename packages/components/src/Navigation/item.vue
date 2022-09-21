@@ -21,7 +21,7 @@
           </el-badge>
         </div>
       </template>
-      <CrlandMenuItem :menuData="i.child"></CrlandMenuItem>
+      <CrlandMenuItem :data="i.child"></CrlandMenuItem>
     </el-sub-menu>
 
     <el-menu-item

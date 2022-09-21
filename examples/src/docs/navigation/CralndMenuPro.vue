@@ -7,7 +7,7 @@
       进行了封装。与相比
       <el-tag class="ml-2" type="info">crland-menu</el-tag> 增加功能有如下<br />
       <p class="dot">新增菜单收缩功能。</p>
-      <p class="dot">不限制级数子菜单，注意：子菜单级数达到一定程度(三级以上)界面显示可能会异常。</p>
+      <p class="dot">不限制级数子菜单，注意：子菜单级数达到一定程度 (三级以上) 界面显示可能会压缩变形。</p>
       <p class="dot">新增菜单图标。</p>
       <p class="dot">新增徽章实现消息数量提示。</p>
     </p>
