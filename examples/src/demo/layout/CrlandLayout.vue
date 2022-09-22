@@ -1,7 +1,7 @@
 <template>
   <el-container class="crland-layout-wrap">
     <el-aside
-      :style="{ width: isCollapse ? '64px' : '300px' }"
+      :style="{ width: isCollapse ? '65px' : '300px' }"
       class="layout-el-aside"
     >
       <crland-menu-pro :data="data" :isCollapse="isCollapse"></crland-menu-pro>
