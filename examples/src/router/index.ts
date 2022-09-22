@@ -5,13 +5,17 @@ import docs from "./docs";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    component:import(/* webpackChunkName: "about" */ "@/docs/layout.vue"),
-    children:[
-        ...docs
-    ]
-  }
+    component: import(/* webpackChunkName: "about" */ "@/docs/layout.vue"),
+    children: [...docs],
+  },
+  {
+    path: "/layout",
+    name: "layout",
+    component: import(
+      /* webpackChunkName: "about" */ "@/docs/layout/layout.vue"
+    ),
+  },
 ];
-
 
 const router = createRouter({
   history: createWebHashHistory(),

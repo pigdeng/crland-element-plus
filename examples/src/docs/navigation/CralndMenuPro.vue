@@ -63,6 +63,13 @@
           <td>-</td>
           <td>false</td>
         </tr>
+        <tr>
+          <td>width</td>
+          <td>菜单宽度</td>
+          <td><el-tag class="ml-2" type="info">string</el-tag><el-tag class="ml-2" type="info">Number</el-tag></td>
+          <td>-</td>
+          <td>100%</td>
+        </tr>
       </tbody>
     </table>
 
@@ -108,7 +115,7 @@
         </tr>
          <tr>
           <td>tips</td>
-          <td>消息数量提示</td>
+          <td>消息数量提示，大于99时显示“99+”</td>
           <td>
             <el-tag class="ml-2" type="info">string</el-tag>
             <el-tag class="ml-2" type="info">Number</el-tag>
@@ -125,7 +132,6 @@
         </tr>
       </tbody>
     </table>
-
 
     <h3>事件</h3>
     <p>暂无</p>

@@ -5,6 +5,7 @@
     :collapse="isCollapse"
     :collapse-transition="false"
     :router="defaultActive === 'name' ? false : true"
+    :style="{ width: computedSize(width) }"
   >
     <div class="menu-logo-wrap">
       <img
@@ -33,6 +34,7 @@ export default defineComponent({
 import "./style/CrlandMenuPro.scss";
 import { ElMenu } from "element-plus";
 import CrlandItem from "./item.vue";
+import { computedSize } from "../utils/index";
 import { propsData } from "./CrlandMenuPro";
 
 import { useRouter, useRoute } from "vue-router";

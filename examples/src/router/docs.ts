@@ -85,4 +85,12 @@ export default [
     component: () =>
       import(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandDialog.vue"),
   },
+  {
+    path: "layout/CrlandLayoutTop",
+    name: "CrlandLayoutTop",
+    component: () =>
+      import(
+        /* webpackChunkName: "menu" */ "@/docs/layout/CrlandLayoutTop.vue"
+      ),
+  },
 ];

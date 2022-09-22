@@ -86,7 +86,6 @@ const data = [
     index: "/navigation/CralndMenuPro?type=NavigatorFour",
     icon: collapseLogo,
     disabled: false,
-    tips: 90000,
     child: [],
   },
 ];

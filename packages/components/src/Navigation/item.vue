@@ -2,8 +2,6 @@
   <template v-for="(i, index) in data" :key="index">
     <el-sub-menu
       :index="i.index"
-      :show-timeout="0"
-      :hide-timeout="0"
       :expand-close-icon="ArrowRightBold"
       :expand-open-icon="ArrowDownBold"
       v-if="i.child && i.child.length > 0"

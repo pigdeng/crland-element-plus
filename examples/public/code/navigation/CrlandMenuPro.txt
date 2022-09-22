@@ -14,6 +14,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import collapseLogo from "./img/collapse-logo.png";
+// import { CrlandMenuPro } from "crland-element-plus";
 const isCollapse = ref(false);
 const data = [
   {
@@ -27,26 +28,37 @@ const data = [
         title: "item One",
         index: "/navigation/CralndMenuPro?type=itemOne",
         disabled: true,
+        icon: collapseLogo,
+        tips: 9999,
       },
       {
         title: "item Two",
         index: "/navigation/CralndMenuPro?type=itemTwo",
         disabled: false,
+        icon: collapseLogo,
+        tips: 9999,
       },
       {
         title: "item Three",
         index: "/navigation/CralndMenuPro?type=itemThree",
         disabled: false,
+        icon: collapseLogo,
+        tips: 9999,
       },
       {
         title: "item Four",
         index: "/navigation/CralndMenuPro?type=itemFour",
         disabled: false,
+        tips: 9999,
+        icon: collapseLogo,
+
         child: [
           {
             title: "item Three 2",
             index: "/navigation/CralndMenuPro?type=itemThree2",
             disabled: false,
+            tips: 9999,
+            icon: collapseLogo,
           },
         ],
       },
@@ -56,7 +68,7 @@ const data = [
     title: "Navigator Two",
     index: "/navigation/CralndMenuPro?type=NavigatorTwo",
     icon: collapseLogo,
-    disabled: false,
+    disabled: true,
     tips: 10,
     child: [],
   },
@@ -74,7 +86,6 @@ const data = [
     index: "/navigation/CralndMenuPro?type=NavigatorFour",
     icon: collapseLogo,
     disabled: false,
-    tips: 90000,
     child: [],
   },
 ];

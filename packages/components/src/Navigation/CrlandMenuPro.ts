@@ -19,5 +19,10 @@ export const propsData = {
       return DefaultActive.includes(value);
     },
   },
+  // 菜单宽度
+  width: {
+    type: [String, Number],
+    default: "100%",
+  },
 };
 export type propsData = ExtractPropTypes<typeof propsData>;

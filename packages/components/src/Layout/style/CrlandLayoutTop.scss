@@ -1,0 +1,46 @@
+.layout-top-wrap {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-bottom: solid 1px var(--el-menu-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-size: 14px;
+
+  .layout-top-icon {
+    cursor: pointer;
+  }
+  .icon-collapse {
+    transform: rotate(180deg);
+  }
+  .layout-top-left {
+    display: flex;
+    align-items: center;
+    .slot-left {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .layout-top-right {
+    display: flex;
+    align-items: center;
+    .slot-right {
+      display: flex;
+      align-items: center;
+    }
+    .crland-el-avatar {
+      background-color: var(--el-color-primary);
+    }
+
+    .crland-el-dropdown {
+      padding-left: 10px;
+      .el-dropdown-link {
+        cursor: pointer;
+      }
+    }
+  }
+}

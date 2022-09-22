@@ -85,6 +85,16 @@ const menuData: any = [
       },
     ],
   },
+  {
+    index: "Layout",
+    title: "Layout 布局",
+    child: [
+      {
+        index: "CrlandLayoutTop",
+        title: "LayoutTop 顶部导航条",
+      },
+    ],
+  },
 ];
 
 export default menuData;
