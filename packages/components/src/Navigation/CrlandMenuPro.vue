@@ -5,7 +5,7 @@
     :collapse="isCollapse"
     :collapse-transition="false"
     :router="defaultActive === 'name' ? false : true"
-    :style="{ width: computedSize(width) }"
+    :style="{ width: isCollapse ? '' : computedSize(width) }"
   >
     <div class="menu-logo-wrap">
       <img
