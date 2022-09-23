@@ -23,7 +23,7 @@ export default defineComponent({
 import { ref } from "vue";
 import { ElBreadcrumb, ElBreadcrumbItem } from "element-plus";
 import { ArrowRight, HomeFilled } from "@element-plus/icons-vue";
-import "./style/CrlandLayout.scss";
+import "./style/CrlandLayoutMainHeader.scss";
 import { propsData } from "./CrlandLayoutTop";
 const props = defineProps(propsData);
 
@@ -31,15 +31,3 @@ const handCollapse = () => {
   console.log("isCollapse:", props.isCollapse);
 };
 </script>
-
-<style lang="scss" scoped>
-.crland-layout-main-header {
-  display: flex;
-  justify-content: space-between;
-  .page-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #3f566e;
-  }
-}
-</style>
