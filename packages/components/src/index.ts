@@ -8,4 +8,4 @@ export { default as CrlandLogin } from "./Login";
 export { CrlandTinymceEditor } from "./Editor";
 export { CrlandDrawer, CrlandDialog } from "./Feedback";
 // CrlandLayout;
-export { CrlandLayoutTop } from "./Layout";
+export { CrlandLayoutTop, CrlandLayoutMainHeader } from "./Layout";

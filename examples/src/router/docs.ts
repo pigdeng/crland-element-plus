@@ -93,4 +93,10 @@ export default [
         /* webpackChunkName: "menu" */ "@/docs/layout/CrlandLayoutTop.vue"
       ),
   },
+  {
+    path: "layout/CrlandLayout",
+    name: "CrlandLayout",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/layout/CrlandLayout.vue"),
+  },
 ];

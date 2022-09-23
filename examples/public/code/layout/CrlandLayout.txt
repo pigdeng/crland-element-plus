@@ -13,6 +13,7 @@
           @handDropdownItem="handDropdownItem"
           :isCollapse="isCollapse"
           :dropdownList="dropdownList"
+          :userInfo="userInfo"
         >
           <template #left>
             <div style="width: 10px"></div>
@@ -129,6 +130,11 @@ const data = [
     child: [],
   },
 ];
+
+const userInfo = {
+  userName: "华小润",
+  avatar: "",
+};
 
 const handCollapse = () => {
   isCollapse.value = !isCollapse.value;

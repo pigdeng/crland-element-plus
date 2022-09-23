@@ -93,6 +93,10 @@ const menuData: any = [
         index: "CrlandLayoutTop",
         title: "LayoutTop 顶部导航条",
       },
+      {
+        index: "CrlandLayout",
+        title: "CrlandLayout 布局",
+      },
     ],
   },
 ];

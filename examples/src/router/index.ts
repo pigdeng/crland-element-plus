@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
     path: "/layout",
     name: "layout",
     component: import(
-      /* webpackChunkName: "about" */ "@/docs/layout/layout.vue"
+      /* webpackChunkName: "about" */ "@/demo/layout/CrlandLayout.vue"
     ),
   },
 ];

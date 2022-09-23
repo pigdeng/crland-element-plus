@@ -13,17 +13,8 @@
           @handDropdownItem="handDropdownItem"
           :isCollapse="isCollapse"
           :dropdownList="dropdownList"
+          :userInfo="userInfo"
         >
-          <template #left>
-            <div style="width: 10px"></div>
-
-            <el-input
-              placeholder="请输入.."
-              size="large"
-              :suffix-icon="Search"
-              style="width: 250px"
-            />
-          </template>
           <!-- 右侧插槽 -->
           <template #right>
             <el-badge is-dot class="solt-right-badge">
@@ -38,7 +29,10 @@
           </template>
         </crland-layout-top>
       </el-header>
-      <el-main> Main </el-main>
+      <el-main class="crland-el-main">
+        <crland-layout-main-header></crland-layout-main-header>
+        <div class="crland-el-main-main">Main</div>
+      </el-main>
     </el-container>
   </el-container>
 </template>
@@ -66,28 +60,28 @@ const data = [
     child: [
       {
         title: "item One",
-        index: "/navigation/CralndMenuPro?type=itemOne",
+        index: "/layout/CrlandLayout?type=itemOne",
         disabled: true,
         icon: collapseLogo,
         tips: 9999,
       },
       {
         title: "item Two",
-        index: "/navigation/CralndMenuPro?type=itemTwo",
+        index: "/layout/CrlandLayout?type=itemTwo",
         disabled: false,
         icon: collapseLogo,
         tips: 9999,
       },
       {
         title: "item Three",
-        index: "/navigation/CralndMenuPro?type=itemThree",
+        index: "/layout/CrlandLayout?type=itemThree",
         disabled: false,
         icon: collapseLogo,
         tips: 9999,
       },
       {
         title: "item Four",
-        index: "/navigation/CralndMenuPro?type=itemFour",
+        index: "/layout/CrlandLayout?type=itemFour",
         disabled: false,
         tips: 9999,
         icon: collapseLogo,
@@ -95,7 +89,7 @@ const data = [
         child: [
           {
             title: "item Three 2",
-            index: "/navigation/CralndMenuPro?type=itemThree2",
+            index: "/layout/CrlandLayout?type=itemThree2",
             disabled: false,
             tips: 9999,
             icon: collapseLogo,
@@ -106,7 +100,7 @@ const data = [
   },
   {
     title: "Navigator Two",
-    index: "/navigation/CralndMenuPro?type=NavigatorTwo",
+    index: "/layout/CrlandLayout?type=NavigatorTwo",
     icon: collapseLogo,
     disabled: true,
     tips: 10,
@@ -114,7 +108,7 @@ const data = [
   },
   {
     title: "Navigator Three",
-    index: "/navigation/CralndMenuPro?type=NavigatorThree",
+    index: "/layout/CrlandLayout?type=NavigatorThree",
     icon: collapseLogo,
     disabled: false,
     tips: 20,
@@ -123,12 +117,17 @@ const data = [
   {
     title:
       "Navigator FourNavigator FourNavigator FourNavigator FourNavigator Four",
-    index: "/navigation/CralndMenuPro?type=NavigatorFour",
+    index: "/layout/CrlandLayout?type=NavigatorFour",
     icon: collapseLogo,
     disabled: false,
     child: [],
   },
 ];
+
+const userInfo = {
+  userName: "华小润",
+  avatar: "",
+};
 
 const handCollapse = () => {
   isCollapse.value = !isCollapse.value;
@@ -143,7 +142,9 @@ const handDropdownItem = (value: any) => {
 <style lang="scss" scoped>
 .crland-layout-wrap {
   height: 100vh;
+  background-color: #f6fafb;
   .layout-el-aside {
+    background: #fff;
     overflow-x: visible;
     overflow-y: visible;
     border-right: solid 1px var(--el-menu-border-color);
@@ -159,6 +160,13 @@ const handDropdownItem = (value: any) => {
       width: 6px;
       height: 6px;
     }
+  }
+  .crland-el-main {
+    // background: #fff;
+    // padding: 0px;
+    // margin: 15px;
+    // border-radius: 4px;
+    // padding: 20px;
   }
 }
 </style>
