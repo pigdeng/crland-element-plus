@@ -1,4 +1,4 @@
 import crlandLogin from "./CrlandLogin.vue";
-import { withInstall } from "bui-utils";
+import { withInstall } from "crland-utils";
 const CrlandLogin = withInstall(crlandLogin);
 export default CrlandLogin;

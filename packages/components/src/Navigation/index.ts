@@ -1,6 +1,6 @@
 import crlandMenu from "./CrlandMenu.vue";
 import crlandMenuPro from "./CrlandMenuPro.vue";
-import { withInstall } from "bui-utils";
+import { withInstall } from "crland-utils";
 // const CrlandMenu = withInstall(crlandMenu);
 // const CrlandMenuPro = withInstall(crlandMenuPro);
 // export default CrlandMenu;

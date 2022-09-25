@@ -1,28 +1,28 @@
 <template>
   <div class="doc-wrap">
-    <h2 class="title">MavonEdit 编辑器 </h2>
+    <h2 class="title">MavonEdit 编辑器</h2>
     <p>
       这是用一个 md 编辑器<br />
       优点:固定格式<br />
       缺点:不能上传附件<br />
-      <small><a href="https://www.npmjs.com/package/mavon-editor/v/next" target="three">插件地址</a></small>
+      <small
+        ><a
+          href="https://www.npmjs.com/package/mavon-editor/v/next"
+          target="three"
+          >插件地址</a
+        ></small
+      >
     </p>
     <h3>使用规则</h3>
-    <p class="dot">
-      Install mavon-editor (安装)
-    </p>
+    <p class="dot">Install mavon-editor (安装)</p>
     <p>
       <el-tag type="info">npm i mavon-editor@3.0.0-beta --save</el-tag>
     </p>
-    <p class="dot">
-      Install axios (安装) ,用于图片上传
-    </p>
+    <p class="dot">Install axios (安装) ,用于图片上传</p>
     <p>
       <el-tag type="info">npm i axios --save</el-tag>
     </p>
-    <p class="dot">
-      服务端接口支持，包含图片上传接口和文档保存接口
-    </p>
+    <p class="dot">服务端接口支持，包含图片上传接口和文档保存接口</p>
     <h3>代码演示</h3>
     <crland-code-show fileUrl="/code/editor/mavonEdit.txt">
       <MavonEdit></MavonEdit>
@@ -49,7 +49,10 @@
           <td>language</td>
           <td>String</td>
           <td>zh-CN</td>
-          <td>语言选择，暂支持 zh-CN: 简体中文, zh-TW: 正体中文 ， en: 英文 ， fr: 法语， pt-BR: 葡萄牙语， ru: 俄语， de: 德语， ja: 日语</td>
+          <td>
+            语言选择，暂支持 zh-CN: 简体中文, zh-TW: 正体中文 ， en: 英文 ， fr:
+            法语， pt-BR: 葡萄牙语， ru: 俄语， de: 德语， ja: 日语
+          </td>
         </tr>
         <tr>
           <td>fontSize</td>
@@ -103,7 +106,9 @@
           <td>defaultOpen</td>
           <td>String</td>
           <td></td>
-          <td>edit： 默认展示编辑区域 ， preview： 默认展示预览区域 , 其他 = edit</td>
+          <td>
+            edit： 默认展示编辑区域 ， preview： 默认展示预览区域 , 其他 = edit
+          </td>
         </tr>
         <tr>
           <td>placeholder</td>
@@ -121,7 +126,12 @@
           <td>codeStyle</td>
           <td>String</td>
           <td>code-github</td>
-          <td>markdown样式： 默认github, <a href="https://github.com/hinesboy/mavonEditor/blob/HEAD/src/lib/core/hljs/lang.hljs.css.js">可选配色方案</a>
+          <td>
+            markdown样式： 默认github,
+            <a
+              href="https://github.com/hinesboy/mavonEditor/blob/HEAD/src/lib/core/hljs/lang.hljs.css.js"
+              >可选配色方案</a
+            >
           </td>
         </tr>
         <tr>
@@ -158,7 +168,9 @@
           <td>imageFilter</td>
           <td>function</td>
           <td>null</td>
-          <td>图片过滤函数，参数为一个<code>File Object</code>，要求返回一个<code>Boolean</code>,
+          <td>
+            图片过滤函数，参数为一个<code>File Object</code
+            >，要求返回一个<code>Boolean</code>,
             <code>true</code>表示文件合法，<code>false</code>表示文件不合法
           </td>
         </tr>
@@ -178,7 +190,11 @@
           <td>xssOptions</td>
           <td>Object</td>
           <td>null</td>
-          <td>xss规则配置，参考 <a href="https://github.com/leizongmin/js-xss">https://github.com/leizongmin/js-xss</a>
+          <td>
+            xss规则配置，参考
+            <a href="https://github.com/leizongmin/js-xss"
+              >https://github.com/leizongmin/js-xss</a
+            >
           </td>
         </tr>
         <tr>
@@ -202,7 +218,9 @@
         <tr>
           <td>change</td>
           <td>String: value , String: render</td>
-          <td>编辑区发生变化的回调事件(render: value 经过markdown解析后的结果)</td>
+          <td>
+            编辑区发生变化的回调事件(render: value 经过markdown解析后的结果)
+          </td>
         </tr>
         <tr>
           <td>save</td>
@@ -247,7 +265,9 @@
         <tr>
           <td>imgAdd</td>
           <td>String: filename, File: imgfile</td>
-          <td>图片文件添加回调事件(filename: 写在md中的文件名, File: File Object)</td>
+          <td>
+            图片文件添加回调事件(filename: 写在md中的文件名, File: File Object)
+          </td>
         </tr>
         <tr>
           <td>imgDel</td>
@@ -260,8 +280,8 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from 'bui-element-plus';
-import MavonEdit from '@/demo/editor/mavonEdit.vue';
+import { CrlandCodeShow } from "crland-element-plus";
+import MavonEdit from "@/demo/editor/mavonEdit.vue";
 
 import {
   reactive,
@@ -271,7 +291,7 @@ import {
   defineEmits,
   defineProps,
   ref,
-} from 'vue';
+} from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});
@@ -282,5 +302,4 @@ onMounted(() => {
   // 3.组件挂载到页面之后执行-------onMounted
 });
 </script>
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

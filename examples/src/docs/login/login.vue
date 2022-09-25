@@ -2,21 +2,22 @@
   <div class="doc-wrap">
     <h2 class="title">login 逃生登录组件</h2>
     <p>
-        逃生登录组件，提供登录界面并根据项目主题动态调整按钮颜色和边框样式。自动填充常用账户和密码。
+      逃生登录组件，提供登录界面并根据项目主题动态调整按钮颜色和边框样式。自动填充常用账户和密码。
     </p>
     <!-- <el-divider /> -->
     <h3>使用规则</h3>
+    <p class="dot">标签引入，如下代码演示</p>
     <p class="dot">
-        标签引入，如下代码演示
-    </p>
-    <p class="dot">成功案例：
-        <a href="https://mon.saas.crland.com.cn/#/login" target="three">监控平台</a>
+      成功案例：
+      <a href="https://mon.saas.crland.com.cn/#/login" target="three"
+        >监控平台</a
+      >
     </p>
     <!-- <el-divider /> -->
 
     <h3>代码演示</h3>
     <crland-code-show fileUrl="/code/login/login.txt">
-        <loginDemo style="height: 800px" />
+      <loginDemo style="height: 800px" />
     </crland-code-show>
 
     <!-- <el-divider /> -->
@@ -79,8 +80,8 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from 'bui-element-plus';
-import loginDemo from '@/demo/login/login.vue';
+import { CrlandCodeShow } from "crland-element-plus";
+import loginDemo from "@/demo/login/login.vue";
 
 import {
   reactive,
@@ -90,7 +91,7 @@ import {
   defineEmits,
   defineProps,
   ref,
-} from 'vue';
+} from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});

@@ -139,7 +139,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "bui-element-plus";
+import { CrlandCodeShow } from "crland-element-plus";
 import CrlandMenuProDemo from "@/demo/navigation/CrlandMenuPro.vue";
 
 import {

@@ -1,4 +1,4 @@
-import { withInstall } from "bui-utils";
+import { withInstall } from "crland-utils";
 
 // import crlandMavonEditor from "./CrlandMavonEditor.vue";
 import crlandTinymceEditor from "./CrlandTinymceEditor.vue";

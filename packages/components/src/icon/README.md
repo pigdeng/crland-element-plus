@@ -121,7 +121,7 @@ export type IconProps = ExtractPropTypes<typeof iconProps>
     </div>
 </template>
 <script lang="ts" setup>
-import { Icon } from 'bui-element-plus'
+import { Icon } from 'crland-element-plus'
 
 </script>
 <style lang="less">
@@ -244,7 +244,7 @@ App.vue中使用
     </div>
 </template>
 <script lang="ts" setup>
-import { Icon } from 'bui-element-plus'
+import { Icon } from 'crland-element-plus'
 
 </script>
 <style lang="less">
@@ -309,7 +309,7 @@ App.vue中使用
     </div>
 </template>
 <script lang="ts" setup>
-import { Icon } from 'bui-element-plus'
+import { Icon } from 'crland-element-plus'
 
 </script>
 <style lang="less">

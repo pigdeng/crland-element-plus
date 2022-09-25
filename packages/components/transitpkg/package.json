@@ -1,5 +1,5 @@
 {
-  "name": "bui-element-plus",
+  "name": "crland-element-plus",
   "version": "1.3.14",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -8,11 +8,11 @@
     "lib"
   ],
   "keywords": [
-    "bui-element-plus",
+    "crland-element-plus",
     "vue3组件库"
   ],
   "dependencies": {
-    "bui-utils": "2.0.3",
+    "crland-utils": "2.0.3",
     "tinymce": "6.1.2",
     "mavon-editor": "3.0.0-beta",
     "highlight.js": "11.6.0"

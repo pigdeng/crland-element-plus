@@ -2,14 +2,13 @@
   <div class="doc-wrap">
     <h2 class="title">crland-dialog 对话框组件</h2>
     <p>
-        抽屉组件是后台管理系统开发中最常见之一，这里对 <span>element-plus</span> 的 <span>Deawer</span>
-        组件进行的二次封装，依旧保留了原有功能和穿参方式，在原有基础上增加一些功能。
+      抽屉组件是后台管理系统开发中最常见之一，这里对
+      <span>element-plus</span> 的 <span>Deawer</span>
+      组件进行的二次封装，依旧保留了原有功能和穿参方式，在原有基础上增加一些功能。
     </p>
     <!-- <el-divider /> -->
     <h3>使用规则</h3>
-    <p class="dot">
-        标签引入，如下代码演示
-    </p>
+    <p class="dot">标签引入，如下代码演示</p>
 
     <!-- <p class="dot">成功案例：
         <a href="https://mon.saas.crland.com.cn/#/login" target="three">监控平台</a>
@@ -18,13 +17,12 @@
 
     <h3>代码演示</h3>
     <crland-code-show fileUrl="/code/Feedback/CrlandDialog.txt">
-        <CrlandDialog  />
+      <CrlandDialog />
     </crland-code-show>
-
 
     <h3>代码演示【带插槽】</h3>
     <crland-code-show fileUrl="/code/Feedback/CrlandDialogSlot.txt">
-        <CrlandDialogSlot  />
+      <CrlandDialogSlot />
     </crland-code-show>
 
     <!-- <el-divider /> -->
@@ -69,7 +67,7 @@
           <td><el-tag class="ml-2" type="info">Boolean</el-tag></td>
           <td>false｜true</td>
           <td>false</td>
-        </tr>	
+        </tr>
       </tbody>
     </table>
 
@@ -86,7 +84,6 @@
           <td>footer</td>
           <td>抽屉框底部按钮替换（如上代码演示）</td>
         </tr>
-        
       </tbody>
     </table>
 
@@ -116,9 +113,9 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from 'bui-element-plus';
-import CrlandDialog from '@/demo/Feedback/CrlandDialog.vue';
-import CrlandDialogSlot from '@/demo/Feedback/CrlandDialogSlot.vue';
+import { CrlandCodeShow } from "crland-element-plus";
+import CrlandDialog from "@/demo/Feedback/CrlandDialog.vue";
+import CrlandDialogSlot from "@/demo/Feedback/CrlandDialogSlot.vue";
 
 import {
   reactive,
@@ -128,7 +125,7 @@ import {
   defineEmits,
   defineProps,
   ref,
-} from 'vue';
+} from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});

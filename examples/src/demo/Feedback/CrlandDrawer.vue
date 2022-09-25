@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandDrawer,CrlandButton } from "bui-element-plus";
+import { CrlandDrawer, CrlandButton } from "crland-element-plus";
 import { ref } from "vue";
 const visible = ref(false);
 const title = ref("抽屉标题");
@@ -32,5 +32,4 @@ const submit = () => {
     visible.value = false;
   }, 1500);
 };
-
 </script>

@@ -1,6 +1,6 @@
 # 快速开始
 
-本节将介绍如何在项目中使用 bui-element-plus
+本节将介绍如何在项目中使用 crland-element-plus
 
 ## 用法
 
@@ -11,7 +11,7 @@
 
 <script setup>
 
-import { Button } from 'bui-element-plus'
+import { Button } from 'crland-element-plus'
 
 </script>
 ```

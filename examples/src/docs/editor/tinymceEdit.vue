@@ -1,27 +1,23 @@
 <template>
   <div class="doc-wrap">
-    <h2 class="title">TinymceEditor 富文本编辑器 </h2>
+    <h2 class="title">TinymceEditor 富文本编辑器</h2>
     <p>
       这是用一个 富文本编辑器<br />
       优点:自由度高<br />
-      <small><a href="https://www.tiny.cloud" target="three">插件地址</a></small>
+      <small
+        ><a href="https://www.tiny.cloud" target="three">插件地址</a></small
+      >
     </p>
     <h3>使用规则</h3>
-    <p class="dot">
-      Install @tinymce/tinymce-vue (安装)
-    </p>
+    <p class="dot">Install @tinymce/tinymce-vue (安装)</p>
     <p>
       <el-tag type="info">npm i @tinymce/tinymce-vue --save</el-tag>
     </p>
-    <p class="dot">
-      Install tinymce（安装)
-    </p>
+    <p class="dot">Install tinymce（安装)</p>
     <p>
       <el-tag type="info">npm i tinymce --save</el-tag>
     </p>
-    <p class="dot">
-      服务端接口支持，包含图片上传接口和文档保存接口
-    </p>
+    <p class="dot">服务端接口支持，包含图片上传接口和文档保存接口</p>
     <h3>代码演示</h3>
     <crland-code-show fileUrl="/code/editor/tinymceEdit.txt">
       <TinymceEdit></TinymceEdit>
@@ -56,7 +52,6 @@
           <td>-</td>
           <td>初始化配置参数详情如下参数说明</td>
         </tr>
-
       </tbody>
     </table>
     <h3>setting 参数说明</h3>
@@ -72,10 +67,12 @@
         <tr>
           <td>change</td>
           <td>String: value , String: render</td>
-          <td>编辑区发生变化的回调事件(render: value 经过markdown解析后的结果)</td>
+          <td>
+            编辑区发生变化的回调事件(render: value 经过markdown解析后的结果)
+          </td>
         </tr>
-        </tbody>
-        </table>
+      </tbody>
+    </table>
     <h3>事件</h3>
     <table>
       <thead>
@@ -89,7 +86,9 @@
         <tr>
           <td>change</td>
           <td>String: value , String: render</td>
-          <td>编辑区发生变化的回调事件(render: value 经过markdown解析后的结果)</td>
+          <td>
+            编辑区发生变化的回调事件(render: value 经过markdown解析后的结果)
+          </td>
         </tr>
         <tr>
           <td>save</td>
@@ -134,7 +133,9 @@
         <tr>
           <td>imgAdd</td>
           <td>String: filename, File: imgfile</td>
-          <td>图片文件添加回调事件(filename: 写在md中的文件名, File: File Object)</td>
+          <td>
+            图片文件添加回调事件(filename: 写在md中的文件名, File: File Object)
+          </td>
         </tr>
         <tr>
           <td>imgDel</td>
@@ -147,8 +148,8 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from 'bui-element-plus';
-import TinymceEdit from '@/demo/editor/tinymceEdit.vue';
+import { CrlandCodeShow } from "crland-element-plus";
+import TinymceEdit from "@/demo/editor/tinymceEdit.vue";
 
 import {
   reactive,
@@ -158,7 +159,7 @@ import {
   defineEmits,
   defineProps,
   ref,
-} from 'vue';
+} from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});
@@ -169,5 +170,4 @@ onMounted(() => {
   // 3.组件挂载到页面之后执行-------onMounted
 });
 </script>
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

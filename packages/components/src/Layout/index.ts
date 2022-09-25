@@ -1,4 +1,4 @@
-import { withInstall } from "bui-utils";
+import { withInstall } from "crland-utils";
 
 // top
 import crlandLayoutTop from "./CrlandLayoutTop.vue";
