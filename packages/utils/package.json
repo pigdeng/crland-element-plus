@@ -6,7 +6,8 @@
   "description": "",
   "keywords": [],
   "files": [
-    "dist"
+    "dist",
+    "withinstall"
   ],
   "author": "",
   "license": "MIT",
