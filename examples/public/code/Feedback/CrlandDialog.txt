@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandDialog,CrlandButton } from "crland-element-plus";
+import { CrlandDialog, CrlandButton } from "crland-element-plus";
 import { ref } from "vue";
 const visible = ref(false);
 const title = ref("对话框标题");

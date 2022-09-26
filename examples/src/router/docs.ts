@@ -99,4 +99,22 @@ export default [
     component: () =>
       import(/* webpackChunkName: "menu" */ "@/docs/layout/CrlandLayout.vue"),
   },
+  {
+    path: "form/Rate",
+    name: "Rate",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/form/Rate.vue"),
+  },
+  {
+    path: "form/Slider",
+    name: "Slider",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/form/Slider.vue"),
+  },
+  {
+    path: "form/CrlandTagInput",
+    name: "CrlandTagInput",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/form/CrlandTagInput.vue"),
+  },
 ];

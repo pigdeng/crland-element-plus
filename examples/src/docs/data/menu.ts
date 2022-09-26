@@ -99,6 +99,24 @@ const menuData: any = [
       },
     ],
   },
+  {
+    index: "form",
+    title: "form 表单组件",
+    child: [
+      {
+        index: "Rate",
+        title: "Rate 评分",
+      },
+      {
+        index: "Slider",
+        title: "Slider 滑块",
+      },
+      {
+        index: "CrlandTagInput",
+        title: "CrlandTagInput 标签输入框",
+      },
+    ],
+  },
 ];
 
 export default menuData;

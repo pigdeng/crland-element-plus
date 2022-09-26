@@ -43,6 +43,8 @@ onMounted(() => {
     height: 100vh;
     overflow: auto;
     float: left;
+    background: #fff;
+    z-index: 20;
     .docs-left-title {
       display: flex;
       align-items: center;
