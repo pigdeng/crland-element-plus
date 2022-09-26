@@ -151,15 +151,7 @@
 import { CrlandCodeShow } from "crland-element-plus";
 import TinymceEdit from "@/demo/editor/tinymceEdit.vue";
 
-import {
-  reactive,
-  onBeforeMount,
-  onMounted,
-  defineExpose,
-  defineEmits,
-  defineProps,
-  ref,
-} from "vue";
+import { reactive, onBeforeMount, onMounted, ref } from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});

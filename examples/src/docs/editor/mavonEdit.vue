@@ -283,15 +283,7 @@
 import { CrlandCodeShow } from "crland-element-plus";
 import MavonEdit from "@/demo/editor/mavonEdit.vue";
 
-import {
-  reactive,
-  onBeforeMount,
-  onMounted,
-  defineExpose,
-  defineEmits,
-  defineProps,
-  ref,
-} from "vue";
+import { reactive, onBeforeMount, onMounted, ref } from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});

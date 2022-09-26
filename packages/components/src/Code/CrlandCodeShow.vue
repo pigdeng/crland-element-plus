@@ -70,11 +70,9 @@ export default defineComponent({
 <script lang="ts" setup>
 import "./style/index.scss";
 import { propsData } from "./types";
-import { ElMessage,ElIcon } from "element-plus";
+import { ElMessage, ElIcon } from "element-plus";
 
-
-import { onBeforeMount, onMounted, defineProps, ref } from "vue";
-
+import { onBeforeMount, onMounted, ref } from "vue";
 
 const props = defineProps(propsData);
 

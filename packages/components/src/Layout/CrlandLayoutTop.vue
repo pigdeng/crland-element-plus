@@ -62,7 +62,7 @@ export default defineComponent({
 });
 </script>
 <script lang="ts" setup>
-import { ref, defineEmits } from "vue";
+import { ref } from "vue";
 import "./style/CrlandLayoutTop.scss";
 import { computedSize, getFirstText } from "../utils/index";
 import {

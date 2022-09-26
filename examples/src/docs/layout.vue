@@ -16,15 +16,7 @@
 <script lang="ts" setup>
 import { CrlandMenu } from "crland-element-plus";
 import menuData from "@/docs/data/menu";
-import {
-  reactive,
-  onBeforeMount,
-  onMounted,
-  defineExpose,
-  defineEmits,
-  defineProps,
-  ref,
-} from "vue";
+import { reactive, onBeforeMount, onMounted, ref } from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});

@@ -117,15 +117,7 @@ import { CrlandCodeShow } from "crland-element-plus";
 import CrlandDrawer from "@/demo/Feedback/CrlandDrawer.vue";
 import CrlandDrawerSlot from "@/demo/Feedback/CrlandDrawerSlot.vue";
 
-import {
-  reactive,
-  onBeforeMount,
-  onMounted,
-  defineExpose,
-  defineEmits,
-  defineProps,
-  ref,
-} from "vue";
+import { reactive, onBeforeMount, onMounted, ref } from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});

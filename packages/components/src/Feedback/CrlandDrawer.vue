@@ -46,7 +46,7 @@ export default defineComponent({
 
 <script lang="ts" setup>
 import "./style/crland-drawer.scss";
-import { defineProps, ref, defineEmits } from "vue";
+import { ref } from "vue";
 import { ElButton, ElMessageBox, ElDrawer, ElIcon } from "element-plus";
 import { ArrowRightBold } from "@element-plus/icons-vue";
 import { propsData } from "./types";

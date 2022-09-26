@@ -146,9 +146,8 @@ import {
   reactive,
   onBeforeMount,
   onMounted,
-  defineExpose,
-  defineEmits,
-  defineProps,
+  
+  
   ref,
 } from "vue";
 const props = defineProps({});
