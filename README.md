@@ -41,9 +41,9 @@ pnpm run coverage
 
 ## 链接到本地私服
 ### 设置npm源地址
-npm config set registry http://localhost:8081/repository/crland-group/
+npm config set registry http://10.72.47.10:8081/repository/crland-group/
 ### 登录私服npm
-npm login -registry=http://localhost:8081/repository/crland/
+npm login -registry=http://10.72.47.10:8081/repository/crland/
 ### 发布
-npm publish -registry=http://localhost:8081/repository/crland/
+npm publish -registry=http://10.72.47.10:8081/repository/crland/
 
