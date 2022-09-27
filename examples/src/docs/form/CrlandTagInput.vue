@@ -1,30 +1,35 @@
 <template>
   <div class="doc-wrap">
-    <h2 class="title">Mune Pro 菜单</h2>
+    <h2 class="title">CrlandTagInput 标签输入框组件</h2>
     <p>
-      这是一个菜单组件，一般用于页面导航。本组件对
-      <el-tag class="ml-2" type="info">el-menu</el-tag>
-      进行了封装。与相比
-      <el-tag class="ml-2" type="info">crland-menu</el-tag> 增加功能有如下<br />
-      <p class="dot">新增菜单收缩功能。</p>
-      <p class="dot">不限制级数子菜单，注意：子菜单级数达到一定程度 (三级以上) 界面显示可能会压缩变形。</p>
-      <p class="dot">新增菜单图标。</p>
-      <p class="dot">新增徽章实现消息数量提示。</p>
+      这是一个标签输入框组件
+      <el-tag class="ml-2" type="info">crland-tag-input</el-tag><br/>
+      主要功能有如下:<br />
+      <p class="dot">按回车键生成标签</p>
+      <p class="dot">按删除键依次删除标签</p>
+      <p class="dot">按标签删除按钮，删除指定标签</p>
     </p>
     <!-- <el-divider /> -->
     <h3>使用规则</h3>
     <p class="dot">标签引入，如下代码演示</p>
     <!-- <el-divider /> -->
 
-    <h3>代码演示</h3>
-    <crland-code-show fileUrl="/code/navigation/CrlandTagInput.txt">
+    <h3>代码演示【基础】</h3>
+    <crland-code-show fileUrl="/code/form/CrlandTagInput.txt">
       <CrlandTagInput ></CrlandTagInput>
     </crland-code-show>
 
-    <!-- <el-divider /> -->
+    <h3>代码演示【尺寸】</h3>
+    <crland-code-show fileUrl="/code/form/CrlandTagInputSize.txt">
+      <CrlandTagInputSize ></CrlandTagInputSize>
+    </crland-code-show>
+
+    <h3>代码演示【tag属性】</h3>
+    <crland-code-show fileUrl="/code/form/CrlandTagInputType.txt">
+      <CrlandTagInputType ></CrlandTagInputType>
+    </crland-code-show>
 
     <h3>参数说明</h3>
-    <!-- <small>可以在分割线上自定义文本内容</small> -->
     <table>
       <thead>
         <tr>
@@ -37,98 +42,36 @@
       </thead>
       <tbody>
         <tr>
-          <td>menuData</td>
-          <td>菜单数据</td>
+          <td>value</td>
+          <td>标签数据</td>
           <td><el-tag class="ml-2" type="info">array</el-tag></td>
-          <td>—</td>
+          <td>-</td>
           <td>[]</td>
         </tr>
         <tr>
-          <td>data</td>
+          <td>tagType</td>
           <td>
-            路由跳转类型，和data数组对象中的index值相对应，告诉组件你是想通过name跳转还是path跳转，用index的值充当路由跳转的值。如：router.push({name:'index'})
+            标签颜色类型
           </td>
           <td><el-tag class="ml-2" type="info">string</el-tag></td>
           <td>
-            <el-tag type="info">name</el-tag>&nbsp;<el-tag type="info"
-              >path</el-tag
-            >
+            success/info/warning/danger
           </td>
-          <td>path</td>
+          <td>info</td>
         </tr>
         <tr>
-          <td>isCollapse</td>
-          <td>是否收缩菜单</td>
+          <td>tagEffect</td>
+          <td>标签主题</td>
+          <td><el-tag class="ml-2" type="info">string</el-tag></td>
+          <td>dark/light/plain</td>
+          <td>light</td>
+        </tr>
+        <tr>
+          <td>tagRound</td>
+          <td>标签是否圆角</td>
           <td><el-tag class="ml-2" type="info">Boolean</el-tag></td>
           <td>-</td>
-          <td>false</td>
-        </tr>
-        <tr>
-          <td>width</td>
-          <td>菜单宽度</td>
-          <td><el-tag class="ml-2" type="info">string</el-tag><el-tag class="ml-2" type="info">Number</el-tag></td>
-          <td>-</td>
-          <td>100%</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>data 参数说明</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Props</th>
-          <th>说明</th>
-          <th>类型</th>
-          <th>是否必填</th>
-          <th>默认值</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>title</td>
-          <td>菜单标题</td>
-          <td><el-tag class="ml-2" type="info">string</el-tag></td>
-          <td>是</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>index</td>
-          <td>路由跳转的 name或path</td>
-          <td><el-tag class="ml-2" type="info">string</el-tag></td>
-          <td>是</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>icon</td>
-          <td>菜单图标</td>
-          <td><el-tag class="ml-2" type="info">string</el-tag></td>
-          <td>否</td>
-          <td>-</td>
-        </tr>
-         <tr>
-          <td>disabled</td>
-          <td>设置不可点击</td>
-          <td><el-tag class="ml-2" type="info">Boolean</el-tag></td>
-          <td>否</td>
-          <td>false</td>
-        </tr>
-         <tr>
-          <td>tips</td>
-          <td>消息数量提示，大于99时显示“99+”</td>
-          <td>
-            <el-tag class="ml-2" type="info">string</el-tag>
-            <el-tag class="ml-2" type="info">Number</el-tag>
-          </td>
-          <td>否</td>
-          <td>-</td>
-        </tr>
-         <tr>
-          <td>child</td>
-          <td>子菜单</td>
-          <td><el-tag class="ml-2" type="info">array</el-tag></td>
-          <td>否</td>
-          <td>-</td>
+          <td>fasle</td>
         </tr>
       </tbody>
     </table>
@@ -141,6 +84,10 @@
 <script lang="ts" setup>
 import { CrlandCodeShow } from "crland-element-plus";
 import CrlandTagInput from "@/demo/form/CrlandTagInput.vue";
+import CrlandTagInputSize from "@/demo/form/CrlandTagInputSize.vue";
+import CrlandTagInputType from "@/demo/form/CrlandTagInputType.vue";
+
+
 
 import {
   reactive,

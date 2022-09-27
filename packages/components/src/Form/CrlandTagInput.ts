@@ -8,6 +8,7 @@ export const tagType = [
   "danger",
   "text",
 ];
+export const tagEffect = ["darkdark", "light", "plain"];
 export const propsData = {
   value: {
     type: Array,
@@ -27,6 +28,17 @@ export const propsData = {
       return tagType.includes(value);
     },
     default: "info",
+  },
+  tagEffect: {
+    type: [String, undefined],
+    validator(value: string) {
+      return tagEffect.includes(value);
+    },
+    default: "light",
+  },
+  tagRound: {
+    type: Boolean,
+    default: false,
   },
 };
 export type propsData = ExtractPropTypes<typeof propsData>;

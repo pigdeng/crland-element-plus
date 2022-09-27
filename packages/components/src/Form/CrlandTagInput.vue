@@ -14,6 +14,8 @@
         v-for="(tag, index) in value"
         :key="index"
         :type="tagType"
+        :effect="tagEffect"
+        :round="tagRound"
         :size="size"
         closable
         :hit="soonDeleteIndex === index"

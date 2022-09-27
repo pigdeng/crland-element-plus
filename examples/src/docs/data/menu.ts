@@ -113,7 +113,7 @@ const menuData: any = [
       },
       {
         index: "CrlandTagInput",
-        title: "CrlandTagInput 标签输入框",
+        title: "TagInput 标签输入框",
       },
     ],
   },
