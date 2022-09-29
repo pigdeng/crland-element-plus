@@ -115,6 +115,22 @@ const menuData: any = [
         index: "CrlandTagInput",
         title: "TagInput 标签输入框",
       },
+      {
+        index: "TimeSelect",
+        title: "TimeSelect 时间选择",
+      },
+      {
+        index: "TimePicker",
+        title: "TimePicker 时间选择器",
+      },
+      {
+        index: "CrlandDatePicker",
+        title: "DatePicker 日期选择器",
+      },
+      {
+        index: "CrlandInput",
+        title: "Input 输入框",
+      },
     ],
   },
 ];

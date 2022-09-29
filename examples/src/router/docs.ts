@@ -117,4 +117,28 @@ export default [
     component: () =>
       import(/* webpackChunkName: "menu" */ "@/docs/form/CrlandTagInput.vue"),
   },
+  {
+    path: "form/TimeSelect",
+    name: "TimeSelect",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/form/TimeSelect.vue"),
+  },
+  {
+    path: "form/TimePicker",
+    name: "TimePicker",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/form/TimePicker.vue"),
+  },
+  {
+    path: "form/CrlandDatePicker",
+    name: "CrlandDatePicker",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/form/CrlandDatePicker.vue"),
+  },
+  {
+    path: "form/CrlandInput",
+    name: "CrlandInput",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/form/CrlandInput.vue"),
+  },
 ];

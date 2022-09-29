@@ -15,7 +15,7 @@
         <el-radio label="plain" />
       </el-radio-group>
     </el-form-item>
-    <el-form-item label="形状">
+    <el-form-item label="圆角">
       <el-radio-group v-model="tagRound">
         <el-radio :label="false" />
         <el-radio :label="true" />

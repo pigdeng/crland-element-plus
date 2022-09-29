@@ -74,9 +74,16 @@ import "./style/index.scss";
 import { propsData } from "./types";
 import { reactive, ref } from "vue";
 import type { FormInstance } from "element-plus";
-import { ElCol, ElForm, ElFormItem, ElIcon, ElImage, ElInput, ElRow } from "element-plus";
-import CrlandButton from "../button/CrlandButton.vue"
-
+import {
+  ElCol,
+  ElForm,
+  ElFormItem,
+  ElIcon,
+  ElImage,
+  ElInput,
+  ElRow,
+} from "element-plus";
+import CrlandButton from "../button/CrlandButton.vue";
 
 const ruleFormRef = ref<FormInstance>();
 const props = defineProps(propsData);
