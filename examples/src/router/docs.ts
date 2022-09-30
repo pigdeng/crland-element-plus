@@ -1,5 +1,35 @@
 export default [
   {
+    path: "navigation/CrlandDropdown",
+    name: "CrlandDropdown",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandDropdown.vue"),
+  },
+  {
+    path: "navigation/CrlandPagination",
+    name: "CrlandPagination",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandPagination.vue"),
+  },
+  {
+    path: "navigation/CrlandBreadcrumb",
+    name: "CrlandBreadcrumb",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandBreadcrumb.vue"),
+  },
+  {
+    path: "navigation/CrlandSteps",
+    name: "CrlandSteps",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandSteps.vue"),
+  },
+  {
+    path: "navigation/CrlandMenuTop",
+    name: "CrlandMenuTop",
+    component: () =>
+      import(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandMenuTop.vue"),
+  },
+  {
     path: "navigation/menu",
     name: "mune",
     component: () =>
