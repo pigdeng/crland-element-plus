@@ -1,0 +1,35 @@
+.crland-date-picker {
+}
+
+.crland-date-picker-popper {
+  .el-date-table-cell__text {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .el-date-table td.today .el-date-table-cell__text {
+    border: 1px solid var(--el-color-primary);
+    box-sizing: border-box;
+    color: var(--el-text-color-regular);
+    font-weight: normal;
+  }
+  .el-date-table td.current:not(.disabled) .el-date-table-cell__text,
+  .el-date-table td.selected .el-date-table-cell__text {
+    color: #fff;
+  }
+
+  .el-month-table td.current:not(.disabled) .cell,
+  .el-year-table td.current:not(.disabled) .cell {
+    background: var(--el-color-primary);
+    border-radius: 6px;
+    color: #fff;
+  }
+  .el-month-table td.today .cell,
+  .el-year-table td.today .cell {
+    border-radius: 6px;
+    border: 1px solid var(--el-color-primary);
+    box-sizing: border-box;
+    color: var(--el-text-color-regular);
+    font-weight: normal;
+  }
+}

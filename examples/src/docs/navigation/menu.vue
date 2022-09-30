@@ -1,6 +1,6 @@
 <template>
   <div class="doc-wrap">
-    <h2 class="title">Mune 菜单</h2>
+    <h2 class="title">Menu 菜单</h2>
     <p>
       这是一个菜单组件，一般用于页面导航。本组件对
       <el-tag class="ml-2" type="info">el-menu</el-tag>

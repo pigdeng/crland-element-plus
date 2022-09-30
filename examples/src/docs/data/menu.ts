@@ -5,11 +5,31 @@ const menuData: any = [
     child: [
       {
         index: "mune",
-        title: "Mune 菜单组件",
+        title: "Menu 菜单组件",
       },
       {
         index: "CralndMenuPro",
-        title: "MunePro 菜单组件",
+        title: "MenuPro 菜单组件",
+      },
+      {
+        index: "CrlandMenuTop",
+        title: "MenuTop 菜单组件",
+      },
+      {
+        index: "CrlandSteps",
+        title: "CrlandSteps 步骤条",
+      },
+      {
+        index: "CrlandBreadcrumb",
+        title: "CrlandBreadcrumb 面包屑",
+      },
+      {
+        index: "CrlandPagination",
+        title: "CrlandPagination 分页",
+      },
+      {
+        index: "CrlandDropdown",
+        title: "CrlandDropdown 下拉气泡",
       },
     ],
   },
@@ -96,6 +116,40 @@ const menuData: any = [
       {
         index: "CrlandLayout",
         title: "CrlandLayout 布局",
+      },
+    ],
+  },
+  {
+    index: "form",
+    title: "form 表单组件",
+    child: [
+      {
+        index: "Rate",
+        title: "Rate 评分",
+      },
+      {
+        index: "Slider",
+        title: "Slider 滑块",
+      },
+      {
+        index: "CrlandTagInput",
+        title: "TagInput 标签输入框",
+      },
+      {
+        index: "TimeSelect",
+        title: "TimeSelect 时间选择",
+      },
+      {
+        index: "TimePicker",
+        title: "TimePicker 时间选择器",
+      },
+      {
+        index: "CrlandDatePicker",
+        title: "DatePicker 日期选择器",
+      },
+      {
+        index: "CrlandInput",
+        title: "Input 输入框",
       },
     ],
   },

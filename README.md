@@ -41,11 +41,11 @@ pnpm run coverage
 
 ## 链接到本地私服
 ### 设置npm源地址
-npm config set registry http://10.72.47.10:8081/repository/crland-group/
+<!-- npm config set registry http://10.72.47.10:8081/repository/crland-group/ -->
+npm config set registry http://maven.saas.crland.com.cn/nexus/repository/npm-crland-ued/
+
 ### 登录私服npm
-npm login -registry=http://10.72.47.10:8081/repository/crland/
+<!-- npm login -registry=http://10.72.47.10:8081/repository/crland/ -->
+npm login -registry=http://maven.saas.crland.com.cn/nexus/repository/npm-crland-ued/
 ### 发布
 pnpm run publish 
-
-<!-- -registry=http://10.72.47.10:8081/repository/crland/ -->
-
