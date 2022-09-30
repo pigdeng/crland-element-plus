@@ -6,7 +6,6 @@
     @keyup.enter.native="addTag"
     @keyup.delete.native="deleteInputValue"
     @input="inputValueChange"
-    type="text"
     placeholder="按回车键生成标签"
   >
     <template #prefix>
