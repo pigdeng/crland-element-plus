@@ -60,5 +60,6 @@
   },
   "dependencies": {
     "path-browserify": "^1.0.1"
-  }
+  },
+   "engines" : { "node" : ">=14" } 
 }
