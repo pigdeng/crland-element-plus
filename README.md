@@ -1,3 +1,6 @@
+## 注意事项
+请使用pnpm，如果您使用`npm install`来安装依赖，有可能导致运行错误。
+如遇上述情况可以删除 `node_modules`文件夹，再运行`pnpm install`
 ## 安装 pnpm
 
 npm i pnpm -g
