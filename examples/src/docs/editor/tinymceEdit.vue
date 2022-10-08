@@ -18,6 +18,16 @@
       <el-tag type="info">npm i tinymce --save</el-tag>
     </p>
     <p class="dot">服务端接口支持，包含图片上传接口和文档保存接口</p>
+    <h3>资源持久化【重要】</h3>
+    <p>
+      插件默认使用远程静态资源如 css、js、icon等，为确保
+      “护网”、“重保”期间可用需将资源本地持久化。操作步骤如下：
+    </p>
+    <p class="dot">下载静态资源 <a href="/tinymce.zip">[下载]</a></p>
+    <p class="dot">
+      解压静态资源并将解压后的文件夹放到项目 public文件夹 根目录
+    </p>
+
     <h3>代码演示</h3>
     <crland-code-show fileUrl="/code/editor/tinymceEdit.txt">
       <TinymceEdit></TinymceEdit>

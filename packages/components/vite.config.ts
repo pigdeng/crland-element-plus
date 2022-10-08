@@ -29,6 +29,7 @@ export default defineConfig({
         "mavon-editor",
         "tinymce",
         "crland-element-plus",
+        "@highlightjs/vue-plugin",
         "@tinymce/tinymce-vue",
         "@element-plus/icons-vue",
         "axios",
@@ -59,7 +60,7 @@ export default defineConfig({
     },
     lib: {
       entry: "./index.ts",
-      name: "kitty",
+      name: "crland",
     },
   },
 

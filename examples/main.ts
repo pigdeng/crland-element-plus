@@ -15,7 +15,7 @@ import hljsVuePlugin from "@highlightjs/vue-plugin";
 
 const app = createApp(App);
 app.use(ElementPlus, { locale });
-// app.use(crlandElementPlus);
+app.use(crlandElementPlus);
 app.use(router);
 app.use(hljsVuePlugin);
 app.mount("#app");
