@@ -3,6 +3,6 @@
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-import { CrlandTagInput } from "crland-element-plus";
+import { CrlandTagInput } from "crland-element-plus-base";
 const value = ref(["鲨鱼", "螃蟹", "田螺"]);
 </script>

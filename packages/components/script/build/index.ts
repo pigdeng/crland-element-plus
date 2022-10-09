@@ -26,6 +26,20 @@ export const buildImg = () => {
     .pipe(dest(`${componentPath}/dist/es/src`));
 };
 
+//md编辑器文件处理
+export const buildMavonEdit = () => {
+  return src(`${componentPath}/src/**/mavonEditor/*`)
+    .pipe(dest(`${componentPath}/dist/lib/src`))
+    .pipe(dest(`${componentPath}/dist/es/src`));
+};
+
+//md编辑器文件处理
+export const buildTinymce = () => {
+  return src(`${componentPath}/src/**/tinymce/*`)
+    .pipe(dest(`${componentPath}/dist/lib/src`))
+    .pipe(dest(`${componentPath}/dist/es/src`));
+};
+
 //打包组件
 export const buildComponent = async () => {
   run("pnpm run build", componentPath);

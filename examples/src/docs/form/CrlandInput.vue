@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus";
+import { CrlandCodeShow } from "crland-element-plus-base";
 import CrlandInput from "@/demo/form/CrlandInput.vue";
 </script>
 <style scoped lang="scss"></style>

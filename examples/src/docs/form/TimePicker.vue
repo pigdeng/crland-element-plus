@@ -34,7 +34,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus";
+import { CrlandCodeShow } from "crland-element-plus-base";
 import TimePicker from "@/demo/form/TimePicker.vue";
 import TimePickerRange from "@/demo/form/TimePickerRange.vue";
 </script>

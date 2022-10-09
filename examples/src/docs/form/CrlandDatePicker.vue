@@ -310,7 +310,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus";
+import { CrlandCodeShow } from "crland-element-plus-base";
 import CrlandDatePicker from "@/demo/form/CrlandDatePicker.vue";
 </script>
 <style scoped lang="scss"></style>

@@ -1,12 +1,12 @@
 {
-  "name": "crland-element-plus",
+  "name": "crland-element-plus-base",
   "version": "2.0.3",
   "main": "index.ts",
   "scripts": {
     "build": "vite build & esno build/buildLess"
   },
   "files": ["es", "lib"],
-  "keywords": ["crland-element-plus", "vue3组件库"],
+  "keywords": ["crland-element-plus-base", "vue3组件库"],
   "author": "bigdeng",
   "license": "MIT",
   "description": "",

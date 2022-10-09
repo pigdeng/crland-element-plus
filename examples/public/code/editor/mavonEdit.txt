@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import { CrlandMavonEditor, CrlandButton } from "crland-element-plus";
+import { CrlandMavonEditor, CrlandButton } from "crland-element-plus-base";
 import { ElRow } from "element-plus";
 
 import { computed, ref } from "vue";

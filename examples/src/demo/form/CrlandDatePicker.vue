@@ -21,7 +21,7 @@
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-import { CrlandDatePicker } from "crland-element-plus";
+import { CrlandDatePicker } from "crland-element-plus-base";
 const value = ref("");
 const size = ref("default");
 const type = ref("date");

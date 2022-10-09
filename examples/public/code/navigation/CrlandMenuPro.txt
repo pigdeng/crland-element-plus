@@ -14,7 +14,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import collapseLogo from "./img/collapse-logo.png";
-import { CrlandMenuPro } from "crland-element-plus";
+import { CrlandMenuPro } from "crland-element-plus-base";
 const isCollapse = ref(false);
 const data = [
   {
