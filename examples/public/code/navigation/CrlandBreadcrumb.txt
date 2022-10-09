@@ -1,8 +1,7 @@
 <template>
-    <crland-breadcrumb></crland-breadcrumb>
+  <crland-breadcrumb></crland-breadcrumb>
 </template>
 
 <script lang="ts" setup>
 //import {  } from "crland-element-plus-base";
-
 </script>
