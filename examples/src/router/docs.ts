@@ -167,4 +167,10 @@ export default [
     component: () =>
       require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandInput.vue"),
   },
+  {
+    path: "echarts/CrlandEchartsBar",
+    name: "CrlandEchartsBar",
+    component: () =>
+      require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandEchartsBar.vue"),
+  },
 ];

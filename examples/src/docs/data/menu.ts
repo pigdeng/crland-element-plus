@@ -153,6 +153,16 @@ const menuData: any = [
       },
     ],
   },
+  {
+    index: "echarts",
+    title: "echarts 图表组件",
+    child: [
+      {
+        index: "CrlandEchartsBar",
+        title: "bar 进度条",
+      },
+    ],
+  },
 ];
 
 export default menuData;

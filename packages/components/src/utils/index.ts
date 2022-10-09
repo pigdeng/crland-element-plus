@@ -57,3 +57,29 @@ export function deepClone(target: any) {
   // 返回最终结果
   return result;
 }
+
+// 随机字符串
+export function randomString(length: number) {
+  const str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let result = "";
+  for (let i = length; i > 0; --i)
+    result += str[Math.floor(Math.random() * str.length)];
+  return result;
+}
+
+// 千位数加分隔符号
+export function numFormat(num: any) {
+  num = parseFloat(num);
+  if (isNaN(num)) {
+    return;
+  }
+
+  num = num.toFixed(2);
+  const res = num.toString().replace(/\d+/, function (n) {
+    // 先提取整数部分
+    return n.replace(/(\d)(?=(\d{3})+$)/g, function ($1) {
+      return $1 + ",";
+    });
+  });
+  return res;
+}

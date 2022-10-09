@@ -10,7 +10,11 @@
       >
     </el-row>
     <br />
-    <mavon-editor v-model="content" :editable="editable"></mavon-editor>
+    <mavon-editor
+      v-model="content"
+      :editable="editable"
+      ref="md"
+    ></mavon-editor>
   </div>
 </template>
 
