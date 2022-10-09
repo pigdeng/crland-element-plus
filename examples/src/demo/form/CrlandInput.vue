@@ -10,7 +10,7 @@
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-// import { CrlandInput } from "crland-element-plus";
+import { CrlandInput } from "crland-element-plus-base";
 const value = ref("");
 const inputType = ref("user");
 const inputTypeList = ["user", "pass", "email", "visa", "phone", "rmb", "http"];

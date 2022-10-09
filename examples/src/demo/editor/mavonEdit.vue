@@ -10,23 +10,19 @@
       >
     </el-row>
     <br />
-    <crland-mavon-editor
-      ref="md"
-      v-model="content"
-      @imgAdd="imgAdd"
-      :editable="editable"
-    ></crland-mavon-editor>
+    <mavon-editor v-model="content" :editable="editable"></mavon-editor>
   </div>
 </template>
 
-<script setup>
-import { CrlandMavonEditor, CrlandButton } from "crland-element-plus";
+<script lang="ts" setup>
+import { CrlandButton } from "crland-element-plus-base";
 import { ElRow } from "element-plus";
+
+import { mavonEditor } from "mavon-editor";
+import "mavon-editor/dist/css/index.css";
 
 import { computed, ref } from "vue";
 import { ElMessage } from "element-plus";
-import { mavonEditor } from "mavon-editor";
-import "mavon-editor/dist/css/index.css";
 import axios from "axios";
 
 const md = ref(null);
@@ -36,7 +32,6 @@ const editable = ref(true);
 // 获取md
 const getMd = () => {
   const mdit = mavonEditor.getMarkdownIt();
-  console.log(mdit);
 
   ElMessage.info(content.value);
 };
@@ -54,7 +49,7 @@ const setEdit = () => {
   ElMessage.success("设置成功");
 };
 
-const imgAdd = (pos, $file) => {
+const imgAdd = (pos: any, $file: any) => {
   // 新建form表单类型的数据
   const formData = new FormData();
   // 将我们上传的图片地址$file加进表单里面，命名为“file”（参数名字与后端相匹配）
@@ -65,7 +60,7 @@ const imgAdd = (pos, $file) => {
     data: formData,
     headers: { "Content-Type": "multipart/form-data" },
   })
-    .then((res) => {
+    .then((res: any) => {
       if (res.status === 200) {
         // 将后端返回的url放在md中图片的指定位置
         md.value.$img2Url(pos, res.data.data);

@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandLogin } from "crland-element-plus";
+import { CrlandLogin } from "crland-element-plus-base";
 import { ref } from "vue";
 
 const loading = ref(false);

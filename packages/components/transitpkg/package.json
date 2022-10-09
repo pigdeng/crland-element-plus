@@ -1,6 +1,6 @@
 {
-  "name": "crland-element-plus",
-  "version": "1.3.30",
+  "name": "crland-element-plus-base",
+  "version": "1.0.8",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -8,7 +8,7 @@
     "lib"
   ],
   "keywords": [
-    "crland-element-plus",
+    "crland-element-plus-base",
     "vue3组件库"
   ],
   "dependencies": {
@@ -16,7 +16,9 @@
     "tinymce": "^6.1.2",
     "mavon-editor": "^3.0.0-beta",
     "highlight.js": "^11.6.0",
-    "@tinymce/tinymce-vue": "^5.0.0"
+    "@tinymce/tinymce-vue": "^5.0.0",
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "axios": "^0.27.2"
   },
   "author": "bigdeng",
   "license": "MIT",

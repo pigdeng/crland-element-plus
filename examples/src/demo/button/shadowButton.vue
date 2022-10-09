@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { CrlandButton } from "crland-element-plus";
+import { CrlandButton } from "crland-element-plus-base";
 </script>
 
 <template>

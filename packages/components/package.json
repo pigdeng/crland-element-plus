@@ -1,5 +1,5 @@
 {
-  "name": "crland-element-plus",
+  "name": "crland-element-plus-base",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -12,7 +12,7 @@
     "lib"
   ],
   "keywords": [
-    "crland-element-plus",
+    "crland-element-plus-base",
     "vue3组件库"
   ],
   "author": "bigdeng",

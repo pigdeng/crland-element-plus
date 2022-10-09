@@ -36,15 +36,25 @@ import { computedSize, deepClone } from "../utils/index";
 import { propsData } from "./CrlandInput";
 const props = defineProps(propsData);
 const emit = defineEmits(["update:value"]);
+
+import user from "./img/user.svg";
+import http from "./img/http.svg";
+import pass from "./img/pass.svg";
+import phone from "./img/phone.svg";
+import rmb from "./img/rmb.svg";
+import visa from "./img/visa.svg";
+import email from "./img/email.svg";
+
 const icons = {
-  email: require("./img/email.svg"),
-  http: require("./img/http.svg"),
-  pass: require("./img/pass.svg"),
-  phone: require("./img/phone.svg"),
-  rmb: require("./img/rmb.svg"),
-  user: require("./img/user.svg"),
-  visa: require("./img/visa.svg"),
+  email,
+  http,
+  pass,
+  phone,
+  rmb,
+  user,
+  visa,
 };
+
 const CrlandInputValue = ref("");
 
 // 输入框输入事件

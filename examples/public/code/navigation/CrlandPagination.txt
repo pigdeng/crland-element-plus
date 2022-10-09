@@ -1,8 +1,7 @@
 <template>
-    <crland-pagination></crland-pagination>
+  <crland-pagination></crland-pagination>
 </template>
 
 <script lang="ts" setup>
-//import {  } from "crland-element-plus";
-
+//import {  } from "crland-element-plus-base";
 </script>
