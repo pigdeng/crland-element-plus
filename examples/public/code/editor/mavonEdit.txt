@@ -19,7 +19,7 @@ import { CrlandButton } from "crland-element-plus-base";
 import { ElRow } from "element-plus";
 
 import { mavonEditor } from "mavon-editor";
-import "../../../public/mavonEditor/css/index.css";
+import "mavon-editor/dist/css/index.css";
 
 import { computed, ref } from "vue";
 import { ElMessage } from "element-plus";
