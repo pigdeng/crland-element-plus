@@ -50,6 +50,7 @@ export default defineConfig({
         "@tinymce/tinymce-vue",
         "@element-plus/icons-vue",
         "axios",
+        "echarts",
       ],
       input: ["index.ts"],
       output: [
