@@ -166,6 +166,10 @@ const menuData: any = [
         title: "barChart 柱状条",
       },
       {
+        index: "CrlandStackedColChart",
+        title: "stackedColChart 堆叠柱状图",
+      },
+      {
         index: "CrlandLineChart",
         title: "lineChart 折线图",
       },

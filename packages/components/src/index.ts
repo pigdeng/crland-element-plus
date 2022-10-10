@@ -20,4 +20,9 @@ export { CrlandDrawer, CrlandDialog } from "./Feedback";
 export { CrlandLayoutTop, CrlandLayoutMainHeader } from "./Layout";
 
 export { CrlandTagInput, CrlandDatePicker, CrlandInput } from "./Form";
-export { CrlandProgressBar, CrlandBarChart, CrlandLineChart } from "./Echarts";
+export {
+  CrlandProgressBar,
+  CrlandBarChart,
+  CrlandLineChart,
+  CrlandStackedColChart,
+} from "./Echarts";

@@ -25,5 +25,7 @@ export const propsData = {
   },
   num: String,
   legend: Array,
+  percent: Boolean,
+  info: String,
 };
 export type propsData = ExtractPropTypes<typeof propsData>;

@@ -1,0 +1,62 @@
+<template>
+  <crland-bar-chart
+    :resOption="resOption"
+    :resData="resData"
+    :isDivider="true"
+    style="height: 500px"
+  ></crland-bar-chart>
+</template>
+
+<script lang="ts" setup>
+const resOption = {
+  unit: ["", "%"],
+  legend: { data: ["当前在建面积", "占比"] },
+  grid: { left: "16.6%", right: "1%", top: "52", bottom: "1%" },
+  xAxis: [{ axisLabel: { rotate: "30" } }],
+  yAxis: [{ name: "(单位:万㎡)" }],
+  series: [
+    {
+      name: "当前在建面积",
+      barWidth: 10,
+      itemStyle: { color: "#76A0F8" },
+      label: { show: true, position: "top" },
+    },
+    { name: "占比", itemStyle: { color: "#FFC229" }, symbol: "none" },
+  ],
+};
+const resData = {
+  x: [
+    "住宅",
+    "写字楼",
+    "公寓",
+    "商铺",
+    "车位",
+    "储藏室",
+    "配套",
+    "购物中心",
+    "酒店",
+  ],
+  bar1: [
+    "3423.42",
+    "621.54",
+    "332.60",
+    "204.34",
+    "1849.22",
+    "31.48",
+    "197.91",
+    "524.56",
+    "56.33",
+  ],
+  line1: [
+    "47.28",
+    "8.58",
+    "4.59",
+    "2.82",
+    "25.54",
+    "0.43",
+    "2.73",
+    "7.24",
+    "0.78",
+  ],
+};
+</script>

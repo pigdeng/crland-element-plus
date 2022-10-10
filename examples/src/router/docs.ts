@@ -185,4 +185,10 @@ export default [
     component: () =>
       require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandLineChart.vue"),
   },
+  {
+    path: "echarts/CrlandStackedColChart",
+    name: "CrlandStackedColChart",
+    component: () =>
+      require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandStackedColChart.vue"),
+  },
 ];
