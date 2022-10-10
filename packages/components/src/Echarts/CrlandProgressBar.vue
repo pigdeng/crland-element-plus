@@ -1,7 +1,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "crland-echarts-bar",
+  name: "crland-progress-bar",
 });
 </script>
 <script lang="ts" setup>
@@ -41,10 +41,12 @@ const data = reactive({
       data.percent = "--";
     }
     const chartDom: any = document.getElementById(data.id);
-    const myChart = echarts.init(chartDom);
+    const myChart = echarts.init(chartDom, null, {
+      renderer: "svg",
+    });
     const resOption = props.resOption;
-    const value1 = data.xData ? numFormat(data.xData) : "--";
-    const value2 = data.yData ? numFormat(data.yData) : "--";
+    const value1 = data.xData ? addFormat(data.xData) : "--";
+    const value2 = data.yData ? addFormat(data.yData) : "--";
     // const value1 = data.xData ;
     // const value2 = data.yData;
     const option = {
@@ -288,6 +290,10 @@ watch(
   },
   { deep: true }
 );
+
+const addFormat = (num: any) => {
+  return props.isDivider ? numFormat(num) : num;
+};
 
 // 计算并渲染
 const computedInit = async (res: any) => {

@@ -83,3 +83,40 @@ export function numFormat(num: any) {
   });
   return res;
 }
+
+export function getCurrentX(a: any, b: any) {
+  let currentXIndex = 0;
+  let startValue = "";
+  let endValue = "";
+
+  if (b) {
+    currentXIndex = a?.findIndex((item: any) => item === b);
+    if (a?.length >= 6) {
+      if (currentXIndex === a?.length - 1) {
+        startValue = a[currentXIndex - 4];
+        endValue = a[currentXIndex];
+      } else if (a?.length - currentXIndex < 5) {
+        startValue = a[currentXIndex - 2];
+        endValue = a[a?.length - 1];
+      } else {
+        if (currentXIndex < 3) {
+          startValue = a[0];
+          endValue = a[5];
+          currentXIndex = 2;
+        } else {
+          startValue = a[currentXIndex - 2];
+          endValue = a[currentXIndex + 2];
+        }
+      }
+      return { currentXIndex, startValue, endValue };
+    } else {
+      return { currentXIndex: 0, startValue: a && a[0], endValue: null };
+    }
+  } else {
+    return {
+      currentXIndex: a?.length > 2 ? 2 : 0,
+      startValue: null,
+      endValue: null,
+    };
+  }
+}

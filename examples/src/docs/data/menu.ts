@@ -158,8 +158,16 @@ const menuData: any = [
     title: "echarts 图表组件",
     child: [
       {
-        index: "CrlandEchartsBar",
-        title: "bar 进度条",
+        index: "CrlandProgressBar",
+        title: "progressBar 进度条",
+      },
+      {
+        index: "CrlandBarChart",
+        title: "barChart 柱状条",
+      },
+      {
+        index: "CrlandLineChart",
+        title: "lineChart 折线图",
       },
     ],
   },

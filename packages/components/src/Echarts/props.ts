@@ -19,5 +19,11 @@ export const propsData = {
       return {};
     },
   },
+  isDivider: {
+    type: Boolean,
+    default: false,
+  },
+  num: String,
+  legend: Array,
 };
 export type propsData = ExtractPropTypes<typeof propsData>;

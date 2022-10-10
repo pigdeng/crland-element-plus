@@ -26,12 +26,12 @@
   </el-row>
   <br />
 
-  <crland-echarts-bar
+  <crland-progress-bar
     :resOption="resOption"
     :resData="resData"
     :isDivider="isDivider"
     :key="isDivider"
-  ></crland-echarts-bar>
+  ></crland-progress-bar>
 </template>
 
 <script lang="ts" setup>

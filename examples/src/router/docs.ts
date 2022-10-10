@@ -168,9 +168,21 @@ export default [
       require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandInput.vue"),
   },
   {
-    path: "echarts/CrlandEchartsBar",
-    name: "CrlandEchartsBar",
+    path: "echarts/CrlandProgressBar",
+    name: "CrlandProgressBar",
     component: () =>
-      require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandEchartsBar.vue"),
+      require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandProgressBar.vue"),
+  },
+  {
+    path: "echarts/CrlandBarChart",
+    name: "CrlandBarChart",
+    component: () =>
+      require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandBarChart.vue"),
+  },
+  {
+    path: "echarts/CrlandLineChart",
+    name: "CrlandLineChart",
+    component: () =>
+      require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandLineChart.vue"),
   },
 ];
