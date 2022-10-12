@@ -120,3 +120,45 @@ export function getCurrentX(a: any, b: any) {
     };
   }
 }
+
+export const getCurrentXIpad = (a: any, b: any, e: any) => {
+  let currentXIndex = 0;
+  let startValue = "";
+  let endValue = "";
+  let eNum = 12;
+  if (e) eNum = e;
+  if (b) {
+    currentXIndex = a?.findIndex((item: any) => item === b);
+    if (a?.length >= eNum) {
+      if (currentXIndex === a?.length - 1) {
+        startValue = a[currentXIndex - 11];
+        endValue = a[currentXIndex];
+      } else if (a?.length - currentXIndex < eNum) {
+        startValue = a[currentXIndex - eNum];
+        endValue = a[a?.length - 1];
+      } else {
+        if (currentXIndex < 6) {
+          startValue = a[0];
+          endValue = a[eNum];
+          currentXIndex = 6;
+        } else {
+          startValue = a[currentXIndex - 11];
+          endValue = a[currentXIndex + 11];
+        }
+      }
+      // console.log(1, {currentXIndex, startValue, endValue})
+      return { currentXIndex, startValue, endValue };
+    } else {
+      // console.log(2, {currentXIndex: 0, startValue: a && a[0], endValue: null})
+      return { currentXIndex: 0, startValue: a && a[0], endValue: null };
+    }
+  } else {
+    // console.log(3, {currentXIndex: a?.length > 11 ? 6 : Math.floor(a?.length/2) || 0, startValue: null, endValue: null})
+    return {
+      currentXIndex: a?.length > 11 ? 6 : Math.floor(a?.length / 2) || 0,
+      startValue: null,
+      endValue: null,
+    };
+    // return {currentXIndex: a?.length > 2 ? 2 : 0, startValue: null, endValue: null}
+  }
+};
