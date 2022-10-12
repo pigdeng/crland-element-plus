@@ -173,6 +173,10 @@ const menuData: any = [
         index: "CrlandLineChart",
         title: "lineChart 折线图",
       },
+      {
+        index: "CrlandDoughnutChart",
+        title: "doughnutChart 环形图",
+      },
     ],
   },
 ];

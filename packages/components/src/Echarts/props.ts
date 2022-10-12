@@ -27,5 +27,9 @@ export const propsData = {
   legend: Array,
   percent: Boolean,
   info: String,
+  borderRadius: {
+    type: [Number, String],
+    default: 0,
+  },
 };
 export type propsData = ExtractPropTypes<typeof propsData>;

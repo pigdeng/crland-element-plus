@@ -25,4 +25,5 @@ export {
   CrlandBarChart,
   CrlandLineChart,
   CrlandStackedColChart,
+  CrlandDoughnutChart,
 } from "./Echarts";
