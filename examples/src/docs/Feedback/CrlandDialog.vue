@@ -113,7 +113,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import { CrlandCodeShow } from "crland-base";
 import CrlandDialog from "@/demo/Feedback/CrlandDialog.vue";
 import CrlandDialogSlot from "@/demo/Feedback/CrlandDialogSlot.vue";
 

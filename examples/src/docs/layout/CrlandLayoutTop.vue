@@ -157,7 +157,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import { CrlandCodeShow } from "crland-base";
 import CrlandLayoutTop from "@/demo/layout/CrlandLayoutTop.vue";
 
 import CrlandLayoutTopSoltLeft from "@/demo/layout/CrlandLayoutTopSoltLeft.vue";

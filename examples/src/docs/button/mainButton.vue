@@ -29,6 +29,6 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import { CrlandCodeShow } from "crland-base";
 import MainButton from "@/demo/button/mainButton.vue";
 </script>

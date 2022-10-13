@@ -44,7 +44,7 @@
 
 <script lang="ts" setup>
 import { ref, reactive, nextTick } from "vue";
-import { CrlandDoughnutChart } from "crland-element-plus-base";
+import { CrlandDoughnutChart } from "crland-base";
 const isDivider = ref(false);
 const diyColor = ref(false);
 const borderRadius = ref(0);

@@ -36,7 +36,7 @@
 
 <script lang="ts" setup>
 import { ArrowLeft, ArrowRight } from "@element-plus/icons-vue";
-import { CrlandProgressBar } from "crland-element-plus-base";
+import { CrlandProgressBar } from "crland-base";
 
 import { ref } from "vue";
 const resData1 = { percent: 30, xData: 300000, yData: 1000000 };

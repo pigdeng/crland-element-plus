@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandMenu } from "crland-element-plus-base";
+import { CrlandMenu } from "crland-base";
 import { reactive } from "vue";
 const menuData = reactive([
   {

@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandButton } from "crland-element-plus-base";
+import { CrlandButton } from "crland-base";
 import { ElRow } from "element-plus";
 
 import { mavonEditor } from "mavon-editor";

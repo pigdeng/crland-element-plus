@@ -1,5 +1,5 @@
 {
-  "name": "crland-element-plus-base",
+  "name": "crland-base",
   "version": "1.0.9",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -8,7 +8,7 @@
     "lib"
   ],
   "keywords": [
-    "crland-element-plus-base",
+    "crland-base",
     "vue3组件库"
   ],
   "dependencies": {

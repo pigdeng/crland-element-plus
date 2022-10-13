@@ -12,7 +12,7 @@
 import { ref } from "vue";
 import { ElDivider, ElMessage } from "element-plus";
 import { Bell, Message } from "@element-plus/icons-vue";
-import { CrlandLayoutTop } from "crland-element-plus-base";
+import { CrlandLayoutTop } from "crland-base";
 
 const userInfo = {
   userName: "华小润",

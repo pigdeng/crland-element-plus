@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "crland-element-plus-base": "workspace:^1.0.0"
+    "crland-base": "workspace:^1.0.0"
   }
 }

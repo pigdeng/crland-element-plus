@@ -158,7 +158,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import { CrlandCodeShow } from "crland-base";
 import TinymceEdit from "@/demo/editor/tinymceEdit.vue";
 
 import { reactive, onBeforeMount, onMounted, ref } from "vue";

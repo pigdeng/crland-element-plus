@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandStackedColChart } from "crland-element-plus-base";
+import { CrlandStackedColChart } from "crland-base";
 
 const resOption = {
   unit: ["亿元", "%"],

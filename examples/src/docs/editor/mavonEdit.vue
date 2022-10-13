@@ -280,7 +280,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import { CrlandCodeShow } from "crland-base";
 import MavonEdit from "@/demo/editor/mavonEdit.vue";
 
 import { reactive, onBeforeMount, onMounted, ref } from "vue";

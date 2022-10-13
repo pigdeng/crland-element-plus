@@ -18,7 +18,7 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-import {CrlandBarChart} from "crland-element-plus-base"
+import { CrlandBarChart } from "crland-base";
 const active = ref(0);
 const BarChartType = [
   {

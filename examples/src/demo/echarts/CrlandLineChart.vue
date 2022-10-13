@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandLineChart } from "crland-element-plus-base";
+import { CrlandLineChart } from "crland-base";
 
 const resOption = {
   unit: "亿元",

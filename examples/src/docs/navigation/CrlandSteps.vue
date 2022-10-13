@@ -55,7 +55,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import { CrlandCodeShow } from "crland-base";
 import crlandStepsDemo from "@/demo/navigation/CrlandSteps.vue";
 
 import { reactive, onBeforeMount, onMounted, ref } from "vue";

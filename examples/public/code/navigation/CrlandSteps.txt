@@ -3,5 +3,5 @@
 </template>
 
 <script lang="ts" setup>
-//import {  } from "crland-element-plus-base";
+//import {  } from "crland-base";
 </script>
