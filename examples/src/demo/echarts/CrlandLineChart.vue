@@ -7,6 +7,8 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandLineChart } from "crland-element-plus-base";
+
 const resOption = {
   unit: "亿元",
   isTime: true,
