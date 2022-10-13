@@ -12,5 +12,12 @@ const props = defineProps({
     default: "",
   },
 });
-const CodePath = `${import.meta.env.VITE_CODE_PATH}${props.fileUrl}`;
+
+let CODE_PATH;
+try {
+  CODE_PATH = import.meta.env.VITE_CODE_PATH;
+} catch (error) {
+  CODE_PATH = process.env.VUE_APP_CODE_PATH;
+}
+const CodePath = `${CODE_PATH}${props.fileUrl}`;
 </script>
