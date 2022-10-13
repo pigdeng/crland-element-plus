@@ -47,7 +47,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import CrlandDropdownDemo from "@/demo/navigation/CrlandDropdown.vue";
 
 import { reactive, onBeforeMount, onMounted, ref } from "vue";

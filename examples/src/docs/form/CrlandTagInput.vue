@@ -82,7 +82,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import CrlandTagInput from "@/demo/form/CrlandTagInput.vue";
 import CrlandTagInputSize from "@/demo/form/CrlandTagInputSize.vue";
 import CrlandTagInputType from "@/demo/form/CrlandTagInputType.vue";

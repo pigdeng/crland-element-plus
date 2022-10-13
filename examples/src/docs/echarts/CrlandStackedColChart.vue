@@ -74,5 +74,6 @@
 </template>
 
 <script lang="ts" setup>
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import CrlandStackedColChart from "@/demo/echarts/CrlandStackedColChart.vue";
 </script>

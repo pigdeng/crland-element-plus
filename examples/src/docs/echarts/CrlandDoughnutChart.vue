@@ -81,5 +81,6 @@
 </template>
 
 <script lang="ts" setup>
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import CrlandDoughnutChart from "@/demo/echarts/CrlandDoughnutChart.vue";
 </script>

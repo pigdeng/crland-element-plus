@@ -7,6 +7,8 @@
 </template>
 
 <script lang="ts" setup>
+import { CrlandStackedColChart } from "crland-base";
+
 const resOption = {
   unit: ["亿元", "%"],
   title: { padding: [20, 0, 0, 0] },

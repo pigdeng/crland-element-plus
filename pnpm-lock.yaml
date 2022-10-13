@@ -13,7 +13,7 @@ specifiers:
   axios: ^0.27.2
   c8: ^7.12.0
   cpy: ^9.0.1
-  crland-element-plus-base: ^1.0.9
+  crland-base: ^0.0.1
   echarts: ^5.4.0
   element-plus: ^2.2.13
   fast-glob: ^3.2.11
@@ -54,7 +54,7 @@ devDependencies:
   axios: 0.27.2
   c8: 7.12.0
   cpy: 9.0.1
-  crland-element-plus-base: 1.0.9_vue@3.2.40
+  crland-base: 0.0.1_vue@3.2.40
   echarts: 5.4.0
   element-plus: 2.2.17_vue@3.2.40
   fast-glob: 3.2.12
@@ -1351,8 +1351,8 @@ packages:
       p-map: 5.5.0
     dev: true
 
-  /crland-element-plus-base/1.0.9_vue@3.2.40:
-    resolution: {integrity: sha512-RgIZ/il8NuLRbDmziysG8Che+F3b9Vn7yXcMl/d4lzuj2klwYbNTBsXgYYgdrqO0An8n3nasIvbz6vHyYOiLsA==}
+  /crland-base/0.0.1_vue@3.2.40:
+    resolution: {integrity: sha512-eFd/PCmlbHExKy3NE+QLvt20vFw5h5T2X8dWvWJ+dbWS+TG1Q08+W0QqHs4q1jv6a6egk3Y5aZei3hgWvbUG6w==}
     dependencies:
       '@highlightjs/vue-plugin': 2.1.0_hktmlzqtso373uvglkhucd4f4y
       '@tinymce/tinymce-vue': 5.0.0_vue@3.2.40

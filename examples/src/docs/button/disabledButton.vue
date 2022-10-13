@@ -29,6 +29,6 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import DisabledButton from "@/demo/button/disabledButton.vue";
 </script>

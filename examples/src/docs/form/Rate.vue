@@ -29,6 +29,6 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import Rate from "@/demo/form/Rate.vue";
 </script>

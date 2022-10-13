@@ -113,7 +113,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import CrlandDrawer from "@/demo/Feedback/CrlandDrawer.vue";
 import CrlandDrawerSlot from "@/demo/Feedback/CrlandDrawerSlot.vue";
 

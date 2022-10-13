@@ -80,7 +80,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import loginDemo from "@/demo/login/login.vue";
 
 import { reactive, onBeforeMount, onMounted, ref } from "vue";

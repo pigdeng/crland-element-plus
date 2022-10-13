@@ -74,5 +74,6 @@
 </template>
 
 <script lang="ts" setup>
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import CrlandLineChart from "@/demo/echarts/CrlandLineChart.vue";
 </script>
