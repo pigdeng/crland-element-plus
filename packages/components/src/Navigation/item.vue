@@ -41,7 +41,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ElMenuItem, ElBadge } from "element-plus";
+import { ElSubMenu, ElMenuItem, ElBadge } from "element-plus";
 import { propsData } from "./CrlandMenuPro";
 import CrlandMenuItem from "./item.vue";
 import { ArrowRightBold, ArrowDownBold } from "@element-plus/icons-vue";

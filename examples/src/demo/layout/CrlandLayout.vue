@@ -48,7 +48,7 @@ import {
 import { Bell, Message, Search } from "@element-plus/icons-vue";
 
 import collapseLogo from "./img/collapse-logo.png";
-import { CrlandMenuPro } from "crland-base";
+import { CrlandMenuPro, CrlandLayoutTop } from "crland-base";
 const isCollapse = ref(localStorage.getItem("isCollapse") === "true");
 const data = [
   {
@@ -160,13 +160,6 @@ const handDropdownItem = (value: any) => {
       width: 6px;
       height: 6px;
     }
-  }
-  .crland-el-main {
-    // background: #fff;
-    // padding: 0px;
-    // margin: 15px;
-    // border-radius: 4px;
-    // padding: 20px;
   }
 }
 </style>
