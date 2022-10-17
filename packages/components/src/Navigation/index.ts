@@ -1,6 +1,6 @@
 import crlandMenu from "./CrlandMenu.vue";
 import crlandMenuPro from "./CrlandMenuPro.vue";
-import crlandMenuTop from "./CrlandMenuTop.vue";
+import crlandHistoryBar from "./CrlandHistoryBar.vue";
 import { withInstall } from "crland-utils";
 // const CrlandMenu = withInstall(crlandMenu);
 // const CrlandMenuPro = withInstall(crlandMenuPro);
@@ -8,6 +8,4 @@ import { withInstall } from "crland-utils";
 
 export const CrlandMenu = withInstall(crlandMenu);
 export const CrlandMenuPro = withInstall(crlandMenuPro);
-export const CrlandMenuTop = withInstall(crlandMenuTop);
-
-
+export const CrlandHistoryBar = withInstall(crlandHistoryBar);

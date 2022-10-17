@@ -30,7 +30,7 @@
         </crland-layout-top>
       </el-header>
       <el-main class="crland-el-main">
-        <crland-menu-top style="height: 50px"></crland-menu-top>
+        <crland-history-bar style="height: 50px"></crland-history-bar>
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -48,7 +48,7 @@ import {
 import { Bell, Message, Search } from "@element-plus/icons-vue";
 
 import collapseLogo from "./img/collapse-logo.png";
-import { CrlandMenuPro, CrlandMenuTop, CrlandLayoutTop } from "crland-base";
+import { CrlandMenuPro, CrlandHistoryBar, CrlandLayoutTop } from "crland-base";
 
 import { RouterView } from "vue-router";
 const isCollapse = ref(localStorage.getItem("isCollapse") === "true");

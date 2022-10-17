@@ -47,7 +47,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "crland-menu-top",
+  name: "crland-history-bar",
 });
 </script>
 <script lang="ts" setup>
@@ -62,13 +62,13 @@ import {
 } from "element-plus";
 import { Close } from "@element-plus/icons-vue";
 import { deepClone } from "../utils/index";
-import "./style/CrlandMenuTop.scss";
+import "./style/CrlandHistoryBar.scss";
 
 import { useRouter, useRoute, RouterLink } from "vue-router";
 const router: any = useRouter();
 const route: any = useRoute();
 
-import { propsData } from "./CrlandMenuTop";
+import { propsData } from "./CrlandHistoryBar";
 const props = defineProps(propsData);
 
 const routerHistory = ref([deepClone(router.currentRoute.value)]);

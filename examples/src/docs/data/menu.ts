@@ -12,8 +12,8 @@ const menuData: any = [
         title: "MenuPro 菜单组件",
       },
       {
-        index: "CrlandMenuTop",
-        title: "MenuTop 菜单组件",
+        index: "CrlandHistoryBar",
+        title: "HistoryBar 历史导航条",
       },
       {
         index: "CrlandSteps",

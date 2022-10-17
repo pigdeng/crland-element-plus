@@ -24,10 +24,10 @@ export default [
       require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandSteps.vue"),
   },
   {
-    path: "navigation/CrlandMenuTop",
-    name: "CrlandMenuTop",
+    path: "navigation/CrlandHistoryBar",
+    name: "CrlandHistoryBar",
     component: () =>
-      require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandMenuTop.vue"),
+      require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandHistoryBar.vue"),
   },
   {
     path: "navigation/menu",

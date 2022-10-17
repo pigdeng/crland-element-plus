@@ -26,7 +26,7 @@
     </el-timeline-item>
   </el-timeline>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 import {
   ElSteps,
   ElStep,
