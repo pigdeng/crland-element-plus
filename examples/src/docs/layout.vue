@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandMenu } from "crland-element-plus-base";
+import { CrlandMenu } from "crland-base";
 import menuData from "@/docs/data/menu";
 import { reactive, onBeforeMount, onMounted, ref } from "vue";
 const props = defineProps({});

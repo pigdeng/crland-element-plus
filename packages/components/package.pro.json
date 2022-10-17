@@ -1,10 +1,10 @@
 {
-  "name": "crland-element-plus-base",
+  "name": "crland-base",
   "version": "2.1.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": ["es", "lib"],
-  "keywords": ["crland-element-plus-base", "vue3组件库"],
+  "keywords": ["crland-base", "vue3组件库"],
   "author": "bigdeng",
   "license": "MIT",
   "description": "",

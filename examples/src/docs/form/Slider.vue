@@ -29,6 +29,6 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import Slider from "@/demo/form/Slider.vue";
 </script>

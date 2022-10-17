@@ -57,3 +57,108 @@ export function deepClone(target: any) {
   // 返回最终结果
   return result;
 }
+
+// 随机字符串
+export function randomString(length: number) {
+  const str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let result = "";
+  for (let i = length; i > 0; --i)
+    result += str[Math.floor(Math.random() * str.length)];
+  return result;
+}
+
+// 千位数加分隔符号
+export function numFormat(num: any) {
+  num = parseFloat(num);
+  if (isNaN(num)) {
+    return;
+  }
+
+  num = num.toFixed(2);
+  const res = num.toString().replace(/\d+/, function (n) {
+    // 先提取整数部分
+    return n.replace(/(\d)(?=(\d{3})+$)/g, function ($1) {
+      return $1 + ",";
+    });
+  });
+  return res;
+}
+
+export function getCurrentX(a: any, b: any) {
+  let currentXIndex = 0;
+  let startValue = "";
+  let endValue = "";
+
+  if (b) {
+    currentXIndex = a?.findIndex((item: any) => item === b);
+    if (a?.length >= 6) {
+      if (currentXIndex === a?.length - 1) {
+        startValue = a[currentXIndex - 4];
+        endValue = a[currentXIndex];
+      } else if (a?.length - currentXIndex < 5) {
+        startValue = a[currentXIndex - 2];
+        endValue = a[a?.length - 1];
+      } else {
+        if (currentXIndex < 3) {
+          startValue = a[0];
+          endValue = a[5];
+          currentXIndex = 2;
+        } else {
+          startValue = a[currentXIndex - 2];
+          endValue = a[currentXIndex + 2];
+        }
+      }
+      return { currentXIndex, startValue, endValue };
+    } else {
+      return { currentXIndex: 0, startValue: a && a[0], endValue: null };
+    }
+  } else {
+    return {
+      currentXIndex: a?.length > 2 ? 2 : 0,
+      startValue: null,
+      endValue: null,
+    };
+  }
+}
+
+export const getCurrentXIpad = (a: any, b: any, e: any) => {
+  let currentXIndex = 0;
+  let startValue = "";
+  let endValue = "";
+  let eNum = 12;
+  if (e) eNum = e;
+  if (b) {
+    currentXIndex = a?.findIndex((item: any) => item === b);
+    if (a?.length >= eNum) {
+      if (currentXIndex === a?.length - 1) {
+        startValue = a[currentXIndex - 11];
+        endValue = a[currentXIndex];
+      } else if (a?.length - currentXIndex < eNum) {
+        startValue = a[currentXIndex - eNum];
+        endValue = a[a?.length - 1];
+      } else {
+        if (currentXIndex < 6) {
+          startValue = a[0];
+          endValue = a[eNum];
+          currentXIndex = 6;
+        } else {
+          startValue = a[currentXIndex - 11];
+          endValue = a[currentXIndex + 11];
+        }
+      }
+      // console.log(1, {currentXIndex, startValue, endValue})
+      return { currentXIndex, startValue, endValue };
+    } else {
+      // console.log(2, {currentXIndex: 0, startValue: a && a[0], endValue: null})
+      return { currentXIndex: 0, startValue: a && a[0], endValue: null };
+    }
+  } else {
+    // console.log(3, {currentXIndex: a?.length > 11 ? 6 : Math.floor(a?.length/2) || 0, startValue: null, endValue: null})
+    return {
+      currentXIndex: a?.length > 11 ? 6 : Math.floor(a?.length / 2) || 0,
+      startValue: null,
+      endValue: null,
+    };
+    // return {currentXIndex: a?.length > 2 ? 2 : 0, startValue: null, endValue: null}
+  }
+};

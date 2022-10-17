@@ -23,7 +23,7 @@
       插件默认使用远程静态资源如 css、js、icon等，为确保
       “护网”、“重保”期间可用需将资源本地持久化。操作步骤如下：
     </p>
-    <p class="dot">下载静态资源 <a href="/tinymce.zip">[下载]</a></p>
+    <p class="dot">下载静态资源 <a :href="CODE_PATH+'/tinymce.zip'">[下载]</a></p>
     <p class="dot">
       解压静态资源并将解压后的文件夹放到项目 public文件夹 根目录
     </p>
@@ -158,13 +158,21 @@
 </template>
 
 <script lang="ts" setup>
-import { CrlandCodeShow } from "crland-element-plus-base";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
 import TinymceEdit from "@/demo/editor/tinymceEdit.vue";
 
 import { reactive, onBeforeMount, onMounted, ref } from "vue";
 const props = defineProps({});
 const emit = defineEmits([]);
 const data = reactive({});
+
+// 这里是路径
+let CODE_PATH;
+try {
+  CODE_PATH = import.meta.env.VITE_CODE_PATH;
+} catch (error) {
+  CODE_PATH = process.env.VUE_APP_CODE_PATH;
+}
 onBeforeMount(() => {
   // 2.组件挂载页面之前执行----onBeforeMount
 });

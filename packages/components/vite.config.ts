@@ -45,11 +45,12 @@ export default defineConfig({
         "tinymce/plugins/wordcount",
         "tinymce/plugins/code",
         "tinymce/plugins/searchreplace",
-        "crland-element-plus-base",
+        "crland-base",
         "@highlightjs/vue-plugin",
         "@tinymce/tinymce-vue",
         "@element-plus/icons-vue",
         "axios",
+        "echarts",
       ],
       input: ["index.ts"],
       output: [

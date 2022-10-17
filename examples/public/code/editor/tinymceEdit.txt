@@ -17,15 +17,22 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import { ElMessage, ElRow } from "element-plus";
-import { CrlandTinymceEditor, CrlandButton } from "crland-element-plus-base";
+import { CrlandTinymceEditor, CrlandButton } from "crland-base";
 import axios from "axios";
 const value = ref(`<p>富文本编辑器</p>`);
 const disabled = ref(false);
+// 这里是路径
+let CODE_PATH;
+try {
+  CODE_PATH = import.meta.env.VITE_CODE_PATH;
+} catch (error) {
+  CODE_PATH = process.env.VUE_APP_CODE_PATH;
+}
 const setting = ref({
-  language_url: "/tinymce/langs/zh-Hans.js",
+  language_url: `${CODE_PATH}/tinymce/langs/zh-Hans.js`,
   language: "zh-Hans",
-  skin_url: "/tinymce/skins/ui/oxide",
-  content_css: "/tinymce/skins/content/default/content.min.css",
+  skin_url: `${CODE_PATH}/tinymce/skins/ui/oxide`,
+  content_css: `${CODE_PATH}/tinymce/skins/content/default/content.min.css`,
   images_upload_handler: (blobInfo: any) =>
     new Promise((resolve) => {
       // 新建form表单类型的数据

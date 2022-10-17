@@ -30,8 +30,8 @@
         </crland-layout-top>
       </el-header>
       <el-main class="crland-el-main">
-        <crland-layout-main-header></crland-layout-main-header>
-        <div class="crland-el-main-main">Main</div>
+        <crland-menu-top style="height: 50px"></crland-menu-top>
+        <router-view></router-view>
       </el-main>
     </el-container>
   </el-container>
@@ -48,48 +48,51 @@ import {
 import { Bell, Message, Search } from "@element-plus/icons-vue";
 
 import collapseLogo from "./img/collapse-logo.png";
-import { CrlandMenuPro } from "crland-element-plus-base";
+import { CrlandMenuPro, CrlandMenuTop, CrlandLayoutTop } from "crland-base";
+
+import { RouterView } from "vue-router";
 const isCollapse = ref(localStorage.getItem("isCollapse") === "true");
+
+// 菜单数据
 const data = [
   {
-    title: "NavigatorOne",
-    index: "NavigatorOne",
+    title: "项目启动",
+    index: "initiating",
     icon: collapseLogo,
     disabled: false,
     tips: 9999,
     child: [
       {
-        title: "item One",
-        index: "/layout/CrlandLayout?type=itemOne",
+        title: "制定项目章程",
+        index: "/layout/CrlandLayout/initiating/devalop",
         disabled: true,
         icon: collapseLogo,
         tips: 9999,
       },
       {
-        title: "item Two",
-        index: "/layout/CrlandLayout?type=itemTwo",
+        title: "识别干系人",
+        index: "/layout/CrlandLayout/initiating/stakeholders",
         disabled: false,
         icon: collapseLogo,
         tips: 9999,
       },
       {
-        title: "item Three",
-        index: "/layout/CrlandLayout?type=itemThree",
-        disabled: false,
-        icon: collapseLogo,
-        tips: 9999,
-      },
-      {
-        title: "item Four",
-        index: "/layout/CrlandLayout?type=itemFour",
+        title: "登记风险",
+        index: "/layout/CrlandLayout/initiating/risks1",
         disabled: false,
         tips: 9999,
         icon: collapseLogo,
-
         child: [
           {
-            title: "item Three 2",
-            index: "/layout/CrlandLayout?type=itemThree2",
+            title: "登记风险1",
+            index: "/layout/CrlandLayout/initiating/risks1",
+            disabled: false,
+            tips: 9999,
+            icon: collapseLogo,
+          },
+          {
+            title: "登记风险2",
+            index: "/layout/CrlandLayout/initiating/risks2",
             disabled: false,
             tips: 9999,
             icon: collapseLogo,
@@ -99,25 +102,31 @@ const data = [
     ],
   },
   {
-    title: "Navigator Two",
-    index: "/layout/CrlandLayout?type=NavigatorTwo",
+    title: "项目规划",
+    index: "/layout/CrlandLayout/planing",
     icon: collapseLogo,
     disabled: true,
     tips: 10,
     child: [],
   },
   {
-    title: "Navigator Three",
-    index: "/layout/CrlandLayout?type=NavigatorThree",
+    title: "项目执行",
+    index: "/layout/CrlandLayout/executing",
     icon: collapseLogo,
     disabled: false,
     tips: 20,
     child: [],
   },
   {
-    title:
-      "Navigator FourNavigator FourNavigator FourNavigator FourNavigator Four",
-    index: "/layout/CrlandLayout?type=NavigatorFour",
+    title: "项目监控",
+    index: "/layout/CrlandLayout/monitoring",
+    icon: collapseLogo,
+    disabled: false,
+    child: [],
+  },
+  {
+    title: "项目收尾",
+    index: "/layout/CrlandLayout/closing",
     icon: collapseLogo,
     disabled: false,
     child: [],
@@ -160,13 +169,6 @@ const handDropdownItem = (value: any) => {
       width: 6px;
       height: 6px;
     }
-  }
-  .crland-el-main {
-    // background: #fff;
-    // padding: 0px;
-    // margin: 15px;
-    // border-radius: 4px;
-    // padding: 20px;
   }
 }
 </style>

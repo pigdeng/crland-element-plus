@@ -10,12 +10,16 @@
       >
     </el-row>
     <br />
-    <mavon-editor v-model="content" :editable="editable"></mavon-editor>
+    <mavon-editor
+      v-model="content"
+      :editable="editable"
+      ref="md"
+    ></mavon-editor>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { CrlandButton } from "crland-element-plus-base";
+import { CrlandButton } from "crland-base";
 import { ElRow } from "element-plus";
 
 import { mavonEditor } from "mavon-editor";

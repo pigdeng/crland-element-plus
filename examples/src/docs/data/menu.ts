@@ -153,6 +153,32 @@ const menuData: any = [
       },
     ],
   },
+  {
+    index: "echarts",
+    title: "echarts 图表组件",
+    child: [
+      {
+        index: "CrlandProgressBar",
+        title: "progressBar 进度条",
+      },
+      {
+        index: "CrlandBarChart",
+        title: "barChart 柱状条",
+      },
+      {
+        index: "CrlandStackedColChart",
+        title: "stackedColChart 堆叠柱状图",
+      },
+      {
+        index: "CrlandLineChart",
+        title: "lineChart 折线图",
+      },
+      {
+        index: "CrlandDoughnutChart",
+        title: "doughnutChart 环形图",
+      },
+    ],
+  },
 ];
 
 export default menuData;
