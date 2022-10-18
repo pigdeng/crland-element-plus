@@ -1,7 +1,10 @@
 <template>
-  <crland-login @formSubmit="formSubmit" :loading="loading"></crland-login>
-
-  <!-- <crland-login :imgBg="imgBg" :imgTitle="imgTitle" @formSubmit="formSubmit" :loading="loading"></crland-login> -->
+  <crland-login
+    :imgBg="imgBg"
+    :imgTitle="imgTitle"
+    @formSubmit="formSubmit"
+    :loading="loading"
+  ></crland-login>
 </template>
 
 <script lang="ts" setup>
