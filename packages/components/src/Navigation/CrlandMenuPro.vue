@@ -8,7 +8,7 @@
   >
     <!-- :style="{ width: isCollapse ? 'auto' : computedSize(width) }" -->
 
-    <div class="menu-logo-wrap">
+    <div class="menu-logo-wrap" @click="emit('handLogo')">
       <img
         v-if="!isCollapse"
         class="expand-logo"
@@ -43,6 +43,7 @@ const router: any = useRouter();
 const route: any = useRoute();
 
 const props = defineProps(propsData);
+const emit = defineEmits(["handLogo"]);
 
 const handMenuItem = (index: string) => {
   if (props.defaultActive === "name") {

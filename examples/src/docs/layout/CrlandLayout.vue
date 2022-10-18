@@ -129,6 +129,11 @@
           <td>点击下拉列表某一项，携带该项object参数</td>
           <td>Obiect</td>
         </tr>
+        <tr>
+          <td>handLogo</td>
+          <td>点击logo触发事件</td>
+          <td>-</td>
+        </tr>
       </tbody>
     </table>
   </div>

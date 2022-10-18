@@ -53,6 +53,12 @@ import { CrlandMenuPro, CrlandHistoryBar, CrlandLayoutTop } from "crland-base";
 import { RouterView } from "vue-router";
 const isCollapse = ref(localStorage.getItem("isCollapse") === "true");
 
+// 这里做路径处理，组件实际使用中不需要
+let rootPath = "";
+if (window.__POWERED_BY_QIANKUN__) {
+  rootPath = "/ued-pc-web";
+}
+
 // 菜单数据
 const data = [
   {
@@ -64,35 +70,35 @@ const data = [
     child: [
       {
         title: "制定项目章程",
-        index: "/layout/CrlandLayout/initiating/devalop",
+        index: rootPath + "/layout/CrlandLayout/initiating/devalop",
         disabled: true,
         icon: collapseLogo,
         tips: 9999,
       },
       {
         title: "识别干系人",
-        index: "/layout/CrlandLayout/initiating/stakeholders",
+        index: rootPath + "/layout/CrlandLayout/initiating/stakeholders",
         disabled: false,
         icon: collapseLogo,
         tips: 9999,
       },
       {
         title: "登记风险",
-        index: "/layout/CrlandLayout/initiating/risks1",
+        index: rootPath + "/layout/CrlandLayout/initiating/risks1",
         disabled: false,
         tips: 9999,
         icon: collapseLogo,
         child: [
           {
             title: "登记风险1",
-            index: "/layout/CrlandLayout/initiating/risks1",
+            index: rootPath + "/layout/CrlandLayout/initiating/risks1",
             disabled: false,
             tips: 9999,
             icon: collapseLogo,
           },
           {
             title: "登记风险2",
-            index: "/layout/CrlandLayout/initiating/risks2",
+            index: rootPath + "/layout/CrlandLayout/initiating/risks2",
             disabled: false,
             tips: 9999,
             icon: collapseLogo,
@@ -103,7 +109,7 @@ const data = [
   },
   {
     title: "项目规划",
-    index: "/layout/CrlandLayout/planing",
+    index: rootPath + "/layout/CrlandLayout/planing",
     icon: collapseLogo,
     disabled: true,
     tips: 10,
@@ -111,7 +117,7 @@ const data = [
   },
   {
     title: "项目执行",
-    index: "/layout/CrlandLayout/executing",
+    index: rootPath + "/layout/CrlandLayout/executing",
     icon: collapseLogo,
     disabled: false,
     tips: 20,
@@ -119,14 +125,14 @@ const data = [
   },
   {
     title: "项目监控",
-    index: "/layout/CrlandLayout/monitoring",
+    index: rootPath + "/layout/CrlandLayout/monitoring",
     icon: collapseLogo,
     disabled: false,
     child: [],
   },
   {
     title: "项目收尾",
-    index: "/layout/CrlandLayout/closing",
+    index: rootPath + "/layout/CrlandLayout/closing",
     icon: collapseLogo,
     disabled: false,
     child: [],
