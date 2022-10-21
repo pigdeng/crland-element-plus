@@ -10,7 +10,7 @@ import * as echarts from "echarts";
 import { computed, onMounted, ref, watch, reactive } from "vue";
 import { propsData } from "./props";
 const props = defineProps(propsData);
-import { numFormat, getCurrentX } from "../utils/index";
+import { numFormat, getCurrentXIpad } from "../utils/index";
 
 const data = reactive({
   id: props.domId,
@@ -31,7 +31,6 @@ const data = reactive({
     const myChart = echarts.init(chartDom, null, {
       renderer: "svg",
     });
-
     const resOption = props.resOption;
     const option = {
       // 初始化配置
@@ -51,14 +50,15 @@ const data = reactive({
         padding: resOption.title?.padding || [30, 0, 0, 0],
         show: true,
         textStyle: {
-          fontSize: 12,
-          color: "#455467",
+          fontSize: 14,
+          color: "#818D99",
+          fontWeight: "400",
         },
         subtext: "", // 副标题
         subtextStyle: {
           // 副标题文本样式
           color: "#455467",
-          fontSize: 12,
+          fontSize: 14,
           rich: {
             a: {
               color: "#F99D35",
@@ -99,11 +99,7 @@ const data = reactive({
                 marker +
                 params[i].seriesName +
                 ": " +
-                (a
-                  ? "<span style='font-size: 14px; font-weight:bold; color: #1D252F'>" +
-                    addFormat(a) +
-                    "</span>"
-                  : "--") +
+                (a ? "<span>" + addFormat(a) + "</span>" : "--") +
                 percent +
                 "</br>";
             } else if (i >= 2 && params[i].data !== "") {
@@ -111,11 +107,7 @@ const data = reactive({
                 marker +
                 params[i].seriesName +
                 ": " +
-                (a
-                  ? "<span style='font-size: 14px; font-weight:bold; color: #1D252F'>" +
-                    addFormat(a) +
-                    "</span>"
-                  : "--") +
+                (a ? "<span>" + addFormat(a) + "</span>" : "--") +
                 percent +
                 "</br>";
             }
@@ -133,7 +125,7 @@ const data = reactive({
         itemWidth: 8, // 设置宽度
         itemHeight: 8, // 设置高度
         textStyle: {
-          fontSize: 12, // 字体大小
+          fontSize: 14, // 字体大小
           color: "#455467",
         },
         padding: [0, 0, 0, 0], // 可
@@ -144,12 +136,12 @@ const data = reactive({
           type: "slider",
           zoomLock: false,
           brushSelect: false, // 滚动条只允许滑动，不允许框选范围
-          show: data.x?.length > 5,
+          show: data.x?.length > 12,
           xAxisIndex: [0],
           moveHandleSize: 0,
           startValue: data.current.startValue,
           endValue: data.current.endValue,
-          maxValueSpan: 4,
+          maxValueSpan: 11,
           handleSize: 0, // 滑动条的 左右2个滑动条的大小
           height: 10, // 组件高度
           left: "13%", // 左边的距离
@@ -167,6 +159,7 @@ const data = reactive({
         },
         {
           type: "inside",
+          zoomLock: true,
           show: true,
           xAxisIndex: [0],
           start: 0, // 默认为1
@@ -198,7 +191,7 @@ const data = reactive({
             rotate: 0, // resOption.xAxis[0].axisLabel.rotate || 0,
             margin: 8,
             lineHeight: 14,
-            fontSize: 12, // 字体大小
+            fontSize: 14, // 字体大小
             formatter: (value: any) => {
               let ret = ""; // 拼接加\n返回的类目项
               const maxLength = 4; // 每项显示文字个数
@@ -255,7 +248,7 @@ const data = reactive({
           alignTicks: true,
           axisLabel: {
             interval: 0,
-            fontSize: 12, // 字体大小
+            fontSize: 14, // 字体大小
           },
         },
       ],
@@ -275,7 +268,7 @@ const data = reactive({
           label: {
             show: resOption.series[0].label?.show,
             position: "top",
-            formatter: function (a: any) {
+            formatter: function (a) {
               return addFormat(a.data);
             },
           },
@@ -291,7 +284,7 @@ const data = reactive({
           itemStyle: {
             color:
               (resOption.series[1] && resOption.series[1].itemStyle.color) ||
-              "#76A0F8", // 柱状条的颜色
+              "#77CFF7", // 柱状条的颜色
           },
           data: data.bar2 || [],
         },
@@ -305,7 +298,7 @@ const data = reactive({
           itemStyle: {
             color:
               (resOption.series[2] && resOption.series[2].itemStyle.color) ||
-              "#76A0F8", // 柱状条的颜色
+              "#77CFF7", // 柱状条的颜色
           },
           data: data.bar3 || [],
         },
@@ -319,7 +312,7 @@ const data = reactive({
           itemStyle: {
             color:
               (resOption.series[3] && resOption.series[3].itemStyle.color) ||
-              "#76A0F8", // 柱状条的颜色
+              "#77CFF7", // 柱状条的颜色
           },
           data: data.bar4 || [],
         },
@@ -353,6 +346,10 @@ const data = reactive({
     // 绘制图表
     myChart.setOption(option);
 
+    window.addEventListener("resize", () => {
+      myChart.resize();
+    });
+
     myChart.dispatchAction({
       type: "hideTip",
     });
@@ -364,10 +361,6 @@ const data = reactive({
         seriesIndex: 0, // 第几条series
         dataIndex: data.current.currentXIndex, // 第几个tooltip
       });
-    });
-
-    window.addEventListener("resize", () => {
-      myChart.resize();
     });
   },
 });
@@ -398,7 +391,7 @@ const computedInit = async (res: any) => {
     ),
     (data.current.currentX = res?.currentX),
   ]);
-  data.current = await getCurrentX(res?.x, data.current.currentX);
+  data.current = await getCurrentXIpad(res?.x, data.current.currentX);
 
   if (props.resData) await data.echartsInit();
 };

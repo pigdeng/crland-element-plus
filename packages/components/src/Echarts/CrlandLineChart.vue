@@ -10,7 +10,7 @@ import * as echarts from "echarts";
 import { computed, onMounted, ref, watch, reactive } from "vue";
 import { propsData } from "./props";
 const props = defineProps(propsData);
-import { numFormat, getCurrentX } from "../utils/index";
+import { numFormat, getCurrentXIpad } from "../utils/index";
 
 const data = reactive({
   id: props.domId,
@@ -29,9 +29,8 @@ const data = reactive({
   echartsInit: () => {
     const chartDom: any = document.getElementById(data.id);
     const myChart = echarts.init(chartDom, null, {
-      renderer: "canvas",
+      renderer: "canvs",
     });
-
     const resOption = data.resOption;
     const option = {
       // 初始化配置
@@ -51,7 +50,7 @@ const data = reactive({
         padding: [25, 0, 0, 0],
         show: true,
         textStyle: {
-          fontSize: 12,
+          fontSize: 14,
           color: "#818D99",
           fontWeight: "400",
         },
@@ -59,7 +58,7 @@ const data = reactive({
         subtextStyle: {
           // 副标题文本样式
           color: "#455467",
-          fontSize: 12,
+          fontSize: 14,
           rich: {
             a: {
               color: "#F99D35",
@@ -86,20 +85,12 @@ const data = reactive({
             for (let i = 0; i < params.length; i++) {
               const m1 = params[i]?.marker;
               const m2 = params[i]?.seriesName;
-              const m3 = params[i]?.value
-                ? "<span style='font-size: 14px; font-weight:bold; color: #1D252F'>" +
-                  addFormat(params[i]?.value) +
-                  "</span>"
-                : "--";
-              const m4 = resOption?.unit
-                ? '<span style="font-size: 12px; font-weight: 400">' +
-                  resOption?.unit[i] +
-                  "</span>"
-                : "";
+              const m3 = params[i]?.value ? addFormat(params[i]?.value) : "--";
+              const m4 = resOption?.unit ? resOption?.unit[i] : "";
               str = str + m1 + m2 + ": " + m3 + m4 + "</br>";
             }
           }
-          return str.replaceAll("10px", "5px");
+          return str;
         },
       },
       legend: {
@@ -111,7 +102,7 @@ const data = reactive({
         itemHeight: 2, // 修改icon图形大小
         itemGap: 30, // 设置间距，
         textStyle: {
-          fontSize: 12, // 字体大小
+          fontSize: 14, // 字体大小
           color: "#455467",
         },
         padding: [2, 20, 10, 2],
@@ -218,7 +209,7 @@ const data = reactive({
             fill: "#9AA1A9",
             width: 51,
             height: 32,
-            fontSize: 12,
+            fontSize: 14,
             lineHeight: 32,
           },
         },
@@ -232,12 +223,12 @@ const data = reactive({
           type: "slider",
           zoomLock: false,
           brushSelect: false, // 滚动条只允许滑动，不允许框选范围
-          show: data.x?.length > 5,
+          show: data.x?.length > 12,
           xAxisIndex: [0],
           moveHandleSize: 0,
           startValue: data.current.startValue,
           endValue: data.current.endValue,
-          maxValueSpan: 4,
+          maxValueSpan: 11,
           handleSize: 0, // 滑动条的 左右2个滑动条的大小
           height: 10, // 组件高度
           left: "13%", // 左边的距离
@@ -255,6 +246,7 @@ const data = reactive({
         },
         {
           type: "inside",
+          zoomLock: true,
           xAxisIndex: [0],
           startValue: data.startValue,
           endValue: data.endValue,
@@ -300,7 +292,7 @@ const computedInit = async (res: any) => {
     (data.line1 = res[0]?.line1),
     (data.current.currentX = res[0]?.currentX),
   ]);
-  data.current = await getCurrentX(res[0]?.x, data.current.currentX);
+  data.current = await getCurrentXIpad(res[0]?.x, data.current.currentX);
   if (props.resData) await data.echartsInit();
 };
 

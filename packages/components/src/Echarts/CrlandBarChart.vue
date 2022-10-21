@@ -10,7 +10,7 @@ import * as echarts from "echarts";
 import { computed, onMounted, ref, watch, reactive } from "vue";
 import { propsData } from "./props";
 const props = defineProps(propsData);
-import { numFormat, getCurrentX } from "../utils/index";
+import { numFormat, getCurrentXIpad } from "../utils/index";
 
 const data = reactive({
   id: props.domId,
@@ -59,8 +59,7 @@ const data = reactive({
             },
             num: {
               fontSize: 16,
-              fontWeight: "bold",
-              color: "#fc9535",
+              color: "#FFAC00 ",
             },
           },
         },
@@ -68,7 +67,7 @@ const data = reactive({
         subtextStyle: {
           // 副标题文本样式
           color: "#e5021d",
-          fontSize: 12,
+          fontSize: 14,
           right: 110,
           rich: {
             a: {
@@ -99,7 +98,7 @@ const data = reactive({
               params[i].color +
               "'></span>";
             axisValue =
-              '<div style="font-size: 14px; font-weight:bold; color: #1D252F">' +
+              '<div style="font-weight: 700">' +
               params[i]?.axisValue +
               "</div>";
             const a = params[i].data;
@@ -107,13 +106,9 @@ const data = reactive({
               marker +
               params[i]?.seriesName +
               ": " +
-              "<span style='font-size: 14px; font-weight:bold; color: #1D252F'>" +
               (a ? addFormat(a) : "--") +
-              "</span>" +
               " " +
-              "<span style='font-size: 12px; font-weight:400'>" +
               (resOption?.unit ? resOption?.unit[params[i].seriesIndex] : "") +
-              "</span>" +
               "</br>";
           }
           return !data.current.currentX ? axisValue + str : str;
@@ -122,7 +117,7 @@ const data = reactive({
       legend: {
         top: -3,
         left: 0,
-        itemGap: 20,
+        itemGap: 5,
         data: [
           {
             name: props.legend
@@ -131,7 +126,7 @@ const data = reactive({
             icon: "circle",
             textStyle: {
               color: "#455467",
-              fontSize: 12,
+              fontSize: 14,
               align: "left",
               padding: [0, 0, 0, -5],
               // 文字块背景色，一定要加上，否则对齐不会生效
@@ -151,7 +146,7 @@ const data = reactive({
             icon: "",
             textStyle: {
               color: "#455467",
-              fontSize: 12,
+              fontSize: 14,
               align: "left",
               padding: [3, 0, 0, 0],
               // 文字块背景色，一定要加上，否则对齐不会生效
@@ -172,13 +167,13 @@ const data = reactive({
         {
           type: "text",
           left: "left",
-          top: resOption.graphic?.top || 20,
+          top: resOption.graphic?.top || 15,
           style: {
             text: resOption.yAxis[0].name || "",
-            fill: "#8D9EAE",
+            fill: "#455467",
             width: 51,
             height: 32,
-            fontSize: 12,
+            fontSize: 14,
             lineHeight: 32,
           },
         },
@@ -189,12 +184,12 @@ const data = reactive({
           type: "slider",
           zoomLock: false,
           brushSelect: false, // 滚动条只允许滑动，不允许框选范围
-          show: data.x?.length > 5,
+          show: props.showNum ? data.x?.length > props.showNum : false,
           xAxisIndex: [0],
           moveHandleSize: 0,
           startValue: data.current.startValue,
           endValue: data.current.endValue,
-          maxValueSpan: 4,
+          maxValueSpan: 11,
           handleSize: 0, // 滑动条的 左右2个滑动条的大小
           height: 10, // 组件高度
           left: "13%", // 左边的距离
@@ -237,6 +232,7 @@ const data = reactive({
             }, */
         {
           type: "inside",
+          zoomLock: true,
           show: true,
           xAxisIndex: [0],
           start: 0, // 默认为1
@@ -269,10 +265,10 @@ const data = reactive({
             interval: 0,
             rotate: 0, // resOption.xAxis && resOption.xAxis[0].axisLabel.rotate || 0,
             margin: 6,
-            fontSize: 12,
+            fontSize: 14,
             lineHeight: 16,
             axisName: {
-              fontSize: 12, // 字体大小
+              fontSize: 14, // 字体大小
             },
             formatter: (value: any) => {
               let ret = ""; // 拼接加\n返回的类目项
@@ -334,7 +330,7 @@ const data = reactive({
           minInterval: 10,
           axisLabel: {
             interval: 0,
-            fontSize: 12, // 字体大小
+            fontSize: 14, // 字体大小
           },
         },
         {
@@ -352,7 +348,7 @@ const data = reactive({
           // interval:10,
           minInterval: 10,
           axisLabel: {
-            fontSize: 12, // 字体大小
+            fontSize: 14, // 字体大小
             formatter: "{value} %",
           },
         },
@@ -367,7 +363,7 @@ const data = reactive({
           itemStyle: {
             color:
               (resOption.series && resOption.series[0].itemStyle?.color) ||
-              "#76A0F8", // 柱状条的颜色
+              "#77CFF7", // 柱状条的颜色
             borderRadius: [5, 5, 0, 0], // 设置柱状条的边框圆角
           },
           data: data.bar,
@@ -375,9 +371,6 @@ const data = reactive({
             color: "rgba(141, 158, 174, 1)",
             show: resOption?.series[0]?.label?.show || true,
             position: resOption?.series[0]?.label?.position || "top",
-            formatter: function (a: any) {
-              return addFormat(a.data);
-            },
           },
         },
         {
@@ -389,7 +382,7 @@ const data = reactive({
           itemStyle: {
             color:
               (resOption.series && resOption.series[1]?.itemStyle?.color) ||
-              "#76A0F8", // 折线的颜色
+              "#77CFF7", // 折线的颜色
             borderRadius: [5, 5, 0, 0], // 设置折线的边框圆角
           },
           symbol: "none", // 取消折点圆圈
@@ -449,7 +442,11 @@ const computedInit = async (res: any) => {
     (data.line = res[0]?.line1 || []),
     (data.current.currentX = res[0]?.currentX),
   ]);
-  data.current = await getCurrentX(res[0]?.x, data.current.currentX);
+  data.current = await getCurrentXIpad(
+    res[0]?.x,
+    data.current.currentX,
+    props.showNum
+  );
   if (props.resData) await data.echartsInit();
 };
 

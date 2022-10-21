@@ -126,7 +126,7 @@ export const getCurrentXIpad = (a: any, b: any, e: any) => {
   let startValue = "";
   let endValue = "";
   let eNum = 12;
-  if (e) eNum = e;
+  if (e) eNum = e - 1;
   if (b) {
     currentXIndex = a?.findIndex((item: any) => item === b);
     if (a?.length >= eNum) {
