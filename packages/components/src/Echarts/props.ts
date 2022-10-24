@@ -26,7 +26,7 @@ export const propsData = {
   // 一版面显示个数
   showNum: {
     type: [Number, String],
-    default: 4,
+    default: 0,
   },
   num: String,
   legend: Array,
