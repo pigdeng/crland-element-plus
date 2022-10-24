@@ -19,6 +19,7 @@
         :disabled="i.disabled"
         v-else
         @click="goPage(i.index)"
+        class="no-child"
       >
         {{ i.title }}
       </el-menu-item>
