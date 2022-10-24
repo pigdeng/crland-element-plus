@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 // Layout
 const Layout = () => import("@/docs/layout.vue");
+// home
+import home from "./module/home";
 // new 文档菜单
 import docs from "./module/docs";
 // 导航🥱菜单
@@ -21,6 +23,7 @@ import form from "./module/form";
 import echarts from "./module/echarts";
 
 const routes: Array<RouteRecordRaw> = [
+  home,
   docs,
   navigation,
   button,

@@ -2,7 +2,7 @@ import { ExtractPropTypes } from "vue";
 
 export const propsData = {
   // 代码示范 txt
-  fileUrl: {
+  code: {
     type: String,
     default: "",
   },

@@ -14,11 +14,19 @@
 </template>
 
 <script lang="ts" setup>
+import { onBeforeMount } from "vue";
 import { CrlandMenu } from "crland-base";
-import menuData from "@/docs/data/menu";
-import { useRouter, RouterView } from "vue-router";
+// import menuData from "@/docs/data/menu";
+import { useRouter, useRoute, RouterView } from "vue-router";
 const router: any = useRouter();
+const route: any = useRoute();
 
+onBeforeMount(() => {
+  console.log("route.name:", route.name);
+  // if (route.name === "docs") {
+  //   // checkHaveMenu(menuData);
+  // }
+});
 // 根据路由配置生成菜单
 const getMenu = () => {
   return mapChild(router.options.routes, "", false);

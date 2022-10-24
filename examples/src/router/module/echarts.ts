@@ -31,7 +31,7 @@ export default {
       path: "CrlandLineChart",
       name: "CrlandLineChart",
       meta: {
-        title: "stackedColChart 堆叠柱状图",
+        title: "lineChart 折线图",
         isMenu: true,
       },
       component: () =>
@@ -41,7 +41,7 @@ export default {
       path: "CrlandStackedColChart",
       name: "CrlandStackedColChart",
       meta: {
-        title: "lineChart 折线图",
+        title: "stackedColChart 堆叠柱状图",
         isMenu: true,
       },
       component: () =>
