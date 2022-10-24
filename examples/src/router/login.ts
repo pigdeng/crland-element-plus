@@ -1,21 +1,21 @@
 const Layout = () => import("@/docs/layout.vue");
 export default {
-  path: "/docs",
+  path: "/logon",
   component: Layout,
   meta: {
-    title: "文档",
-    isMenu: false,
+    title: "登录",
+    isMenu: true,
   },
   children: [
     {
-      path: "index",
-      name: "docs",
+      path: "login",
+      name: "login",
       meta: {
-        title: "文档",
+        title: "逃生登录",
         isMenu: true,
       },
       component: () =>
-        import(/* webpackChunkName: "about" */ "@/docs/docs/index.vue"),
+        require(/* webpackChunkName: "menu" */ "@/docs/login/login.vue"),
     },
   ],
 };

@@ -5,7 +5,7 @@
         <h1>Pc</h1>
         <img :src="require('@/assets/img/to-mobile.png')" alt="" />
       </div>
-      <crland-menu :menuData="menuData"></crland-menu>
+      <crland-menu :menuData="getMenu()" defaultActive="path"></crland-menu>
     </div>
     <div class="docs-right">
       <router-view></router-view>
@@ -16,17 +16,42 @@
 <script lang="ts" setup>
 import { CrlandMenu } from "crland-base";
 import menuData from "@/docs/data/menu";
-import { reactive, onBeforeMount, onMounted, ref } from "vue";
-const props = defineProps({});
-const emit = defineEmits([]);
-const data = reactive({});
+import { useRouter, RouterView } from "vue-router";
+const router: any = useRouter();
 
-onBeforeMount(() => {
-  // 2.组件挂载页面之前执行----onBeforeMount
-});
-onMounted(() => {
-  // 3.组件挂载到页面之后执行-------onMounted
-});
+// 根据路由配置生成菜单
+const getMenu = () => {
+  return mapChild(router.options.routes, "", false);
+};
+
+/**
+ * 遍历路由数组
+ * @param list 遍历的数组路由children
+ * @param parentPath 父级的path
+ * @param isChild 当前遍历是否children
+ */
+const mapChild = (list: any, parentPath: string, isChild: boolean) => {
+  let backData: any = [];
+  list.map((i: any) => {
+    if (i.meta?.isMenu) {
+      // 当前path
+      let nowPath = `${parentPath + (isChild ? "/" : "") + i.path}`;
+      let obj: any = {
+        title: i.meta?.title || "未命名标题",
+        index: nowPath,
+        disabled: i.meta?.disabled || false,
+      };
+      if (i.children?.length > 0) {
+        obj.child = mapChild(i.children, nowPath, true);
+      }
+      backData.push(obj);
+    } else if (!i.meta?.isMenu && i.children?.length > 0) {
+      // 对一级菜单的处理
+      backData = [...backData, ...mapChild(i.children, i.path, true)];
+    }
+  });
+  return backData;
+};
 </script>
 <style scoped lang="scss">
 .docs-layout-wrap {
