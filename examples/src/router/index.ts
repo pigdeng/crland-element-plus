@@ -2,23 +2,23 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 // Layout
 const Layout = () => import("@/docs/layout.vue");
 // new 文档菜单
-import docs from "./docs";
+import docs from "./module/docs";
 // 导航🥱菜单
-import navigation from "./navigation";
+import navigation from "./module/navigation";
 // 按钮
-import button from "./button";
+import button from "./module/button";
 // 编辑器
-import deitor from "./deitor";
+import deitor from "./module/deitor";
 // 登录
-import login from "./login";
+import login from "./module/login";
 // 反馈组件
-import feedback from "./feedback";
+import feedback from "./module/feedback";
 // layout 布局组件
-import layout from "./layout";
+import layout from "./module/layout";
 // form 表单组件
-import form from "./form";
+import form from "./module/form";
 // echarts图表
-import echarts from "./echarts";
+import echarts from "./module/echarts";
 
 const routes: Array<RouteRecordRaw> = [
   docs,
