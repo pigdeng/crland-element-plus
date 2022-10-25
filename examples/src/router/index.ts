@@ -35,6 +35,14 @@ const routes: Array<RouteRecordRaw> = [
   echarts,
 ];
 
+if (window.__POWERED_BY_QIANKUN__) {
+  routes.forEach((i: any) => {
+    if (i.path) {
+      i.path = `/${process?.env?.VUE_APP_QIANKUN_NAME}${i.path}`;
+    }
+  });
+}
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes,

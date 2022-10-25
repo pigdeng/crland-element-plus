@@ -39,8 +39,7 @@
 </template>
 
 <script lang="ts" setup>
-import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
-// import CrlandBarChart from "@/demo/echarts/CrlandBarChart.vue";
+import { CrlandCodeShow, CrlandCodeBar } from "crland-base";
 import loginDemo from "@/demo/login/login.vue";
 const code_install = `
 // 推荐 使用pnpm
