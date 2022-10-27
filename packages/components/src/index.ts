@@ -4,7 +4,7 @@ export { CrlandButton } from "./button";
 // export { default as Upload } from "./upload";
 export { CrlandMenu, CrlandMenuPro, CrlandHistoryBar } from "./Navigation";
 
-export { default as CrlandCodeShow } from "./Code";
+export { CrlandCodeShow, CrlandCodeBar } from "./Code";
 export { default as CrlandLogin } from "./Login";
 export { CrlandTinymceEditor } from "./Editor";
 
@@ -20,3 +20,5 @@ export {
   CrlandStackedColChart,
   CrlandDoughnutChart,
 } from "./Echarts";
+
+export { CrlandListCombined, CrlandTable, CrlandTableColumn } from "./list";

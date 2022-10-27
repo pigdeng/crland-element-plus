@@ -1,0 +1,24 @@
+.crland-code-bar-wrap {
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  overflow: hidden;
+  padding-right: 30px;
+  background-color: rgba(255, 176, 0, 0.04) !important;
+  position: relative;
+  margin-bottom: 16px;
+  .icon-copy {
+    font-size: 16px;
+    color: #909399;
+    cursor: pointer;
+    margin: 0 4px;
+    position: absolute;
+    top: 6px;
+    right: 4px;
+    display: none;
+  }
+  &:hover {
+    .icon-copy {
+      display: inline-block;
+    }
+  }
+}
