@@ -21,6 +21,8 @@ import layout from "./module/layout";
 import form from "./module/form";
 // echarts图表
 import echarts from "./module/echarts";
+//  list 列表哦
+import list from "./module/list";
 
 const routes: Array<RouteRecordRaw> = [
   home,
@@ -33,6 +35,7 @@ const routes: Array<RouteRecordRaw> = [
   layout,
   form,
   echarts,
+  list,
 ];
 
 if (window.__POWERED_BY_QIANKUN__) {

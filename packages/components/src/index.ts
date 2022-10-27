@@ -20,3 +20,5 @@ export {
   CrlandStackedColChart,
   CrlandDoughnutChart,
 } from "./Echarts";
+
+export { CrlandListCombined, CrlandTable, CrlandTableColumn } from "./list";
