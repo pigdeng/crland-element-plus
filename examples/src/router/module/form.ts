@@ -77,5 +77,45 @@ export default {
       component: () =>
         require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandInput.vue"),
     },
+    {
+      path: "CrlandImage",
+      name: "CrlandImage",
+      meta: {
+        title: "Image 图片",
+        isMenu: true,
+      },
+      component: () =>
+        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandImage.vue"),
+    },
+    {
+      path: "CrlandEmpty",
+      name: "CrlandEmpty",
+      meta: {
+        title: "Empty 空状态",
+        isMenu: true,
+      },
+      component: () =>
+        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandEmpty.vue"),
+    },
+    {
+      path: "CrlandBacktop",
+      name: "CrlandBacktop",
+      meta: {
+        title: "Backtop 回到顶部",
+        isMenu: true,
+      },
+      component: () =>
+        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandBackTop.vue"),
+    },
+    {
+      path: "CrlandAffix",
+      name: "CrlandAffix",
+      meta: {
+        title: "Affix 固钉",
+        isMenu: true,
+      },
+      component: () =>
+        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandAffix.vue"),
+    },
   ],
 };
