@@ -24,6 +24,9 @@ import echarts from "./module/echarts";
 //  list 列表哦
 import list from "./module/list";
 
+//  card 卡片
+import card from "./module/card";
+
 const routes: Array<RouteRecordRaw> = [
   home,
   docs,
@@ -36,6 +39,7 @@ const routes: Array<RouteRecordRaw> = [
   form,
   echarts,
   list,
+  card,
 ];
 
 if (window.__POWERED_BY_QIANKUN__) {

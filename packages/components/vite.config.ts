@@ -51,6 +51,7 @@ export default defineConfig({
         "@element-plus/icons-vue",
         "axios",
         "echarts",
+        "sortablejs",
       ],
       input: ["index.ts"],
       output: [

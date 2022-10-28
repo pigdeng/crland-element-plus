@@ -1,25 +1,54 @@
-.crland-list-wrap {
-  .table-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    > div {
-      display: flex;
-      align-items: center;
-    }
-
-    .checkout-style {
-      margin-left: 15px;
-      cursor: pointer;
-    }
-  }
-}
-.checkout-popover {
-  .el-checkbox-group {
-    .el-checkbox {
-      display: flex;
-      align-items: center;
+.crland-table {
+  &.crland-table-style-bar {
+    display: block;
+    .el-table__row {
+      width: 100%;
+      box-shadow: var(--el-box-shadow);
+      margin: 20px 0px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #000;
+      padding: 20px 0;
+      > td {
+        border-bottom: none !important;
+      }
     }
   }
+
+  // 十字聚焦（失败）
+  // &.crland-table-hover {
+  //   table {
+  //     overflow: hidden;
+  //   }
+
+  //   td,
+  //   th {
+  //     padding: 10px;
+  //     position: relative;
+  //     outline: 0;
+  //   }
+
+  //   tbody tr:hover {
+  //     background-color: var(--el-color-primary-light-9);
+  //   }
+
+  //   td:hover::after,
+  //   thead th:not(:empty):hover::after,
+  //   td:focus::after,
+  //   thead th:not(:empty):focus::after {
+  //     content: "";
+  //     height: 10000px;
+  //     left: 0;
+  //     position: absolute;
+  //     top: -5000px;
+  //     width: 100%;
+  //     z-index: -1;
+  //   }
+
+  //   td:hover::after,
+  //   th:hover::after {
+  //     background-color: var(--el-color-primary-light-9);
+  //   }
+  // }
+  // 十字聚焦（失败）end
 }

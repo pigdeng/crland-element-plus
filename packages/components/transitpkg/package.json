@@ -19,7 +19,8 @@
     "@tinymce/tinymce-vue": "^5.0.0",
     "@highlightjs/vue-plugin": "^2.1.0",
     "axios": "^0.27.2",
-    "echarts": "^5.4.0"
+    "echarts": "^5.4.0",
+    "sortablejs": "^1.15.0"
   },
   "author": "bigdeng",
   "license": "MIT",

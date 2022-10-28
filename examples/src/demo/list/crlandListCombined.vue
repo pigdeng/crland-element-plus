@@ -1,0 +1,108 @@
+<template>
+  <br />
+
+  <crland-search-bar
+    :span="3"
+    label-width="80px"
+    @submit="search"
+    @reset="reset"
+    class="demo-style"
+  >
+    <el-col :span="8">
+      <el-form-item label="参数名称">
+        <el-input v-model="query.name"></el-input>
+      </el-form-item>
+    </el-col>
+    <el-col :span="8">
+      <el-form-item label="参数编码">
+        <el-input v-model="query.code"></el-input>
+      </el-form-item>
+    </el-col>
+  </crland-search-bar>
+  <br />
+
+  <crland-list-combined v-model:setItemValue="setItemValue" :setItem="setItem">
+    <template #listTopLeft>
+      <el-tooltip
+        class="box-item"
+        effect="light"
+        content="刷新"
+        placement="top-start"
+      >
+        <el-button :icon="Refresh"></el-button>
+      </el-tooltip>
+      <el-button type="primary">新增</el-button>
+      <el-button>关闭</el-button>
+    </template>
+    <template #listTopRight>
+      <el-button type="danger">删除</el-button>
+    </template>
+    <crland-table
+      ref="multipleTableRef"
+      :data="tableData()"
+      style="width: 100%"
+      isSort
+      sortClass=".table-row-weigh-sort"
+      tableStyle="bar"
+    >
+      <el-table-column type="selection" width="55" />
+      <el-table-column prop="index" label="序号" />
+      <el-table-column
+        prop="date"
+        label="时间"
+        v-if="setItemValue.includes('date')"
+      />
+      <el-table-column
+        prop="name"
+        label="姓名"
+        v-if="setItemValue.includes('name')"
+      />
+      <el-table-column
+        prop="address"
+        label="地址"
+        v-if="setItemValue.includes('address')"
+      />
+      <el-table-column label="操作" width="80">
+        <template #default>
+          <el-icon class="table-row-weigh-sort"><Rank /></el-icon>
+        </template>
+      </el-table-column>
+    </crland-table>
+  </crland-list-combined>
+</template>
+<script lang="ts" setup>
+import { ref, reactive } from "vue";
+import { ElButton } from "element-plus";
+import { Refresh, Rank } from "@element-plus/icons-vue";
+
+const query = reactive({
+  name: "",
+  code: "",
+});
+
+const search = () => {};
+const reset = () => {};
+
+const tableData = () => {
+  let arr = [];
+  for (let i = 0; i < 10; i++) {
+    arr[i] = {
+      index: i,
+      date: "2016-05-01",
+      name: "Tom",
+      address: "No. 189, Grove St, Los Angeles",
+    };
+  }
+  return arr;
+};
+
+const setItemValue = ref(["date", "name", "address"]);
+const setItem = ref(["date", "name", "address"]);
+</script>
+
+<style lang="scss" scoped>
+.demo-style {
+  box-shadow: var(--el-box-shadow);
+  // box-shadow: 0px 0px 5px -4px var(--el-box-shadow);
+}
+</style>

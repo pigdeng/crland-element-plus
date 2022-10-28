@@ -1,6 +1,24 @@
 <template>
   <br />
   <br />
+
+  <crland-search-bar
+    :span="3"
+    label-width="80px"
+    @submit="search"
+    @reset="reset"
+  >
+    <el-col :span="8">
+      <el-form-item label="参数名称">
+        <el-input v-model="query.name"></el-input>
+      </el-form-item>
+    </el-col>
+    <el-col :span="8">
+      <el-form-item label="参数编码">
+        <el-input v-model="query.code"></el-input>
+      </el-form-item>
+    </el-col>
+  </crland-search-bar>
   <br />
   <crland-list-combined v-model:setItemValue="setItemValue" :setItem="setItem">
     <template #listTopLeft>
@@ -19,33 +37,46 @@
       <el-button type="danger">删除</el-button>
     </template>
     <crland-table :data="tableData()">
-      <crland-table-column type="index" />
-      <crland-table-column
+      <el-table-column prop="index" label="Index" />
+      <el-table-column
         prop="date"
         label="Date"
         v-if="setItemValue.includes('date')"
       />
-      <crland-table-column
+      <el-table-column
         prop="name"
         label="Name"
         v-if="setItemValue.includes('name')"
       />
-      <crland-table-column
+      <el-table-column
         prop="address"
         label="Address"
         v-if="setItemValue.includes('address')"
       />
+      <el-table-column label="Operations">
+        <template #default>
+          <el-icon class="table-row-weigh-sort"><Rank /></el-icon>
+        </template>
+      </el-table-column>
     </crland-table>
   </crland-list-combined>
 </template>
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 import { ElButton } from "element-plus";
-import { Refresh } from "@element-plus/icons-vue";
+import { Refresh, Rank } from "@element-plus/icons-vue";
+
+const query = reactive({
+  name: "",
+  code: "",
+});
+
+const search = () => {};
+const reset = () => {};
 
 const tableData = () => {
   let arr = [];
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 10; i++) {
     arr[i] = {
       index: i,
       date: "2016-05-01",

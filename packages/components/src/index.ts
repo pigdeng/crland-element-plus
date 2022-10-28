@@ -1,3 +1,5 @@
+import form from "examples/src/router/module/form";
+
 export { CrlandButton } from "./button";
 // export { default as Icon } from "./Icon";
 // export { default as Link } from "./link";
@@ -22,3 +24,5 @@ export {
 } from "./Echarts";
 
 export { CrlandListCombined, CrlandTable, CrlandTableColumn } from "./list";
+
+export { CrlandSearchBar } from "./card";

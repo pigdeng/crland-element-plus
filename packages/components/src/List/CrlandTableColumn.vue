@@ -1,5 +1,7 @@
 <template>
-  <el-table-column></el-table-column>
+  <el-table-column>
+    <slot name="default"></slot>
+  </el-table-column>
 </template>
 
 <script lang="ts">
