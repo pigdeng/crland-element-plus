@@ -32,33 +32,99 @@
       </thead>
       <tbody>
         <tr>
+          <td>total</td>
+          <td>总条数</td>
+          <td><el-tag class="ml-2" type="info">nimber</el-tag></td>
           <td>-</td>
-          <td>-</td>
-          <td><el-tag class="ml-2" type="info">-</el-tag></td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>isCircle</td>
+          <td>是否开启按钮圆角</td>
+          <td><el-tag class="ml-2" type="info">Boolan</el-tag></td>
+          <td>true/false</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>layout</td>
+          <td>布局</td>
+          <td><el-tag class="ml-2" type="info">string</el-tag></td>
           <td>—</td>
-          <td></td>
+          <td>total, sizes, prev, pager, next, jumper</td>
+        </tr>
+        <tr>
+          <td>small</td>
+          <td>是否使用小尺寸分页组件</td>
+          <td><el-tag class="ml-2" type="info">Boolan</el-tag></td>
+          <td>true/false</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>disabled</td>
+          <td>是否禁用</td>
+          <td><el-tag class="ml-2" type="info">Boolan</el-tag></td>
+          <td>true/false</td>
+          <td>false</td>
         </tr>
       </tbody>
     </table>
 
     <h3>事件</h3>
-    <p>暂无</p>
+    <table>
+      <thead>
+        <tr>
+          <th>事件名</th>
+          <th>说明</th>
+          <th>回调参数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>changePagination</td>
+          <td>点击分页按钮或调整每页个数时触发</td>
+          <td>Object 页码和每页个数</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>ref</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>ref</th>
+          <th>说明</th>
+          <th>方法</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>currentPage</td>
+          <td>可通过ref获取组件的页码</td>
+          <td>childRef.value.currentPage</td>
+        </tr>
+        <tr>
+          <td>pageSize</td>
+          <td>可通过ref获取或改变组件的每页个数</td>
+          <td>childRef.value.pageSize</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
 <script lang="ts" setup>
-import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
-import CrlandPaginationDemo from "@/demo/navigation/CrlandPagination.vue";
+import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue"
+import CrlandPaginationDemo from "@/demo/navigation/CrlandPagination.vue"
 
-import { reactive, onBeforeMount, onMounted, ref } from "vue";
-const props = defineProps({});
-const emit = defineEmits([]);
-const data = reactive({});
+import { reactive, onBeforeMount, onMounted, ref } from "vue"
+const props = defineProps({})
+const emit = defineEmits([])
+const data = reactive({})
 onBeforeMount(() => {
   // 2.组件挂载页面之前执行----onBeforeMount
-});
+})
 onMounted(() => {
   // 3.组件挂载到页面之后执行-------onMounted
-});
+})
 </script>
 <style scoped lang="scss"></style>

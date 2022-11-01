@@ -151,6 +151,22 @@ const menuData: any = [
         index: "CrlandInput",
         title: "Input 输入框",
       },
+      {
+        index: "CrlandImage",
+        title: "Image 图片",
+      },
+      {
+        index: "CrlandEmpty",
+        title: "Empty 空状态",
+      },
+      {
+        index: "CrlandBacktop",
+        title: "Backtop 回到顶部",
+      },
+      {
+        index: "CrlandAffix",
+        title: "Affix 固钉",
+      },
     ],
   },
   {

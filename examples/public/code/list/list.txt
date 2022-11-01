@@ -1,6 +1,7 @@
 <template>
   <br />
   <br />
+<<<<<<< HEAD
 
   <crland-search-bar
     :span="3"
@@ -19,6 +20,8 @@
       </el-form-item>
     </el-col>
   </crland-search-bar>
+=======
+>>>>>>> 6add202c333d366f062df5d557601ecb06c4ea49
   <br />
   <crland-list-combined v-model:setItemValue="setItemValue" :setItem="setItem">
     <template #listTopLeft>
@@ -37,31 +40,48 @@
       <el-button type="danger">删除</el-button>
     </template>
     <crland-table :data="tableData()">
+<<<<<<< HEAD
       <el-table-column prop="index" label="Index" />
       <el-table-column
+=======
+      <crland-table-column type="index" />
+      <crland-table-column
+>>>>>>> 6add202c333d366f062df5d557601ecb06c4ea49
         prop="date"
         label="Date"
         v-if="setItemValue.includes('date')"
       />
+<<<<<<< HEAD
       <el-table-column
+=======
+      <crland-table-column
+>>>>>>> 6add202c333d366f062df5d557601ecb06c4ea49
         prop="name"
         label="Name"
         v-if="setItemValue.includes('name')"
       />
+<<<<<<< HEAD
       <el-table-column
+=======
+      <crland-table-column
+>>>>>>> 6add202c333d366f062df5d557601ecb06c4ea49
         prop="address"
         label="Address"
         v-if="setItemValue.includes('address')"
       />
+<<<<<<< HEAD
       <el-table-column label="Operations">
         <template #default>
           <el-icon class="table-row-weigh-sort"><Rank /></el-icon>
         </template>
       </el-table-column>
+=======
+>>>>>>> 6add202c333d366f062df5d557601ecb06c4ea49
     </crland-table>
   </crland-list-combined>
 </template>
 <script lang="ts" setup>
+<<<<<<< HEAD
 import { ref, reactive } from "vue";
 import { ElButton } from "element-plus";
 import { Refresh, Rank } from "@element-plus/icons-vue";
@@ -77,6 +97,15 @@ const reset = () => {};
 const tableData = () => {
   let arr = [];
   for (let i = 0; i < 10; i++) {
+=======
+import { ref } from "vue";
+import { ElButton } from "element-plus";
+import { Refresh } from "@element-plus/icons-vue";
+
+const tableData = () => {
+  let arr = [];
+  for (let i = 0; i < 30; i++) {
+>>>>>>> 6add202c333d366f062df5d557601ecb06c4ea49
     arr[i] = {
       index: i,
       date: "2016-05-01",

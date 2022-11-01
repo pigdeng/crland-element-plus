@@ -1,14 +1,12 @@
 .crland-table {
   &.crland-table-style-bar {
-    display: block;
+    // display: block;
     .el-table__row {
       width: 100%;
       box-shadow: var(--el-box-shadow);
       margin: 20px 0px;
       border-radius: 10px;
       overflow: hidden;
-      border: 1px solid #000;
-      padding: 20px 0;
       > td {
         border-bottom: none !important;
       }

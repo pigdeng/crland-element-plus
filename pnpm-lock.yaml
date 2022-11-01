@@ -13,7 +13,7 @@ specifiers:
   axios: ^0.27.2
   c8: ^7.12.0
   cpy: ^9.0.1
-  crland-base: ^0.0.10
+  crland-base: ^0.0.11
   echarts: ^5.4.0
   element-plus: ^2.2.13
   fast-glob: ^3.2.11
@@ -55,7 +55,7 @@ devDependencies:
   axios: 0.27.2
   c8: 7.12.0
   cpy: 9.0.1
-  crland-base: 0.0.10_vue@3.2.40
+  crland-base: 0.0.11_vue@3.2.40
   echarts: 5.4.0
   element-plus: 2.2.17_vue@3.2.40
   fast-glob: 3.2.12
@@ -1353,8 +1353,8 @@ packages:
       p-map: 5.5.0
     dev: true
 
-  /crland-base/0.0.10_vue@3.2.40:
-    resolution: {integrity: sha512-EiJh1r+DsGNT22E9PbDlnaJc/0B26HkLdE2TXF1naeke21E5vWrRYOdKcvYVX09bZbUf9auGMVkP82KEutxURQ==}
+  /crland-base/0.0.11_vue@3.2.40:
+    resolution: {integrity: sha512-60KdUCYFofUbu7SOwgfLN1KYvyJZDJHsCfCfSP4n5HlAd276YKUJM4x/8LlVEweSFJzbQ80D88eYj4aAZ9TKeQ==}
     dependencies:
       '@highlightjs/vue-plugin': 2.1.0_hktmlzqtso373uvglkhucd4f4y
       '@tinymce/tinymce-vue': 5.0.0_vue@3.2.40
@@ -1363,6 +1363,7 @@ packages:
       echarts: 5.4.0
       highlight.js: 11.6.0
       mavon-editor: 3.0.0-beta
+      sortablejs: 1.15.0
       tinymce: 6.2.0
     transitivePeerDependencies:
       - debug

@@ -1,5 +1,5 @@
-import { ExtractPropTypes } from "vue";
-export const DefaultActive = ["name", "path"];
+import { ExtractPropTypes } from "vue"
+export const DefaultActive = ["name", "path"]
 export const propsData = {
   // 菜单数据
   data: {
@@ -16,7 +16,7 @@ export const propsData = {
     type: String,
     default: "path",
     validator(value: string) {
-      return DefaultActive.includes(value);
+      return DefaultActive.includes(value)
     },
   },
   // 菜单宽度
@@ -24,5 +24,5 @@ export const propsData = {
     type: [String, Number],
     default: "100%",
   },
-};
-export type propsData = ExtractPropTypes<typeof propsData>;
+}
+export type propsData = ExtractPropTypes<typeof propsData>

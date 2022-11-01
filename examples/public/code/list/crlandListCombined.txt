@@ -1,6 +1,5 @@
 <template>
   <br />
-  <br />
 
   <crland-search-bar
     :span="3"
@@ -21,6 +20,7 @@
     </el-col>
   </crland-search-bar>
   <br />
+
   <crland-list-combined v-model:setItemValue="setItemValue" :setItem="setItem">
     <template #listTopLeft>
       <el-tooltip
@@ -41,6 +41,9 @@
       ref="multipleTableRef"
       :data="tableData()"
       style="width: 100%"
+      isSort
+      sortClass=".table-row-weigh-sort"
+      tableStyle="bar"
     >
       <el-table-column type="selection" width="55" />
       <el-table-column prop="index" label="序号" />
@@ -59,7 +62,7 @@
         label="地址"
         v-if="setItemValue.includes('address')"
       />
-      <el-table-column label="操作">
+      <el-table-column label="操作" width="80">
         <template #default>
           <el-icon class="table-row-weigh-sort"><Rank /></el-icon>
         </template>

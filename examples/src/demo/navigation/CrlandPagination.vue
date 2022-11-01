@@ -1,112 +1,56 @@
 <template>
-  <div class="flex items-center mb-4">
-    <el-radio-group v-model="small" class="mr-4">
-      <el-radio-button :label="false">default</el-radio-button>
-      <el-radio-button :label="true">small</el-radio-button>
-    </el-radio-group>
-    <div>
-      background:
-      <el-switch v-model="background" class="ml-2" />
-    </div>
-    <div class="ml-4">
-      disabled: <el-switch v-model="disabled" class="ml-2" />
-    </div>
-  </div>
+  <el-form :labelWidth="60">
+    <el-form-item label="圆角">
+      <el-radio-group v-model="isCircle">
+        <el-radio :label="true" />
+        <el-radio :label="false" />
+      </el-radio-group>
+    </el-form-item>
+    <el-form-item label="小尺寸">
+      <el-radio-group v-model="small">
+        <el-radio :label="true" />
+        <el-radio :label="false" />
+      </el-radio-group>
+    </el-form-item>
+    <el-form-item label="layout">
+      <el-radio-group v-model="layout">
+        <el-radio label="total, sizes, prev, pager, next, jumper">layout1</el-radio>
+        <el-radio label="total, sizes, prev, pager, next">layout2</el-radio>
+        <el-radio label="total, prev, pager, next">layout3</el-radio>
+        <el-radio label="prev, pager, next">layout4</el-radio>
+      </el-radio-group>
+    </el-form-item>
 
-  <hr class="my-4" />
-
-  <div class="demo-pagination-block">
-    <div class="demonstration">Total item count</div>
-    <el-pagination
-      v-model:currentPage="currentPage1"
-      :page-size="100"
-      :small="small"
-      :disabled="disabled"
-      :background="background"
-      layout="total, prev, pager, next"
-      :total="1000"
-      @size-change="handleSizeChange"
-      @current-change="handleCurrentChange"
-    />
-  </div>
-  <div class="demo-pagination-block">
-    <div class="demonstration">Change page size</div>
-    <el-pagination
-      v-model:currentPage="currentPage2"
-      v-model:page-size="pageSize2"
-      :page-sizes="[100, 200, 300, 400]"
-      :small="small"
-      :disabled="disabled"
-      :background="background"
-      layout="sizes, prev, pager, next"
-      :total="1000"
-      @size-change="handleSizeChange"
-      @current-change="handleCurrentChange"
-    />
-  </div>
-  <div class="demo-pagination-block">
-    <div class="demonstration">Jump to</div>
-    <el-pagination
-      v-model:currentPage="currentPage3"
-      v-model:page-size="pageSize3"
-      :small="small"
-      :disabled="disabled"
-      :background="background"
-      layout="prev, pager, next, jumper"
-      :total="1000"
-      @size-change="handleSizeChange"
-      @current-change="handleCurrentChange"
-    />
-  </div>
-  <div class="demo-pagination-block">
-    <div class="demonstration">All combined</div>
-    <el-pagination
-      v-model:currentPage="currentPage4"
-      v-model:page-size="pageSize4"
-      :page-sizes="[100, 200, 300, 400]"
-      :small="small"
-      :disabled="disabled"
-      :background="background"
-      layout="total, sizes, prev, pager, next, jumper"
-      :total="400"
-      @size-change="handleSizeChange"
-      @current-change="handleCurrentChange"
-    />
-  </div>
+    <el-form-item label="调整页">
+      <el-radio-group v-model="pageNum" @change="changePage(pageNum)">
+        <el-radio :label="1"></el-radio>
+        <el-radio :label="5"></el-radio>
+        <el-radio :label="10"></el-radio>
+        <el-radio :label="20"></el-radio>
+      </el-radio-group>
+    </el-form-item>
+  </el-form>
+  <br />
+  <crland-pagination :total="400" :isCircle="isCircle" :layout="layout" :small="small" @change="changePagination" ref="childRef"> </crland-pagination>
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import {
-  ElPagination,
-  ElRadioGroup,
-  ElRadioButton,
-  ElSwitch,
-} from "element-plus";
-const currentPage1 = ref(5);
-const currentPage2 = ref(5);
-const currentPage3 = ref(5);
-const currentPage4 = ref(4);
-const pageSize2 = ref(100);
-const pageSize3 = ref(100);
-const pageSize4 = ref(100);
-const small = ref(false);
-const background = ref(false);
-const disabled = ref(false);
+import { ref } from "vue"
+import { CrlandPagination } from "crland-base"
 
-const handleSizeChange = (val: number) => {
-  console.log(`${val} items per page`);
-};
-const handleCurrentChange = (val: number) => {
-  console.log(`current page: ${val}`);
-};
+const changePagination = (res: Object) => {
+  console.log("res:", res)
+}
+
+const isCircle = ref(true)
+const small = ref(true)
+const layout = ref("total, sizes, prev, pager, next, jumper")
+const pageNum = ref(1)
+
+const childRef = ref(null)
+const changePage = (num: Number) => {
+  childRef.value.currentPage = num
+}
 </script>
 
-<style scoped>
-.demo-pagination-block + .demo-pagination-block {
-  margin-top: 10px;
-}
-.demo-pagination-block .demonstration {
-  margin-bottom: 16px;
-}
-</style>
+<style lang="scss" scoped></style>
