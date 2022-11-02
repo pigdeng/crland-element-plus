@@ -14,7 +14,9 @@
     </el-form-item>
     <el-form-item label="layout">
       <el-radio-group v-model="layout">
-        <el-radio label="total, sizes, prev, pager, next, jumper">layout1</el-radio>
+        <el-radio label="total, sizes, prev, pager, next, jumper"
+          >layout1</el-radio
+        >
         <el-radio label="total, sizes, prev, pager, next">layout2</el-radio>
         <el-radio label="total, prev, pager, next">layout3</el-radio>
         <el-radio label="prev, pager, next">layout4</el-radio>
@@ -31,26 +33,34 @@
     </el-form-item>
   </el-form>
   <br />
-  <crland-pagination :total="400" :isCircle="isCircle" :layout="layout" :small="small" @change="changePagination" ref="childRef"> </crland-pagination>
+  <crland-pagination
+    :total="400"
+    :isCircle="isCircle"
+    :layout="layout"
+    :small="small"
+    @change="changePagination"
+    ref="childRef"
+  >
+  </crland-pagination>
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue"
-import { CrlandPagination } from "crland-base"
+import { ref } from "vue";
+import { CrlandPagination } from "crland-base";
 
-const changePagination = (res: Object) => {
-  console.log("res:", res)
-}
+const changePagination = (res: any) => {
+  console.log("res:", res);
+};
 
-const isCircle = ref(true)
-const small = ref(true)
-const layout = ref("total, sizes, prev, pager, next, jumper")
-const pageNum = ref(1)
+const isCircle = ref(true);
+const small = ref(true);
+const layout = ref("total, sizes, prev, pager, next, jumper");
+const pageNum = ref(1);
 
-const childRef = ref(null)
-const changePage = (num: Number) => {
-  childRef.value.currentPage = num
-}
+const childRef = ref(null);
+const changePage = (num: any) => {
+  childRef.value.currentPage = num;
+};
 </script>
 
 <style lang="scss" scoped></style>

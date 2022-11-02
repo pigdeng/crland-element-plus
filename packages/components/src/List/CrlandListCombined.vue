@@ -51,11 +51,16 @@ export default defineComponent({
 
 <script lang="ts" setup>
 import "./style/CrlandListCombined.scss";
-import "./style/CrlandTable.scss";
-import { ElTable, ElIcon, ElPopover } from "element-plus";
+import {
+  ElTable,
+  ElCheckboxGroup,
+  ElCheckbox,
+  ElIcon,
+  ElPopover,
+} from "element-plus";
 import { Grid } from "@element-plus/icons-vue";
 import { ref, onMounted, watch, nextTick } from "vue";
-import { deepClone } from "../utils/index";
+import { deepClone } from "../Utils/index";
 import Sortable from "sortablejs";
 
 import { propsData } from "./type/CrlandListCombined";

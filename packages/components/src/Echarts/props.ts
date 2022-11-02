@@ -1,5 +1,5 @@
 import { ExtractPropTypes } from "vue";
-import { randomString } from "../utils/index";
+import { randomString } from "../Utils/index";
 
 export const propsData = {
   // 图表id

@@ -1,6 +1,6 @@
-import { ExtractPropTypes } from "vue"
-import { randomString } from "../../utils/index"
-export const tableStyle = ["table", "bar"]
+import { ExtractPropTypes } from "vue";
+import { randomString } from "../../Utils/index";
+export const tableStyle = ["table", "bar"];
 export const propsData = {
   loading: {
     type: Boolean,
@@ -9,20 +9,20 @@ export const propsData = {
   tableData: {
     type: [Array, Object],
     default: () => {
-      return []
+      return [];
     },
   },
   // 设置显示列
   setItemShow: {
     type: Object,
     default: () => {
-      return {}
+      return {};
     },
   },
   setItemShowValue: {
     type: Array,
     default: () => {
-      return []
+      return [];
     },
   },
   // table Id
@@ -49,9 +49,9 @@ export const propsData = {
   tableStyle: {
     type: String,
     validator(value: string) {
-      return tableStyle.includes(value)
+      return tableStyle.includes(value);
     },
     default: "table",
   },
-}
-export type propsData = ExtractPropTypes<typeof propsData>
+};
+export type propsData = ExtractPropTypes<typeof propsData>;

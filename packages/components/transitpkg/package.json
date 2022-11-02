@@ -1,6 +1,6 @@
 {
   "name": "crland-base",
-  "version": "0.0.15",
+  "version": "0.0.20",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "crland-utils": "^2.0.3",
+    "element-plus": "^2.2.13",
     "tinymce": "^6.1.2",
     "mavon-editor": "^3.0.0-beta",
     "highlight.js": "^11.6.0",

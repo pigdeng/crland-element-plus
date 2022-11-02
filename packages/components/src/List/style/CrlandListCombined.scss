@@ -19,6 +19,30 @@
   .crland-list-combined-pagination {
     padding: 30px 0px;
   }
+
+  // table
+  .crland-table {
+    border-radius: 10px;
+    overflow: hidden;
+    &.crland-table-style-bar {
+      .el-table__row {
+        width: 100%;
+        box-shadow: var(--el-box-shadow);
+        margin: 20px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        > td {
+          border-bottom: none !important;
+        }
+      }
+    }
+
+    .crland-th-row-class {
+      > th {
+        background: #f8fafb;
+      }
+    }
+  }
 }
 .checkout-popover {
   .el-checkbox-group {
