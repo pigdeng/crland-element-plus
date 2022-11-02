@@ -1,23 +1,16 @@
 <template>
   <div class="doc-wrap">
-    <h2 class="title">login 逃生登录组件</h2>
-    <p>
-      逃生登录组件，提供登录界面并根据项目主题动态调整按钮颜色和边框样式。自动填充常用账户和密码。
-    </p>
+    <h2 class="title">ListCombined 列表组合</h2>
+    <p>列表组合组件，是我们管理后他常见的情景，包含搜索、展示、分页等</p>
     <!-- <el-divider /> -->
     <h3>使用规则</h3>
     <p class="dot">标签引入，如下代码演示</p>
-    <p class="dot">
-      成功案例：
-      <a href="https://mon.saas.crland.com.cn/#/login" target="three"
-        >监控平台</a
-      >
-    </p>
+
     <!-- <el-divider /> -->
 
     <h3>代码演示</h3>
-    <crland-code-show fileUrl="/code/login/login.txt">
-      <loginDemo style="height: 800px" />
+    <crland-code-show fileUrl="/code/list/crlandListCombined.txt" bgTable>
+      <crlandListCombined style="height: 800px" />
     </crland-code-show>
 
     <!-- <el-divider /> -->
@@ -81,7 +74,7 @@
 
 <script lang="ts" setup>
 import CrlandCodeShow from "@/docs/components/CrlandCodeShow.vue";
-import loginDemo from "@/demo/login/login.vue";
+import crlandListCombined from "@/demo/list/crlandListCombined.vue";
 
 import { reactive, onBeforeMount, onMounted, ref } from "vue";
 const props = defineProps({});

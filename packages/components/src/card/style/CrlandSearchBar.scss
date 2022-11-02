@@ -1,0 +1,21 @@
+// 搜索卡片
+.crland-search-bar {
+  background: #ffffff;
+  //   box-shadow: 0px 0px 5px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px -4px var(--el-box-shadow);
+  //   box-shadow: var(--el-box-shadow);
+  border-radius: 10px;
+  padding: 18px 20px 0 20px;
+  .btn-col {
+    display: flex;
+    justify-content: flex-start;
+    .btn-submit {
+      width: 32px;
+      height: 32px;
+    }
+    .btn-reset {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

@@ -32,7 +32,7 @@ export default defineComponent({
 import "./style/CrlandInput.scss";
 import { ref, computed, shallowRef, h } from "vue";
 import { ElInput, ElImage, ElIcon } from "element-plus";
-import { computedSize, deepClone } from "../utils/index";
+import { computedSize, deepClone } from "../Utils/index";
 import { propsData } from "./CrlandInput";
 const props = defineProps(propsData);
 const emit = defineEmits(["update:value"]);

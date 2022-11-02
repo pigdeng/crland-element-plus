@@ -64,7 +64,7 @@ export default defineComponent({
 <script lang="ts" setup>
 import { ref } from "vue";
 import "./style/CrlandLayoutTop.scss";
-import { computedSize, getFirstText } from "../utils/index";
+import { computedSize, getFirstText } from "../Utils/index";
 import {
   ElIcon,
   ElAvatar,

@@ -13,7 +13,7 @@ specifiers:
   axios: ^0.27.2
   c8: ^7.12.0
   cpy: ^9.0.1
-  crland-base: ^0.0.10
+  crland-base: ^0.0.20
   echarts: ^5.4.0
   element-plus: ^2.2.13
   fast-glob: ^3.2.11
@@ -27,6 +27,7 @@ specifiers:
   mavon-editor: ^3.0.0-beta
   path-browserify: ^1.0.1
   sass: ^1.54.3
+  sortablejs: ^1.15.0
   sucrase: ^3.24.0
   tinymce: ^6.1.2
   typescript: ^4.7.4
@@ -54,7 +55,7 @@ devDependencies:
   axios: 0.27.2
   c8: 7.12.0
   cpy: 9.0.1
-  crland-base: 0.0.10_vue@3.2.40
+  crland-base: 0.0.20_vue@3.2.40
   echarts: 5.4.0
   element-plus: 2.2.17_vue@3.2.40
   fast-glob: 3.2.12
@@ -68,6 +69,7 @@ devDependencies:
   mavon-editor: 3.0.0-beta
   path-browserify: 1.0.1
   sass: 1.55.0
+  sortablejs: 1.15.0
   sucrase: 3.28.0
   tinymce: 6.2.0
   typescript: 4.8.4
@@ -1351,18 +1353,21 @@ packages:
       p-map: 5.5.0
     dev: true
 
-  /crland-base/0.0.10_vue@3.2.40:
-    resolution: {integrity: sha512-EiJh1r+DsGNT22E9PbDlnaJc/0B26HkLdE2TXF1naeke21E5vWrRYOdKcvYVX09bZbUf9auGMVkP82KEutxURQ==}
+  /crland-base/0.0.20_vue@3.2.40:
+    resolution: {integrity: sha512-pYl5tICFjhfxEMF806zRCxj5T9/GqLc/HRY5HN4l5r3DdhqCKgZ7lM3ajSrmarArBSrTobXKfAXZLihd1YGhRg==}
     dependencies:
       '@highlightjs/vue-plugin': 2.1.0_hktmlzqtso373uvglkhucd4f4y
       '@tinymce/tinymce-vue': 5.0.0_vue@3.2.40
       axios: 0.27.2
       crland-utils: 2.0.3
       echarts: 5.4.0
+      element-plus: 2.2.17_vue@3.2.40
       highlight.js: 11.6.0
       mavon-editor: 3.0.0-beta
+      sortablejs: 1.15.0
       tinymce: 6.2.0
     transitivePeerDependencies:
+      - '@vue/composition-api'
       - debug
       - vue
     dev: true
@@ -4001,6 +4006,10 @@ packages:
       use: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /sortablejs/1.15.0:
+    resolution: {integrity: sha512-bv9qgVMjUMf89wAvM6AxVvS/4MX3sPeN0+agqShejLU5z5GX4C75ow1O2e5k4L6XItUyAK3gH6AxSbXrOM5e8w==}
     dev: true
 
   /source-map-js/1.0.2:

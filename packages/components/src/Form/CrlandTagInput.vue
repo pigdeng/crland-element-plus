@@ -36,7 +36,7 @@ export default defineComponent({
 import "./style/CrlandTagInput.scss";
 import { ref, computed } from "vue";
 import { ElInput, ElTag, ElMessage } from "element-plus";
-import { computedSize, deepClone } from "../utils/index";
+import { computedSize, deepClone } from "../Utils/index";
 
 import { propsData } from "./CrlandTagInput";
 const props = defineProps(propsData);

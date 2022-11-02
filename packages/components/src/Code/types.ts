@@ -11,6 +11,10 @@ export const propsData = {
     type: String,
     default: "html",
   },
+  bgTable: {
+    type: Boolean,
+    default: false,
+  },
 };
 
 export type propsData = ExtractPropTypes<typeof propsData>;

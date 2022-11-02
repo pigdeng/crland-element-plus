@@ -8,14 +8,14 @@ export default {
   },
   children: [
     {
-      path: "list",
-      name: "list",
+      path: "crlandListCombined",
+      name: "crlandListCombined",
       meta: {
-        title: "列表",
+        title: "listCombined 列表组合",
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/demo/list/list.vue"),
+        require(/* webpackChunkName: "menu" */ "@/docs/list/crlandListCombined.vue"),
     },
   ],
 };

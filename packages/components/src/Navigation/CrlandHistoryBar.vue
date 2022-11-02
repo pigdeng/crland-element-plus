@@ -61,7 +61,7 @@ import {
   ElDropdownItem,
 } from "element-plus";
 import { Close } from "@element-plus/icons-vue";
-import { deepClone } from "../utils/index";
+import { deepClone } from "../Utils/index";
 import "./style/CrlandHistoryBar.scss";
 
 import { useRouter, useRoute, RouterLink } from "vue-router";

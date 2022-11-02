@@ -35,7 +35,7 @@ export default defineComponent({
 import "./style/CrlandMenuPro.scss";
 import { ElMenu } from "element-plus";
 import CrlandItem from "./item.vue";
-import { computedSize } from "../utils/index";
+import { computedSize } from "../Utils/index";
 import { propsData } from "./CrlandMenuPro";
 
 import { useRouter, useRoute } from "vue-router";

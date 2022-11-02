@@ -6,6 +6,9 @@
   .component-source {
     display: block;
     padding: 24px;
+    &.bg-table {
+      background: #eff3f7;
+    }
   }
   .component-btn-bars {
     border-top: 1px solid #eaeefb;
@@ -62,5 +65,4 @@
       background-color: rgba(0, 0, 0, 0) !important;
     }
   }
-  
 }

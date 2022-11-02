@@ -1,8 +1,13 @@
-export { CrlandButton } from "./button";
+export { CrlandButton } from "./Button";
 // export { default as Icon } from "./Icon";
 // export { default as Link } from "./link";
 // export { default as Upload } from "./upload";
-export { CrlandMenu, CrlandMenuPro, CrlandHistoryBar } from "./Navigation";
+export {
+  CrlandMenu,
+  CrlandMenuPro,
+  CrlandHistoryBar,
+  CrlandPagination,
+} from "./Navigation";
 
 export { CrlandCodeShow, CrlandCodeBar } from "./Code";
 export { default as CrlandLogin } from "./Login";
@@ -21,4 +26,6 @@ export {
   CrlandDoughnutChart,
 } from "./Echarts";
 
-export { CrlandListCombined, CrlandTable, CrlandTableColumn } from "./list";
+export { CrlandListCombined } from "./List";
+
+export { CrlandSearchBar } from "./Card";

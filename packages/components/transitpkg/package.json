@@ -1,6 +1,6 @@
 {
   "name": "crland-base",
-  "version": "0.0.10",
+  "version": "0.0.20",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -13,13 +13,15 @@
   ],
   "dependencies": {
     "crland-utils": "^2.0.3",
+    "element-plus": "^2.2.13",
     "tinymce": "^6.1.2",
     "mavon-editor": "^3.0.0-beta",
     "highlight.js": "^11.6.0",
     "@tinymce/tinymce-vue": "^5.0.0",
     "@highlightjs/vue-plugin": "^2.1.0",
     "axios": "^0.27.2",
-    "echarts": "^5.4.0"
+    "echarts": "^5.4.0",
+    "sortablejs": "^1.15.0"
   },
   "author": "bigdeng",
   "license": "MIT",
