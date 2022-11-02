@@ -1,6 +1,29 @@
 <template>
-  <br />
+  <el-form>
+    <el-form-item label="颜色">
+      <el-radio-group v-model="tagType">
+        <el-radio label="success" />
+        <el-radio label="info" />
+        <el-radio label="warning" />
+        <el-radio label="danger" />
+      </el-radio-group>
+    </el-form-item>
+    <el-form-item label="主题">
+      <el-radio-group v-model="tagEffect">
+        <el-radio label="dark" />
+        <el-radio label="light" />
+        <el-radio label="plain" />
+      </el-radio-group>
+    </el-form-item>
+    <el-form-item label="圆角">
+      <el-radio-group v-model="tagRound">
+        <el-radio :label="false" />
+        <el-radio :label="true" />
+      </el-radio-group>
+    </el-form-item>
+  </el-form>
 
+  <br />
   <!-- 搜索框 -->
   <crland-search-bar
     :span="3"
@@ -75,6 +98,7 @@
     <el-table-column
       prop="address"
       label="地址"
+      width="250"
       v-if="setItemShowValue.includes('address')"
     />
     <el-table-column
@@ -104,6 +128,7 @@ import { CrlandPagination } from "crland-base";
 // 分页组件ref
 const childRef = ref();
 
+// 搜索数据
 const query = reactive({
   name: "",
   code: "",
@@ -146,7 +171,7 @@ const mockTableData = () => {
       index,
       name: "name" + index,
       age: Math.round(Math.random() * 80 + 20),
-      code: Math.random().toString(36).slice(-6),
+      code: Math.random().toString(36).slice(-10).toLocaleUpperCase(),
       date: "2016-05-01",
       address: "南昌市青山湖区南京东路235号" + index + "铺",
     };
@@ -201,6 +226,6 @@ const setItemShow = reactive({
 
 <style lang="scss" scoped>
 .demo-style {
-  box-shadow: var(--el-box-shadow);
+  // box-shadow: var(--el-box-shadow);
 }
 </style>

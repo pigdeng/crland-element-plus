@@ -1,4 +1,6 @@
 .crland-table {
+  border-radius: 10px;
+  overflow: hidden;
   &.crland-table-style-bar {
     // display: block;
     .el-table__row {
@@ -10,6 +12,12 @@
       > td {
         border-bottom: none !important;
       }
+    }
+  }
+
+  .crland-th-row-class {
+    > th {
+      background: #f8fafb;
     }
   }
 

@@ -30,19 +30,14 @@
       </el-radio-group>
     </el-form-item>
   </el-form>
-  <crland-pagination
-    :total="400"
-    :isCircle="isCircle"
-    :layout="layout"
-    :small="small"
-    @change="changePagination"
-    ref="childRef"
-  >
-  </crland-pagination>
+  <br />
+  <crland-pagination :total="400" :isCircle="isCircle" :layout="layout" :small="small" @change="changePagination" ref="childRef"> </crland-pagination>
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue"
+import { CrlandPagination } from "crland-base"
+
 const changePagination = (res: Object) => {
   console.log("res:", res)
 }

@@ -9,7 +9,7 @@
     <!-- <el-divider /> -->
 
     <h3>代码演示</h3>
-    <crland-code-show fileUrl="/code/list/crlandListCombined.txt">
+    <crland-code-show fileUrl="/code/list/crlandListCombined.txt" bgTable>
       <crlandListCombined style="height: 800px" />
     </crland-code-show>
 

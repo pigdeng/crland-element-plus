@@ -35,6 +35,7 @@
       v-loading="loading"
       @selection-change="handleSelectionChange"
       ref="multipleTableRef"
+      header-row-class-name="crland-th-row-class"
     >
       <slot></slot>
     </el-table>
