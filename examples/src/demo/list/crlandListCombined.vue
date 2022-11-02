@@ -1,5 +1,5 @@
 <template>
-  <el-form>
+  <!-- <el-form>
     <el-form-item label="颜色">
       <el-radio-group v-model="tagType">
         <el-radio label="success" />
@@ -21,7 +21,7 @@
         <el-radio :label="true" />
       </el-radio-group>
     </el-form-item>
-  </el-form>
+  </el-form> -->
 
   <br />
   <!-- 搜索框 -->
