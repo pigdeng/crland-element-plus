@@ -16,7 +16,7 @@
       </crland-code-show>
 
       <h3>代码演示【2】</h3>
-      <crland-code-show fileUrl="/code/form/CrlandTree.txt">
+      <crland-code-show fileUrl="/code/form/CrlandTreeSelect.txt">
         <crland-tree-select></crland-tree-select>
       </crland-code-show>
   

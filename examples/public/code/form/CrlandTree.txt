@@ -40,7 +40,7 @@ const data: Tree[] =
     [
         {
             "code": "1006717",
-            "name": "重庆万象汇店",
+            "name": "华润怡宝",
             "parentCode": "1005578",
             "type": null,
             "level": "70",
@@ -1602,7 +1602,7 @@ const data: Tree[] =
         },
         {
             "code": "1011912",
-            "name": "厦门万象里",
+            "name": "华润电力",
             "parentCode": "1005578",
             "type": null,
             "level": "70",
