@@ -167,6 +167,10 @@ const menuData: any = [
         index: "CrlandAffix",
         title: "Affix 固钉",
       },
+      {
+        index: "CrlandTree",
+        title: "树形 控件",
+      },
     ],
   },
   {

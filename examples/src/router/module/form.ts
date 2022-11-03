@@ -117,5 +117,15 @@ export default {
       component: () =>
         require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandAffix.vue"),
     },
+    {
+      path: "CrlandTree",
+      name: "CrlandTree",
+      meta: {
+        title: "树形 控件",
+        isMenu: true,
+      },
+      component: () =>
+        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandTree.vue"),
+    },
   ],
 };
