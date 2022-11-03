@@ -83,7 +83,7 @@ import {
   ElInput,
   ElRow,
 } from "element-plus";
-import CrlandButton from "../button/CrlandButton.vue";
+import CrlandButton from "../Button/CrlandButton.vue";
 
 const ruleFormRef = ref<FormInstance>();
 const props = defineProps(propsData);

@@ -18,6 +18,6 @@ export default defineComponent({
 import "./style/CrlandDatePicker.scss";
 import { ref, computed } from "vue";
 import { ElDatePicker } from "element-plus";
-import { computedSize, deepClone } from "../utils/index";
+import { computedSize, deepClone } from "../Utils/index";
 const value = ref("");
 </script>

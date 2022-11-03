@@ -10,7 +10,7 @@ import * as echarts from "echarts";
 import { computed, onMounted, ref, watch, reactive } from "vue";
 import { propsData } from "./props";
 const props = defineProps(propsData);
-import { numFormat, getCurrentXIpad } from "../utils/index";
+import { numFormat, getCurrentXIpad } from "../Utils/index";
 
 const data = reactive({
   id: props.domId,

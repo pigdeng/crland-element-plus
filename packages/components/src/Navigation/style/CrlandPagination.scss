@@ -1,0 +1,16 @@
+.crland-pagination {
+  display: flex;
+  justify-content: center;
+  // 圆角按钮
+  .crland-pagination-circle {
+    > .el-pager {
+      > li {
+        border-radius: 100% !important;
+      }
+    }
+    .btn-prev,
+    .btn-next {
+      border-radius: 100% !important;
+    }
+  }
+}

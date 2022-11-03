@@ -3,7 +3,9 @@
     <div class="docs-left">
       <div class="docs-left-title">
         <h1>Pc</h1>
-        <img :src="require('@/assets/img/to-mobile.png')" alt="" />
+        <router-link to="/component/mobile/doc">
+          <img :src="require('@/assets/img/to-mobile.png')" alt="" />
+        </router-link>
       </div>
       <crland-menu :menuData="getMenu()" defaultActive="path"></crland-menu>
     </div>
@@ -17,7 +19,7 @@
 import { onBeforeMount } from "vue";
 import { CrlandMenu } from "crland-base";
 // import menuData from "@/docs/data/menu";
-import { useRouter, useRoute, RouterView } from "vue-router";
+import { useRouter, useRoute, RouterView, RouterLink } from "vue-router";
 const router: any = useRouter();
 const route: any = useRoute();
 
@@ -87,7 +89,7 @@ const mapChild = (list: any, parentPath: string, isChild: boolean) => {
         font-weight: 700;
         margin: 25px 113px 17px 52px;
       }
-      > img {
+      img {
         position: absolute;
         cursor: pointer;
         top: 28px;

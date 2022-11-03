@@ -1,6 +1,6 @@
 <template>
   <div class="component-wrap" id="CrlandCodeShow">
-    <div class="component-source">
+    <div class="component-source" :class="bgTable ? 'bg-table' : ''">
       <slot></slot>
     </div>
     <div class="component-btn-bars" :class="openCode ? 'open-style' : ''">
