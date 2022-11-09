@@ -34,6 +34,17 @@
     background: #FFB000;
 }
 
+.vue-treeselect__multi-value-item {
 
+  background: #fff;
+  border-color: #e0e0e0;
+}
 
+.vue-treeselect:not(.vue-treeselect--disabled):not(.vue-treeselect--focused) .vue-treeselect__control:hover {
+  border-color: #FFB000;
+}
 
+.vue-treeselect--focused:not(.vue-treeselect--open) 
+.vue-treeselect__control{
+  border-color:#FFB000;
+}
