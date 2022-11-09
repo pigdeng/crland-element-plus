@@ -1,14 +1,13 @@
-<!-- <template>
-
+ <!-- 
+ <template>
     <el-tree-select
       v-model="valueStrictly"
       :data="data"
       multiple
       :render-after-expand="false"
       show-checkbox
-      check-strictly
-      check-on-click-node
       :props="defaultProps"
+      filterable
     />
   </template>
   
@@ -18,24 +17,22 @@
   const valueStrictly = ref()
 
   interface Tree {
-    // id: number
-    // label: string
+    valueStrictly: string
+    label: string
     children?: Tree[]
 
-    // "code": string,
-    "label": string,
+//    valueStrictly: string,
+//    label: string,
     // "parentCode": string,
     // "type": object,
     // "level": string,
     // "selectable": boolean,
 }
 
-
-
 const defaultProps = {
     children: 'children',
     // label: 'label',
-    // code: 'code',
+    valueStrictly: 'code',
     label: 'name',
     // parentCode: 'parentCode',
     // type: 'type',
@@ -1618,13 +1615,8 @@ const data: Tree[] =
         }
     ]
 
-
-
-
-
-
   </script>
-   -->
+-->
 
 
 
@@ -1640,10 +1632,9 @@ const data: Tree[] =
     </treeselect>
 </template>
 <script lang="ts" setup>
-// import the component
 import Treeselect from 'vue3-treeselect'
-// import the styles
 import 'vue3-treeselect/dist/vue3-treeselect.css'
+import './style/CrlandTreeSelect.scss'
 import {ref ,reactive} from "vue"
 
 const state = reactive({
@@ -3232,17 +3223,9 @@ const state = reactive({
         }
     },
 })
-
-
-
-
-
-
 </script>
 <style scoped>
 
 
 
-
-
-</style>
+</style> 
