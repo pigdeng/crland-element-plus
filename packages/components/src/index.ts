@@ -17,7 +17,13 @@ export { CrlandDrawer, CrlandDialog } from "./Feedback";
 // CrlandLayout;
 export { CrlandLayoutTop, CrlandLayoutMainHeader } from "./Layout";
 
-export { CrlandTagInput, CrlandDatePicker, CrlandInput } from "./Form";
+export {
+  CrlandTagInput,
+  CrlandDatePicker,
+  CrlandInput,
+  CrlandUpload,
+} from "./Form";
+
 export {
   CrlandProgressBar,
   CrlandBarChart,

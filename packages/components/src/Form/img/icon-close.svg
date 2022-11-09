@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>删除关闭/关闭/White #4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="14" cy="14" r="14"></circle>
+        <path d="M15.5979766,4.3825478 C16.1095219,3.88890761 17.0298247,3.85632069 17.57441,4.3825478 C18.1202413,4.90756671 18.1630812,5.64138554 17.57441,6.2846847 L17.57441,6.2846847 L12.988856,11.0014185 L17.57441,15.7181523 C18.1630812,16.3614514 18.1202413,17.0940705 17.57441,17.6178798 C17.0298247,18.1440411 16.1095219,18.1103011 15.5979766,17.6178798 C15.2249033,17.2605099 12.4655572,14.4104131 10.9990199,12.893594 C9.53442417,14.4104131 6.77507805,17.2605099 6.40200472,17.6178798 C5.8904594,18.1103011 4.97016081,18.1440411 4.42557272,17.6178798 C3.87976076,17.0940705 3.8369281,16.3614514 4.42557272,15.7181523 L9.01112529,11.0014185 L4.42557272,6.2846847 C3.8369281,5.64138554 3.87976076,4.90756671 4.42557272,4.3825478 C4.97016081,3.85632069 5.8904594,3.88890761 6.40200472,4.3825478 C6.77510802,4.74171091 9.53486755,7.59142825 11.0013149,9.10758802 C12.4651138,7.59142825 15.2248733,4.74171091 15.5979766,4.3825478 Z" id="path-3"></path>
+    </defs>
+    <g id="删除关闭/关闭/White-#4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BG">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Oval"></g>
+            <g id="Color/Grey-7" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+                <rect id="Rectangle" x="0" y="0" width="28" height="28"></rect>
+            </g>
+        </g>
+        <g id="Icon/Basic/Cross" transform="translate(3.000000, 3.000000)">
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="cross" fill="#44566C" fill-rule="nonzero" xlink:href="#path-3"></use>
+            <g id="Color/Grey-4" mask="url(#mask-4)" fill="#5B6D83" fill-rule="nonzero">
+                <rect id="Rectangle" x="0" y="0" width="22" height="22"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

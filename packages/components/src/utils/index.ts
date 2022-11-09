@@ -162,3 +162,20 @@ export const getCurrentXIpad = (a: any, b: any, e: any) => {
     // return {currentXIndex: a?.length > 2 ? 2 : 0, startValue: null, endValue: null}
   }
 };
+
+// 文件大小转换
+// c 参数：表示要被转化的容量大小，以字节为单
+// b 参数：表示如果转换时出小数，四舍五入保留多少位 默认为2位小数
+export function formatBytes(a: any, b: any) {
+  if (a === 0) return "0 B";
+  const c = 1024;
+  const d = b || 2;
+  const e = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+  const f = Math.floor(Math.log(a) / Math.log(c));
+  return parseFloat((a / Math.pow(c, f)).toFixed(d)) + " " + e[f];
+}
+
+// 区间随机数
+export function randomFrom(lowerValue: any, upperValue: any) {
+  return Math.floor(Math.random() * (upperValue - lowerValue + 1) + lowerValue);
+}

@@ -1,0 +1,69 @@
+.crland-file-list-wrap {
+  width: 300px;
+  .crland-file-list {
+    background: #f8fafb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+    box-shadow: var(--el-box-shadow-light);
+    position: relative;
+    box-sizing: border-box;
+    .file-list-left {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .file-type-img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .file-list-left-text {
+        padding-left: 6px;
+        width: calc(100% - 70px);
+        overflow: hidden;
+        .file-name {
+          font-size: 13px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #44566c;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .file-size {
+          font-size: 13px;
+          font-family: Roboto-Regular, Roboto;
+          font-weight: 400;
+          color: #8697a8;
+        }
+      }
+      .crland-upload-progress {
+        margin-top: 6px;
+      }
+    }
+    .crland-list-right {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      width: 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .icon-down {
+        img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}

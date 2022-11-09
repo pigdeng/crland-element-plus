@@ -8,3 +8,6 @@ export const CrlandDatePicker = withInstall(crlandDatePicker);
 
 import crlandInput from "./CrlandInput.vue";
 export const CrlandInput = withInstall(crlandInput);
+
+import crlandUpload from "./CrlandUpload.vue";
+export const CrlandUpload = withInstall(crlandUpload);

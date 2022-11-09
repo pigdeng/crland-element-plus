@@ -49,9 +49,11 @@ export default defineConfig({
         "@highlightjs/vue-plugin",
         "@tinymce/tinymce-vue",
         "@element-plus/icons-vue",
+        "element-plus",
         "axios",
         "echarts",
         "sortablejs",
+        "vue3-treeselect",
       ],
       input: ["index.ts"],
       output: [

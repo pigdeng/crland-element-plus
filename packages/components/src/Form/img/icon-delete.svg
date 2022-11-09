@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>Delete </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="8" cy="8" r="8"></circle>
+        <path d="M9.92598512,2.78889406 C10.251514,2.47475939 10.8371612,2.45402226 11.1837155,2.78889406 C11.5310626,3.122997 11.5583244,3.58997262 11.1837155,3.99934481 L11.1837155,3.99934481 L8.26563567,7.00090267 L11.1837155,10.0024605 C11.5583244,10.4118327 11.5310626,10.8780448 11.1837155,11.211378 C10.8371612,11.546208 10.251514,11.5247371 9.92598512,11.211378 C9.68853385,10.9839216 7.93202113,9.16963678 6.99889318,8.20451464 C6.067967,9.16963678 4.31145428,10.9839216 4.074003,11.211378 C3.74847416,11.5247371 3.1628296,11.546208 2.81627355,11.211378 C2.46893867,10.8780448 2.44168152,10.4118327 2.81627355,10.0024605 L5.73435245,7.00090267 L2.81627355,3.99934481 C2.44168152,3.58997262 2.46893867,3.122997 2.81627355,2.78889406 C3.1628296,2.45402226 3.74847416,2.47475939 4.074003,2.78889406 C4.31145428,3.01747348 6.067967,4.83124345 7.00109495,5.79600481 C7.93202113,4.83124345 9.68853385,3.01747348 9.92598512,2.78889406 Z" id="path-3"></path>
+    </defs>
+    <g id="常用业务组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0-其他元素" transform="translate(-747.000000, -150.000000)">
+            <g id="上传下载/上传中/未知+删除" transform="translate(529.000000, 132.000000)">
+                <g id="删除关闭/关闭//Grey4-#1" transform="translate(218.000000, 18.000000)">
+                    <g id="Close">
+                        <g id="BG">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Oval" fill="#44566C" xlink:href="#path-1"></use>
+                            <g id="Color/Grey-5" mask="url(#mask-2)" fill="#8D9EAE" fill-rule="nonzero">
+                                <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                        <g id="Icon/Basic/Cross" transform="translate(1.000000, 1.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="cross" fill="#44566C" fill-rule="nonzero" xlink:href="#path-3"></use>
+                            <g id="Color/White-1" mask="url(#mask-4)" fill="#FFFFFF" fill-rule="nonzero">
+                                <rect id="Rectangle" x="0" y="0" width="14" height="14"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
