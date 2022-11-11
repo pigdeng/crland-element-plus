@@ -63,4 +63,10 @@ pnpm build
 
 ### 发布
 
-pnpm run publish
+#### 发布到测试库
+
+pnpm publish:dev
+
+#### 发布到生产库
+
+pnpm publish:prod
