@@ -6,6 +6,7 @@
     :on-preview="handlePreview"
     :on-remove="handleRemove"
     :on-success="handSuccess"
+    :on-error="handError"
     :before-remove="beforeRemove"
     :on-exceed="handleExceed"
     :before-upload="handleStart"
@@ -57,7 +58,6 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import { fa } from "element-plus/es/locale";
 export default defineComponent({
   name: "crland-upload",
 });
@@ -165,6 +165,13 @@ const handSuccess = (res: any, uploadFile: UploadRawFile) => {
   console.log("obj:", obj);
   obj.percentage = 100;
   obj.status = 1;
+};
+
+// 上传失败
+const handError = (res: any, uploadFile: UploadRawFile) => {
+  // console.log("res:", res);
+  console.log("uploadFile:", uploadFile);
+  console.log("uploadFile:", uploadFile);
 };
 
 const handleStart = (rawFile: UploadRawFile) => {

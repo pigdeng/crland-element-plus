@@ -1,33 +1,57 @@
-import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-
-// vite
-import requireTransform from "vite-plugin-require-transform";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+import requireTransform from "vite-plugin-require-transform";
+import { resolve } from "path";
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  server: {
-    host: "0.0.0.0",
+  /**
+   * 在生产中服务时的基本公共路径。
+   * @default '/'
+   */
+  base: "./",
+  preview: {
+    port: 8128,
   },
   plugins: [
     vue(),
-    requireTransform({
-      fileRegex: /.js$|.vue$|.ts$/,
-    }),
     AutoImport({
       resolvers: [ElementPlusResolver()],
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [
+        ElementPlusResolver({
+          importStyle: false, //按需导入组件，但是不导入样式文件（sass）
+        }),
+      ],
+    }),
+    requireTransform({
+      fileRegex: /.ts$|.tsx$|.vue$/,
+      //   fileRegex:/.js$|.jsx$|.vue$/
     }),
   ],
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `@import "./src/assets/css/theming.scss"`, // 添加公共样式sass变量(此处为全局sass变量，跟element-plus无关)
+  //     },
+  //   },
+  // },
   resolve: {
-    // 配置路径别名
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": resolve(__dirname, "src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          lodash: ["lodash"],
+        },
+      },
     },
   },
 });

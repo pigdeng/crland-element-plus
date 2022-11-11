@@ -1,6 +1,6 @@
 {
   "name": "crland-base",
-  "version": "0.0.20",
+  "version": "0.0.22",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -25,6 +25,6 @@
   },
   "author": "bigdeng",
   "license": "MIT",
-  "description": "",
+  "description": "基于element-plus二次开发的UI组件",
   "typings": "lib/index.d.ts"
 }
