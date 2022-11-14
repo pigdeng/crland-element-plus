@@ -22,7 +22,7 @@ import form from "./module/form";
 // echarts图表
 import echarts from "./module/echarts";
 //  list 列表哦
-import list from "./module/list";
+// import list from "./module/list";
 
 //  card 卡片
 import card from "./module/card";
@@ -38,7 +38,7 @@ const routes: Array<RouteRecordRaw> = [
   layout,
   form,
   echarts,
-  list,
+  // list,
   card,
 ];
 

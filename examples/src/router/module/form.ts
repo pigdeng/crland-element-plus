@@ -127,15 +127,15 @@ export default {
       component: () =>
         require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandTree.vue"),
     },
-    {
-      path: "CrlandUpload",
-      name: "CrlandUpload",
-      meta: {
-        title: "upload 上传",
-        isMenu: true,
-      },
-      component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandUpload.vue"),
-    },
+    // {
+    //   path: "CrlandUpload",
+    //   name: "CrlandUpload",
+    //   meta: {
+    //     title: "upload 上传",
+    //     isMenu: true,
+    //   },
+    //   component: () =>
+    //     require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandUpload.vue"),
+    // },
   ],
 };

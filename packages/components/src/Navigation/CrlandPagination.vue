@@ -16,33 +16,33 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue"
+import { defineComponent } from "vue";
 export default defineComponent({
   name: "crland-pagination",
-})
+});
 </script>
 <script lang="ts" setup>
-import "./style/CrlandPagination.scss"
-import { ref } from "vue"
-import { ElPagination } from "element-plus"
+import "./style/CrlandPagination.scss";
+import { ref } from "vue";
+import { ElPagination } from "element-plus";
 
-import { propsData } from "./CrlandPagination"
-const props = defineProps(propsData)
-const emit = defineEmits(["change"])
+import { propsData } from "./CrlandPagination";
+const props = defineProps(propsData);
+const emit = defineEmits(["change"]);
 
-const currentPage = ref(1)
-const pageSize = ref(10)
+const currentPage = ref(1);
+const pageSize = ref(10);
 
 const updatePagination = () => {
   let obj = {
     pageSize: pageSize.value,
     currentPage: currentPage.value,
-  }
-  emit("change", obj)
-}
+  };
+  emit("change", obj);
+};
 
 defineExpose({
   currentPage,
   pageSize,
-})
+});
 </script>

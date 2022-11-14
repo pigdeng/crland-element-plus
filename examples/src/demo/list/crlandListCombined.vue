@@ -123,11 +123,11 @@
 import { ref, reactive, onMounted } from "vue";
 import { ElButton, ElMessage } from "element-plus";
 import { Refresh, Rank } from "@element-plus/icons-vue";
-import {
-  CrlandPagination,
-  CrlandListCombined,
-  CrlandSearchBar,
-} from "crland-base";
+// import {
+//   CrlandPagination,
+//   CrlandListCombined,
+//   CrlandSearchBar,
+// } from "crland-base";
 
 // 分页组件ref
 const childRef = ref();

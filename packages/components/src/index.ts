@@ -21,7 +21,7 @@ export {
   CrlandTagInput,
   CrlandDatePicker,
   CrlandInput,
-  CrlandUpload,
+  // CrlandUpload,
 } from "./Form";
 
 export {
@@ -32,6 +32,6 @@ export {
   CrlandDoughnutChart,
 } from "./Echarts";
 
-export { CrlandListCombined } from "./List";
+// export { CrlandListCombined } from "./List";
 
 export { CrlandSearchBar } from "./Card";

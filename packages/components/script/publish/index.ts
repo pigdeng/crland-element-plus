@@ -53,10 +53,10 @@ const copypackage = async () => {
 export const publish = async (env: any) => {
   const envInfo = await versionPatch(env);
   await assignPackage(envInfo);
-  // await run(
-  //   "npm publish --access=public --registry http://maven.saas.crland.com.cn/nexus/repository/npm-crland-ued/",
-  //   `${componentPath}/dist`
-  // );
+  await run(
+    "npm publish --access=public --registry http://maven.saas.crland.com.cn/nexus/repository/npm-crland-ued/",
+    `${componentPath}/dist`
+  );
 
   // //先给transitpkg升个版本
   // await run("pnpm version patch", `${componentPath}/transitpkg`);
