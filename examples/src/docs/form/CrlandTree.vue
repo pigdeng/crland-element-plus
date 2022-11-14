@@ -15,7 +15,14 @@
         <Crland-Tree></Crland-Tree>
       </crland-code-show>
 
-      <h3>代码演示【2】</h3>
+
+     
+        
+      <h3>代码演示【vue3-treeselect】</h3>
+      <p>
+        <el-tag class="ml-2" type="info">crland-tree-select</el-tag><br />
+        组件保留了 <a href="https://www.vue-treeselect.cn/">vue3-treeselect</a>原有功能，并对其进行样式定制化。
+      </p>
       <crland-code-show fileUrl="/code/form/CrlandTreeSelect.txt">
         <crland-tree-select></crland-tree-select>
       </crland-code-show>
