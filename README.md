@@ -19,19 +19,25 @@ pnpm run exm:dev
 
 pnpm run build
 
-## 发布
+### 发布
 
-pnpm run publish
+#### 发布到测试库
 
-## 启动文档
+pnpm publish:dev
+
+#### 发布到生产库
+
+pnpm publish:prod
+
+<!-- ## 启动文档
 
 pnpm run docs:dev
 
 ## 打包文档
 
-pnpm run docs:build
+pnpm run docs:build -->
 
-## 启动打包后文档服务
+<!-- ## 启动打包后文档服务
 
 pnpm run docs:serve
 
@@ -41,7 +47,7 @@ pnpm run test
 
 ## 查看测试覆盖率
 
-pnpm run coverage
+pnpm run coverage -->
 
 ## 链接到本地私服
 
@@ -60,13 +66,3 @@ npm login -registry=http://maven.saas.crland.com.cn/nexus/repository/npm-crland-
 ### 打包
 
 pnpm build
-
-### 发布
-
-#### 发布到测试库
-
-pnpm publish:dev
-
-#### 发布到生产库
-
-pnpm publish:prod
