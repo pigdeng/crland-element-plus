@@ -103,6 +103,26 @@ const menuData: any = [
         index: "CrlandDialog",
         title: "Dialog 对话框",
       },
+      {
+        index: "CrlandAlert",
+        title: "Alert 提示",
+      },
+      {
+        index: "CrlandPoppover",
+        title: "Popover 气泡卡片",
+      },
+      {
+        index: "CrlandTooltip",
+        title: "Tooltip 文字提示",
+      },
+      {
+        index: "CrlandMessageBox",
+        title: "MessageBox 消息弹框",
+      },
+      {
+        index: "CrlandNotification",
+        title: "Notification 通知",
+      },
     ],
   },
   {
@@ -196,6 +216,10 @@ const menuData: any = [
       {
         index: "CrlandDoughnutChart",
         title: "doughnutChart 环形图",
+      },
+      {
+        index: "CrlandChinaMap",
+        title: "ChinaMap 环形图",
       },
     ],
   },

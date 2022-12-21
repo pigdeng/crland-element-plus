@@ -57,5 +57,15 @@ export default {
       component: () =>
         require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandDoughnutChart.vue"),
     },
+    {
+      path: "CrlandChinaMap",
+      name: "CrlandChinaMap",
+      meta: {
+        title: "ChinaMap 中国地图",
+        isMenu: true,
+      },
+      component: () =>
+        require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandChinaMap.vue"),
+    },
   ],
 };

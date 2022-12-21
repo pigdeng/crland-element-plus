@@ -24,6 +24,7 @@ export {
   CrlandLineChart,
   CrlandStackedColChart,
   CrlandDoughnutChart,
+  CrlandChinaMap,
 } from "./Echarts";
 
 export { CrlandListCombined } from "./List";
