@@ -30,6 +30,7 @@ export {
   CrlandLineChart,
   CrlandStackedColChart,
   CrlandDoughnutChart,
+  ProgressBar1,
 } from "./Echarts";
 
 // export { CrlandListCombined } from "./List";
