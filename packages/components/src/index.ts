@@ -31,6 +31,7 @@ export {
   CrlandStackedColChart,
   CrlandDoughnutChart,
   ProgressBar1,
+  CrlandChinaMap,
 } from "./Echarts";
 
 // export { CrlandListCombined } from "./List";

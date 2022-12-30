@@ -66,6 +66,7 @@
     "node": ">=14"
   },
   "dependencies": {
+    "uuid": "^9.0.0",
     "vue3-treeselect": "^0.1.10"
   }
 }
