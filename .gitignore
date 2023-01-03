@@ -2,6 +2,7 @@ node_modules
 **/es
 **/lib
 **/dist
+**/preview
 coverage
 *.log
 .DS_Store

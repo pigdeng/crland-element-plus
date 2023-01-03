@@ -4,6 +4,7 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import requireTransform from "vite-plugin-require-transform";
+import VitePluginQiankun from 'vite-plugin-qiankun'
 import { resolve } from "path";
 
 // https://vitejs.dev/config/
@@ -12,7 +13,7 @@ export default defineConfig({
    * 在生产中服务时的基本公共路径。
    * @default '/'
    */
-  base: "./",
+  base: "/ued-pc-web",
   preview: {
     port: 8128,
   },
@@ -31,6 +32,9 @@ export default defineConfig({
     requireTransform({
       fileRegex: /.ts$|.tsx$|.vue$/,
       //   fileRegex:/.js$|.jsx$|.vue$/
+    }),
+    VitePluginQiankun('ued-pc-web', { // 微应用名字，与主应用注册的微应用名字保持一致
+      useDevMode: true,
     }),
   ],
   // css: {

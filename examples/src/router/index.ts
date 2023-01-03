@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
+import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 // Layout
 const Layout = () => import("@/docs/layout.vue");
 // home
@@ -42,10 +43,12 @@ const routes: Array<RouteRecordRaw> = [
   card,
 ];
 
-if (window.__POWERED_BY_QIANKUN__) {
+
+if (qiankunWindow.__POWERED_BY_QIANKUN__) {
   routes.forEach((i: any) => {
     if (i.path) {
-      i.path = `/${process?.env?.VUE_APP_QIANKUN_NAME}${i.path}`;
+      i.path = `${import.meta.env.VITE_CODE_PATH}${i.path}`;
+      // i.path = `/ued-pc-web${i.path}`;
     }
   });
 }
