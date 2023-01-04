@@ -1,20 +1,20 @@
 .vue-treeselect__multi-value-item {
   .vue-treeselect__multi-value-label {
-    color: #FFB000;
+    color: var(--el-color-primary);
   }
   .vue-treeselect__value-remove{
-    color: #FFB000;
+    color: var(--el-color-primary);
   }
 }
 
 .vue-treeselect__checkbox-container{
     .vue-treeselect__checkbox--checked{
-        border-color: #FFB000;
-        background: #FFB000;
+        border-color: var(--el-color-primary);
+        background: var(--el-color-primary);
     }
     .vue-treeselect__checkbox--indeterminate{
-        border-color: #FFB000;
-        background: #FFB000;
+        border-color: var(--el-color-primary);
+        background: var(--el-color-primary);
     }
 }
 
@@ -30,8 +30,8 @@
 .vue-treeselect__label-container:hover 
 .vue-treeselect__checkbox--checked,
  .vue-treeselect__label-container:hover .vue-treeselect__checkbox--indeterminate {
-    border-color: #FFB000;
-    background: #FFB000;
+    border-color: var(--el-color-primary);
+    background: var(--el-color-primary);
 }
 
 .vue-treeselect__multi-value-item {
@@ -41,10 +41,10 @@
 }
 
 .vue-treeselect:not(.vue-treeselect--disabled):not(.vue-treeselect--focused) .vue-treeselect__control:hover {
-  border-color: #FFB000;
+  border-color: var(--el-color-primary);
 }
 
 .vue-treeselect--focused:not(.vue-treeselect--open) 
 .vue-treeselect__control{
-  border-color:#FFB000;
+  border-color:var(--el-color-primary);
 }
