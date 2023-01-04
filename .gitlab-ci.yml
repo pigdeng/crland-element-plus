@@ -13,7 +13,7 @@ node_build:
     - pnpm exm:build
   cache:
     paths:
-      - dist
+      - examples/dist
     policy: push
   only:
     - develop
@@ -30,7 +30,7 @@ docker_build:
     - chart_build
   cache:
     paths:
-      - dist
+      - examples/dist
     policy: pull
   only:
     - develop
