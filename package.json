@@ -57,8 +57,8 @@
     "vite": "3.0.9",
     "vite-plugin-dts": "^1.4.1",
     "vite-plugin-libcss": "^1.0.5",
-    "vite-plugin-require-transform": "^1.0.3",
     "vite-plugin-qiankun": "^1.0.15",
+    "vite-plugin-require-transform": "^1.0.3",
     "vitest": "^0.21.1",
     "vue": "^3.2.39",
     "vue-router": "4.0.12"
