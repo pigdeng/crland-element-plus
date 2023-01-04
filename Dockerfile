@@ -7,7 +7,7 @@ FROM registry.saas.crland.com.cn/tools/nginx:1.21.4-alpine
 #    && rm -rf /usr/share/nginx/html/*
 # COPY nginx.conf /etc/nginx/conf.d/nginx.conf
 
-COPY dist /usr/share/nginx/html/ued-pc-web/
+COPY examples/dist /usr/share/nginx/html/ued-pc-web/
 
 EXPOSE 80
 
