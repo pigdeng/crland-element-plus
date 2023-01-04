@@ -6,11 +6,11 @@ stages:
 
 
 node_build:
-  image: registry.saas.crland.com.cn/choerodon-tools/cifront:node16
+  image: registry.saas.crland.com.cn/choerodon-tools/cifront:node16-pnpm-vue
   stage: node_build
   script:
-    - npm install -registry=http://maven.saas.crland.com.cn/nexus/repository/npm-group/
-    - npm run exm:build
+    - pnpm install
+    - pnpm exm:build
   cache:
     paths:
       - diexamples/distst
