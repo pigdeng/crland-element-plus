@@ -54,6 +54,7 @@ export default defineConfig({
         "echarts",
         "sortablejs",
         "vue3-treeselect",
+        "uuid"
       ],
       input: ["index.ts"],
       output: [
