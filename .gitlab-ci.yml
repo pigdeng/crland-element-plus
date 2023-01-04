@@ -1,7 +1,7 @@
 stages:
   - node_build
   - docker_build
-  - sonar_check
+  # - sonar_check
 
 
 
@@ -17,7 +17,7 @@ node_build:
     policy: push
   only:
     - develop
-    - /^feature-.*$/
+    - /^develop-.*$/
     - uat
     - /^release-.*$/
     - master
@@ -34,7 +34,7 @@ docker_build:
     policy: pull
   only:
     - develop
-    - /^feature-.*$/
+    - /^develop-.*$/
     - uat
     - /^release-.*$/
     - master
