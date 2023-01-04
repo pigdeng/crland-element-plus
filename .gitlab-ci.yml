@@ -1,0 +1,76 @@
+stages:
+  - node_build
+  - docker_build
+  - sonar_check
+
+
+
+node_build:
+  image: registry.saas.crland.com.cn/choerodon-tools/cifront:node16
+  stage: node_build
+  script:
+    - npm install -registry=http://maven.saas.crland.com.cn/nexus/repository/npm-group/
+    - npm run exm:build
+  cache:
+    paths:
+      - diexamples/distst
+    policy: push
+  only:
+    - develop
+    - /^feature-.*$/
+    - uat
+    - /^release-.*$/
+    - master
+    - tags
+
+docker_build:
+  stage: docker_build
+  script:
+    - docker_build
+    - chart_build
+  cache:
+    paths:
+      - examples/dist
+    policy: pull
+  only:
+    - develop
+    - /^feature-.*$/
+    - uat
+    - /^release-.*$/
+    - master
+    - tags
+
+sonar_check:
+  stage: sonar_check
+  image: sonarsource/sonar-scanner-cli
+  script:
+    - |
+      sonar-scanner \
+        -Dsonar.projectBaseDir=. \
+        -Dsonar.projectKey=${GROUP_NAME}:${PROJECT_NAME} \
+        -Dsonar.projectName=${GROUP_NAME}/${PROJECT_NAME} \
+        -Dsonar.projectVersion=${CI_COMMIT_TAG} \
+        -Dsonar.gitlab.project_id=${CI_PROJECT_ID} \
+        -Dsonar.sources=. \
+        -Dsonar.sourceEncoding=UTF-8
+  allow_failure: true
+  only:
+    - /^feature-.*$/
+
+.auto_devops: &auto_devops |
+  curl -o .auto_devops.sh \
+      "${CHOERODON_URL}/devops/ci?token=${Token}&type=front"
+  if [ $? -ne 0 ];then
+    cat .auto_devops.sh
+    exit 1
+  fi
+  source .auto_devops.sh
+
+  function docker_build() {
+    docker login -u ${DOCKER_USER} -p ${DOCKER_PWD} ${DOCKER_REGISTRY}
+    docker build --pull -t ${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG} .
+    docker push ${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG}
+  }
+
+before_script:
+  - *auto_devops
