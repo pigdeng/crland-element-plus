@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/Rate.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/Rate.vue"),
     },
     {
       path: "Slider",
@@ -25,7 +25,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/Slider.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/Slider.vue"),
     },
     {
       path: "CrlandTagInput",
@@ -35,7 +35,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandTagInput.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandTagInput.vue"),
     },
     {
       path: "TimeSelect",
@@ -45,7 +45,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/TimeSelect.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/TimeSelect.vue"),
     },
     {
       path: "TimePicker",
@@ -55,7 +55,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/TimePicker.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/TimePicker.vue"),
     },
     {
       path: "CrlandDatePicker",
@@ -65,7 +65,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandDatePicker.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandDatePicker.vue"),
     },
     {
       path: "CrlandInput",
@@ -75,7 +75,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandInput.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandInput.vue"),
     },
     {
       path: "CrlandImage",
@@ -85,7 +85,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandImage.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandImage.vue"),
     },
     {
       path: "CrlandEmpty",
@@ -95,7 +95,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandEmpty.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandEmpty.vue"),
     },
     {
       path: "CrlandBacktop",
@@ -105,7 +105,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandBackTop.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandBackTop.vue"),
     },
     {
       path: "CrlandAffix",
@@ -115,7 +115,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandAffix.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandAffix.vue"),
     },
     {
       path: "CrlandTree",
@@ -125,7 +125,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandTree.vue"),
+        import(/* webpackChunkName: "form" */ "@/docs/form/CrlandTree.vue"),
     },
     // {
     //   path: "CrlandUpload",
@@ -135,7 +135,7 @@ export default {
     //     isMenu: true,
     //   },
     //   component: () =>
-    //     require(/* webpackChunkName: "menu" */ "@/docs/form/CrlandUpload.vue"),
+    //     import(/* webpackChunkName: "form" */ "@/docs/form/CrlandUpload.vue"),
     // },
   ],
 };

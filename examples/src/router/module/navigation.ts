@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/navigation/menu.vue"),
+        import(/* webpackChunkName: "navigation" */ "@/docs/navigation/menu.vue"),
     },
     {
       path: "CralndMenuPro",
@@ -25,7 +25,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/navigation/CralndMenuPro.vue"),
+        import(/* webpackChunkName: "navigation" */ "@/docs/navigation/CralndMenuPro.vue"),
     },
     {
       path: "CrlandHistoryBar",
@@ -35,7 +35,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandHistoryBar.vue"),
+        import(/* webpackChunkName: "navigation" */ "@/docs/navigation/CrlandHistoryBar.vue"),
     },
     {
       path: "CrlandDropdown",
@@ -45,7 +45,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandDropdown.vue"),
+        import(/* webpackChunkName: "navigation" */ "@/docs/navigation/CrlandDropdown.vue"),
     },
     {
       path: "CrlandPagination",
@@ -55,7 +55,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandPagination.vue"),
+        import(/* webpackChunkName: "navigation" */ "@/docs/navigation/CrlandPagination.vue"),
     },
     {
       path: "CrlandBreadcrumb",
@@ -65,7 +65,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandBreadcrumb.vue"),
+        import(/* webpackChunkName: "navigation" */ "@/docs/navigation/CrlandBreadcrumb.vue"),
     },
     {
       path: "CrlandSteps",
@@ -75,7 +75,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/navigation/CrlandSteps.vue"),
+        import(/* webpackChunkName: "navigation" */ "@/docs/navigation/CrlandSteps.vue"),
     },
   ],
 };

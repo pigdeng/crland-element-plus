@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/list/crlandListCombined.vue"),
+        import(/* webpackChunkName: "list" */ "@/docs/list/crlandListCombined.vue"),
     },
   ],
 };

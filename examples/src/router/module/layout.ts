@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/layout/CrlandLayoutTop.vue"),
+        import(/* webpackChunkName: "layout" */ "@/docs/layout/CrlandLayoutTop.vue"),
     },
     {
       path: "CrlandLayout",
@@ -25,7 +25,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/layout/CrlandLayout.vue"),
+        import(/* webpackChunkName: "layout" */ "@/docs/layout/CrlandLayout.vue"),
       children: [
         {
           path: "initiating",
@@ -34,7 +34,7 @@ export default {
             title: "项目启动",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "devalop",
@@ -43,7 +43,7 @@ export default {
             title: "制定项目章程",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "initiating/stakeholders",
@@ -52,7 +52,7 @@ export default {
             title: "识别干系人",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "initiating/risks1",
@@ -61,7 +61,7 @@ export default {
             title: "问题1",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "initiating/risks2",
@@ -70,7 +70,7 @@ export default {
             title: "问题2",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "planing",
@@ -79,7 +79,7 @@ export default {
             title: "项目规划",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "executing",
@@ -88,7 +88,7 @@ export default {
             title: "项目执行",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "monitoring",
@@ -97,7 +97,7 @@ export default {
             title: "项目监控",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
         {
           path: "closing",
@@ -106,7 +106,7 @@ export default {
             title: "项目收尾",
           },
           component: () =>
-            require(/* webpackChunkName: "menu" */ "@/demo/layout/CrlandHistory.vue"),
+            import(/* webpackChunkName: "layout" */ "@/demo/layout/CrlandHistory.vue"),
         },
       ],
     },

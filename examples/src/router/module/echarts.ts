@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandProgressBar.vue"),
+        import(/* webpackChunkName: "echarts" */ "@/docs/echarts/CrlandProgressBar.vue"),
     },
     {
       path: "CrlandBarChart",
@@ -25,7 +25,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandBarChart.vue"),
+        import(/* webpackChunkName: "echarts" */ "@/docs/echarts/CrlandBarChart.vue"),
     },
     {
       path: "CrlandLineChart",
@@ -35,7 +35,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandLineChart.vue"),
+        import(/* webpackChunkName: "echarts" */ "@/docs/echarts/CrlandLineChart.vue"),
     },
     {
       path: "CrlandStackedColChart",
@@ -45,7 +45,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandStackedColChart.vue"),
+        import(/* webpackChunkName: "echarts" */ "@/docs/echarts/CrlandStackedColChart.vue"),
     },
     {
       path: "CrlandDoughnutChart",
@@ -55,7 +55,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandDoughnutChart.vue"),
+        import(/* webpackChunkName: "echarts" */ "@/docs/echarts/CrlandDoughnutChart.vue"),
     },
     {
       path: "CrlandChinaMap",
@@ -65,7 +65,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/echarts/CrlandChinaMap.vue"),
+        import(/* webpackChunkName: "echarts" */ "@/docs/echarts/CrlandChinaMap.vue"),
     },
   ],
 };

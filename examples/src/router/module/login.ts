@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/login/login.vue"),
+        import(/* webpackChunkName: "login" */ "@/docs/login/login.vue"),
     },
   ],
 };

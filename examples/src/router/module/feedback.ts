@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandDrawer.vue"),
+        import(/* webpackChunkName: "feedback" */ "@/docs/Feedback/CrlandDrawer.vue"),
     },
     {
       path: "feedback/CrlandDialog",
@@ -25,7 +25,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandDialog.vue"),
+        import(/* webpackChunkName: "feedback" */ "@/docs/Feedback/CrlandDialog.vue"),
     },
     {
       path: "feedback/CrlandAlert",
@@ -35,7 +35,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandAlert.vue"),
+        import(/* webpackChunkName: "feedback" */ "@/docs/Feedback/CrlandAlert.vue"),
     },
     {
       path: "feedback/CrlandPoppover",
@@ -45,7 +45,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandPoppover.vue"),
+        import(/* webpackChunkName: "feedback" */ "@/docs/Feedback/CrlandPoppover.vue"),
     },
     {
       path: "feedback/CrlandTooltip",
@@ -55,7 +55,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandTooltip.vue"),
+        import(/* webpackChunkName: "feedback" */ "@/docs/Feedback/CrlandTooltip.vue"),
     },
     {
       path: "feedback/CrlandMessageBox",
@@ -65,7 +65,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandMessageBox.vue"),
+        import(/* webpackChunkName: "feedback" */ "@/docs/Feedback/CrlandMessageBox.vue"),
     },
     {
       path: "feedback/CrlandNotification",
@@ -75,7 +75,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/Feedback/CrlandNotification.vue"),
+        import(/* webpackChunkName: "feedback" */ "@/docs/Feedback/CrlandNotification.vue"),
     },
   ],
 };

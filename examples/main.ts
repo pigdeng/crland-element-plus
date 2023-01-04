@@ -20,20 +20,13 @@ import {
 } from 'vite-plugin-qiankun/dist/helper'
 
 
-// app.use(ElementPlus, { locale });
-// app.use(crlandElementPlus);
-// app.use(router);
-// app.use(hljsVuePlugin);
-// app.mount("#app");
-
-
 const render = (props: QiankunProps = {}) => {
   const app = createApp(App);
   const { container } = props
   const UedPcWeb: string | Element = container?.querySelector('#ued-pc-web') || '#ued-pc-web' // 避免 id 重复导致微应用挂载失败
-  // createApp(App).mount(app)
   app.use(router);
   app.use(hljsVuePlugin);
+  // app.use(crlandElementPlus);
   app.mount(UedPcWeb);
 }
 

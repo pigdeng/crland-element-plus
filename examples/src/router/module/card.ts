@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/card/CrlandSearchBar.vue"),
+        import(/* webpackChunkName: "card" */ "@/docs/card/CrlandSearchBar.vue"),
     },
   ],
 };

@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        import(/* webpackChunkName: "about" */ "@/docs/docs/index.vue"),
+        import(/* webpackChunkName: "docs" */ "@/docs/docs/index.vue"),
     },
   ],
 };

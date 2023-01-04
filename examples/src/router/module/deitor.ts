@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/editor/mavonEdit.vue"),
+        import(/* webpackChunkName: "deitor" */ "@/docs/editor/mavonEdit.vue"),
     },
     {
       path: "tinymceEdit",
@@ -25,7 +25,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/editor/tinymceEdit.vue"),
+        import(/* webpackChunkName: "deitor" */ "@/docs/editor/tinymceEdit.vue"),
     },
   ],
 };

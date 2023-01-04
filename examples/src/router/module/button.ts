@@ -15,7 +15,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/button/mainButton.vue"),
+        import(/* webpackChunkName: "button" */ "@/docs/button/mainButton.vue"),
     },
     {
       path: "shadowButton",
@@ -25,7 +25,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/button/shadowButton.vue"),
+        import(/* webpackChunkName: "button" */ "@/docs/button/shadowButton.vue"),
     },
 
     {
@@ -36,7 +36,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/button/disabledButton.vue"),
+        import(/* webpackChunkName: "button" */ "@/docs/button/disabledButton.vue"),
     },
     {
       path: "textButton",
@@ -46,7 +46,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/button/textButton.vue"),
+        import(/* webpackChunkName: "button" */ "@/docs/button/textButton.vue"),
     },
     {
       path: "iconButton",
@@ -56,7 +56,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/button/iconButton.vue"),
+        import(/* webpackChunkName: "button" */ "@/docs/button/iconButton.vue"),
     },
     {
       path: "linkButton",
@@ -66,7 +66,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/button/linkButton.vue"),
+        import(/* webpackChunkName: "button" */ "@/docs/button/linkButton.vue"),
     },
     {
       path: "switchButton",
@@ -76,7 +76,7 @@ export default {
         isMenu: true,
       },
       component: () =>
-        require(/* webpackChunkName: "menu" */ "@/docs/button/switchButton.vue"),
+        import(/* webpackChunkName: "button" */ "@/docs/button/switchButton.vue"),
     },
   ],
 };
