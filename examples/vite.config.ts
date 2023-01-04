@@ -50,7 +50,7 @@ export default defineConfig({
     },
   },
   build: {
-    chunkSizeWarningLimit: 500,
+    chunkSizeWarningLimit: 1500,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -59,4 +59,11 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    fs: {
+      // Allow serving files from one level up to the project root
+      // strict: false,
+      allow: ['..'],
+    }
+  }
 });
