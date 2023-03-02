@@ -1,7 +1,7 @@
 <template>
   <el-dialog
     v-model="visible"
-    custom-class="crland-dialog"
+    class="crland-dialog"
     :before-close="handleClose"
     :show-close="false"
   >

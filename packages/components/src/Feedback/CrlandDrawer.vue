@@ -1,7 +1,7 @@
 <template>
   <el-drawer
     v-model="visible"
-    custom-class="crland-drawer"
+    class="crland-drawer"
     :show-close="false"
     :before-close="handleClose"
     :size="size"
