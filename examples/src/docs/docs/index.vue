@@ -16,10 +16,10 @@
     <p class="dot">设置npm 源地址。</p>
     <crland-code-bar
       code="npm config set registry http://maven.saas.crland.com.cn/nexus/repository/npm-group/"
-      :language="'Bash'"
+      :language="'bash'"
     ></crland-code-bar>
     <p class="dot">下载依赖</p>
-    <crland-code-bar :code="code_install" :language="'Bash'"></crland-code-bar>
+    <crland-code-bar :code="code_install" :language="'bash'"></crland-code-bar>
 
     <p class="dot">标签引入，如下代码演示。</p>
 

@@ -21,7 +21,8 @@ specifiers:
   gulp-less: ^5.0.0
   gulp-sass: ^5.0.0
   happy-dom: ^6.0.4
-  highlight.js: ^11.6.0
+  highlight.js: ^11.7.0
+  install: ^0.13.0
   less: ^4.1.3
   mavon-editor: ^3.0.0-beta
   path-browserify: ^1.0.1
@@ -45,6 +46,7 @@ specifiers:
   vue3-treeselect: ^0.1.10
 
 dependencies:
+  install: 0.13.0
   uuid: 9.0.0
   vue3-treeselect: 0.1.10_vue@3.2.45
 
@@ -2659,6 +2661,11 @@ packages:
   /ini/1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
+
+  /install/0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
+    dev: false
 
   /interpret/1.4.0:
     resolution: {integrity: sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==}
