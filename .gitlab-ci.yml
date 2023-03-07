@@ -1,9 +1,7 @@
 stages:
   - node_build
   - docker_build
-  # - sonar_check
-
-
+  - sonar_check
 
 node_build:
   image: registry.saas.crland.com.cn/choerodon-tools/cifront:node16-pnpm-vue
