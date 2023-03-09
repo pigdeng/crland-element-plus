@@ -26,30 +26,30 @@
   </el-menu>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({
-  name: "crland-menu-pro",
-});
+  import { defineComponent } from 'vue'
+  export default defineComponent({
+    name: 'crland-menu-pro'
+  })
 </script>
 <script lang="ts" setup>
-import "./style/CrlandMenuPro.scss";
-import { ElMenu } from "element-plus";
-import CrlandItem from "./item.vue";
-import { computedSize } from "../Utils/index";
-import { propsData } from "./CrlandMenuPro";
+  import './style/CrlandMenuPro.scss'
+  import { ElMenu } from 'element-plus'
+  import CrlandItem from './item.vue'
+  import { computedSize } from '../Utils/index'
+  import { propsData } from './CrlandMenuPro'
 
-import { useRouter, useRoute } from "vue-router";
-const router: any = useRouter();
-const route: any = useRoute();
+  import { useRouter, useRoute } from 'vue-router'
+  const router: any = useRouter()
+  const route: any = useRoute()
 
-const props = defineProps(propsData);
-const emit = defineEmits(["handLogo"]);
+  const props = defineProps(propsData)
+  const emit = defineEmits(['handLogo'])
 
-const handMenuItem = (index: string) => {
-  if (props.defaultActive === "name") {
-    router.push({
-      name: index,
-    });
+  const handMenuItem = (index: string) => {
+    if (props.defaultActive === 'name') {
+      router.push({
+        name: index
+      })
+    }
   }
-};
 </script>
