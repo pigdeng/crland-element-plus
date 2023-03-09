@@ -11,6 +11,7 @@
     "build": "gulp -f packages/components/script/build/gulpfile.ts",
     "publish:dev": "gulp -f packages/components/script/publish/gulpfileDev.ts --mode dev",
     "publish:prod": "gulp -f packages/components/script/publish/gulpfile.ts --mode prod",
+    "publish:npm": "gulp -f packages/components/script/publish/gulpfileNpm.ts --mode npm",
     "docs:dev": "pnpm run --filter ./site docs:dev",
     "docs:build": "pnpm run --filter ./site docs:build",
     "docs:serve": "pnpm run --filter ./site docs:serve",
